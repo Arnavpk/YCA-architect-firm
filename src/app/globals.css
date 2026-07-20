@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-warm-white: #FAF8F5;
+  --color-warm-beige: #F0EBE3;
+  --color-warm-cream: #E8E2D8;
+  --color-charcoal: #1A1A1A;
+  --color-dark-grey: #4A4A4A;
+  --color-soft-grey: #E8E4DF;
+  --color-gold: #B08D57;
+  --color-bronze: #8B7355;
+  --color-earthy-brown: #6B5B4B;
+
+  /* Font families — loaded via <link> in layout.js */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif-mr: 'Noto Serif Devanagari', 'Playfair Display', serif;
+  --font-sans-mr: 'Noto Sans Devanagari', 'DM Sans', sans-serif;
+
+  /* Font sizes */
+  --text-display-xl: clamp(3rem, 8vw, 8rem);
+  --text-display-xl--line-height: 0.95;
+  --text-display-xl--letter-spacing: -0.03em;
+
+  --text-display-lg: clamp(2.5rem, 6vw, 6rem);
+  --text-display-lg--line-height: 1;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-display: clamp(2rem, 4vw, 4rem);
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.02em;
+
+  --text-heading: clamp(1.5rem, 3vw, 2.5rem);
+  --text-heading--line-height: 1.2;
+  --text-heading--letter-spacing: -0.01em;
+
+  /* Easing */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Animations */
+  --animate-fade-up: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-scale-in: scaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── Base ── */
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html,
+body {
+  color: #1A1A1A;
+  background-color: #fff;
+  overflow-x: clip;
+}
+
+::selection {
+  background-color: #B08D57;
+  color: #fff;
+}
+
+/* ── Loading Screen ── */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-bar {
+  width: 120px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.loading-bar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #B08D57;
+  animation: loadBar 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes loadBar {
+  to {
+    width: 100%;
+  }
+}
+
+/* ── Image Effects ── */
+
+.image-mask {
+  overflow: hidden;
+}
+
+.image-mask img {
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.image-mask:hover img {
+  transform: scale(1.08);
+}
+
+/* ── Buttons ── */
+
+.btn-luxury {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid #1A1A1A;
+  background: transparent;
+  color: #1A1A1A;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #1A1A1A;
+  transform: translateY(101%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-luxury:hover {
+  color: #fff;
+}
+
+.btn-luxury:hover::before {
+  transform: translateY(0);
+}
+
+.btn-luxury span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-gold {
+  border-color: #B08D57;
+  color: #B08D57;
+}
+
+.btn-gold::before {
+  background: #B08D57;
+}
+
+/* ── Scrollbar ── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B7355;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B08D57;
+}
+
+/* ── Music Toggle ── */
+
+.music-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  transition: all 0.3s ease;
+}
+
+.music-toggle:hover {
+  border-color: #B08D57;
+}
+
+.music-bar {
+  width: 2px;
+  height: 12px;
+  background: #1A1A1A;
+  border-radius: 1px;
+  transition: height 0.3s ease;
+}
+
+.music-toggle.playing .music-bar {
+  animation: musicBars 0.8s ease-in-out infinite alternate;
+}
+
+.music-bar:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.music-bar:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.music-bar:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes musicBars {
+  0% {
+    height: 4px;
+  }
+
+  100% {
+    height: 16px;
+  }
+}
+
+/* ── Reduced Motion ── */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .music-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ── Marathi Typography ── */
+
+html[lang="mr"] body {
+  font-family: 'Noto Sans Devanagari', 'DM Sans', system-ui, sans-serif;
+}
+
+html[lang="mr"] .font-serif {
+  font-family: 'Noto Serif Devanagari', 'Playfair Display', Georgia, serif;
+}
+
+html[lang="mr"] .font-sans {
+  font-family: 'Noto Sans Devanagari', 'DM Sans', system-ui, sans-serif;
+}
+
+/* Marathi text needs slightly more line-height and reduced letter-spacing */
+html[lang="mr"] h1,
+html[lang="mr"] h2,
+html[lang="mr"] h3,
+html[lang="mr"] h4 {
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+html[lang="mr"] p {
+  line-height: 1.85;
+}
+
+html[lang="mr"] .text-display-xl {
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+html[lang="mr"] .text-display-lg {
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+html[lang="mr"] .text-display {
+  line-height: 1.2;
+  letter-spacing: 0;
+}
