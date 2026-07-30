@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,21 +29,21 @@ export default function Hero() {
       line1: t('hero.slide1.line1'),
       line2: t('hero.slide1.line2'),
       line3: t('hero.slide1.line3'),
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80',
+      image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406630/IMG_5216_jbygfj.jpg",
       imageAlt: t('hero.slide1.imageAlt'),
     },
     {
       line1: t('hero.slide2.line1'),
       line2: t('hero.slide2.line2'),
       line3: t('hero.slide2.line3'),
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80',
+      image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406403/Grand_Shaurya_2_of_15_1_qedt9o.jpg",
       imageAlt: t('hero.slide2.imageAlt'),
     },
     {
       line1: t('hero.slide3.line1'),
       line2: t('hero.slide3.line2'),
       line3: t('hero.slide3.line3'),
-      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80',
+      image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406274/Grand_Shaurya_1_of_15_1_1_pj1lj0.jpg",
       imageAlt: t('hero.slide3.imageAlt'),
     },
   ];

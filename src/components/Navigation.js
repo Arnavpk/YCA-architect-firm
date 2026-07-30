@@ -7,8 +7,8 @@ import gsap from 'gsap';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from '@/components/LanguageToggle';
 
-const NAV_HREFS = ['/', '/about', '/services', '/portfolio', '/process', '/journal', '/contact'];
-const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'journal', 'contact'];
+const NAV_HREFS = ['/', '/about', '/services', '/portfolio', '/process', '/contact'];
+const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'contact'];
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

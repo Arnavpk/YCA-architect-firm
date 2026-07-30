@@ -105,11 +105,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s;
+  transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1), visibility 0s 1s;
 }
 
 .loading-screen.hidden {
-  opacity: 0;
+  transform: translateY(-100%);
   visibility: hidden;
   pointer-events: none;
 }

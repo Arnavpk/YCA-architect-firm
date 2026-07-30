@@ -59,7 +59,7 @@ export default function AboutPage() {
       </section>
       <section ref={imgRef} className="px-6 md:px-12 lg:px-16 pb-24">
         <div className="w-full aspect-[21/9] overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600&q=80" alt={t('about.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
+          <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785412337/About_page_1_xwieya.jpg" alt={t('about.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
         </div>
       </section>
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-16 bg-warm-white">

@@ -4,12 +4,12 @@ import { useRevealAnimation, useStaggerReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
 const GALLERY_IMAGES = [
-  'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&q=80',
-  'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&q=80',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80',
-  'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80',
-  'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&q=80',
-  'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&q=80',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/685136336_18205305295338845_827371784558748825_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg5MTcxNzc3ODAxMjkzODg3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuNTU2LnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=t4FS39i20CUQ7kNvwH4QxZt&_nc_oc=AdqImVGW8Hjc27qrYGH4sLqUwAaNcQ-lpBNbSFuDlrBKrNTxgrRjns3K0E2HUOdxOR0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=IjaoucTdZ4k69Q96nyQL9A&_nc_ss=7a22e&oh=00_AQD8xucqD7duwC27sa37woCzb3VRevgOUB7NAR-VIrxo1Q&oe=6A6E57ED',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/671169721_18204809437338845_8885038075055066416_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg4ODIxMzI4Mjc0NjEwOTQxNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=f0A0GVTJW7UQ7kNvwFdUTqf&_nc_oc=AdoZ55fpl1zMRuU-y1HOOYvErEI4GuaVPsr3HEdg3dubSzHA6d5B3kl6PtePksdRaDk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=IjaoucTdZ4k69Q96nyQL9A&_nc_ss=7a22e&oh=00_AQAjvnvyCQehHO77ScJkY7djonf9sGwLd2TTE3PWCKEgEg&oe=6A6E5A18',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/683762691_18204696460338845_2076256067042973193_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=Mzg4NzQ0MDg4NzQ3MDkzNzM2Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=3swv60YNwYMQ7kNvwEoJ_JW&_nc_oc=Ado5Z_uqDGFws44n6WHPvtLQMKD8blfzzZyKOYoE7k_SukpFpJnPh6SemwBEzvf4MuE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=IjaoucTdZ4k69Q96nyQL9A&_nc_ss=7a22e&oh=00_AQA97chcg0b0zxC77yB-qaxqpG92mCZg3lDsbtpw9SCiMw&oe=6A6E4C7F',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/527706034_18175291378338845_2771042152604889357_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzY5MzMwMzkwODE3NDE1NTAxMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=HOOHlnDky_oQ7kNvwFhluvV&_nc_oc=Adp1lP-ER0m-HOVr8No-ZA6SjOvye3inmRcIPC1zwV4qIfsnuHcAIrX6AMEPyKWZNrk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=Zv9sZ_T9BCIUwu_Z9OG0Tg&_nc_ss=7a22e&oh=00_AQDg2fjyISoxeGA7Mv6cj2RRlGgb4wtgh4GCVJE5JRcDYA&oe=6A6E397F',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/652561161_17964069591046794_5040066033079324390_n.webp?_nc_cat=100&ig_cache_key=MzUzMTcwMjIyMzQxODEzMDYxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=XFdWiQ2xHvIQ7kNvwEY3-hH&_nc_oc=Adr4eOkrCtK_M9D7PLpYVmMtbezUkV03mutcBMmQPeYRM_z5dFocmPmJhOWU6jSarzI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=9zlCz1u2ULsiYUQQa54abg&_nc_ss=7a22e&oh=00_AQD_THLSYBtDJrIfW2_88qxdFMNujKeZE83kssaHUwPyrg&oe=6A6E5A13',
+  'https://instagram.fpnq26-1.fna.fbcdn.net/v/t51.82787-15/655228769_18089842109178746_2270282799230115432_n.webp?_nc_cat=102&ig_cache_key=MzUzMzcxNTc1MjExMTA3MTAxNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTQ0MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=tSeuBemjK4QQ7kNvwE71MaG&_nc_oc=AdqSAS5r3NLZZvOeBVnSfTSRMfZT-tZa9bxQ1pvM31905q9mO_2F3nDaiVlyfPY4DA8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fpnq26-1.fna&_nc_gid=9zlCz1u2ULsiYUQQa54abg&_nc_ss=7a22e&oh=00_AQA5pUUKyhj1clmuQIEWCDRlALNBxJEEgL48QAWTg8RT_A&oe=6A6E41AD',
 ];
 
 export default function InstagramGallery() {
@@ -21,7 +21,7 @@ export default function InstagramGallery() {
     <section className="py-24 md:py-32 bg-white">
       <div ref={headingRef} className="px-6 md:px-12 lg:px-16 text-center mb-12 opacity-0">
         <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-4">{t('instagram.eyebrow')}</p>
-        <h2 className="font-serif text-display text-charcoal">@yogeshchavanassociates</h2>
+        <h2 className="font-serif text-display text-charcoal">@yogeshchavan_associates</h2>
       </div>
       <div ref={gridRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         {GALLERY_IMAGES.map((src, i) => (

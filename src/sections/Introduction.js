@@ -2,6 +2,7 @@
 
 import { useRevealAnimation, useImageReveal, useLineReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from "next/image";
 
 export default function Introduction() {
   const eyebrowRef = useRevealAnimation({ y: 20 });
@@ -37,7 +38,7 @@ export default function Introduction() {
           </div>
         </div>
         <div ref={imageRef} className="relative aspect-[3/4] lg:aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt={t('intro.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
+          <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785406489/IMG_5203_m9qekn.jpg" alt={t('intro.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
           <div className="absolute bottom-0 right-0 bg-gold text-white px-6 py-4 md:px-8 md:py-6">
             <span className="text-[10px] tracking-[0.2em] uppercase block">{t('intro.established')}</span>
             <span className="font-serif text-2xl">2008</span>

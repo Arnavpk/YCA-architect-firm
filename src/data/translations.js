@@ -43,7 +43,7 @@ export const translations = {
     intro: {
       eyebrow: 'Since 2008',
       heading: 'Where architecture meets the art of living',
-      para1: 'At Yogesh Chavan Associates, we believe that great design is invisible — it simply feels right. For over 16+ years, we have been creating spaces that honour the relationship between people and the environments they inhabit.',
+      para1: 'At Yogesh Chavan Associates, we believe that great design is invisible — it simply feels right. For over 15+ years, we have been creating spaces that honour the relationship between people and the environments they inhabit.',
       para2: 'Every project begins with a conversation, not a blueprint. We listen to understand not just what you want, but how you live, work, and dream. From this understanding emerges design that is deeply personal yet universally beautiful.',
       established: 'Established',
       statProjects: 'Projects',
@@ -382,22 +382,22 @@ export const translations = {
        ═══════════════════════════════════════ */
     projectsList: {
       sereneVilla: {
-        title: 'Serene Villa',
+        title: 'Kanchan Villa',
         description:
           'A minimalist villa where natural light sculpts every room, blending indoor warmth with outdoor serenity.',
       },
       terraOffice: {
-        title: 'Terra Office',
+        title: 'The Grand Shaurya',
         description:
           'A tech headquarters designed around biophilic principles, fostering innovation through connection with nature.',
       },
       goldenHour: {
-        title: 'The Golden Hour',
+        title: 'Ganga Gold',
         description:
           'A boutique resort suite collection where every room captures the ephemeral beauty of dusk.',
       },
       monochromeFlat: {
-        title: 'Monochrome Flat',
+        title: 'Pandharipuram Palace.',
         description:
           'A study in restraint — black, white, and the textures between. Proof that limitation breeds creativity.',
       },
@@ -627,6 +627,7 @@ export const translations = {
     },
 
     loading: {
+      name: 'Yogesh Chavan Associates',
       subtitle: 'वास्तुकला आणि अंतर्गत सजावट',
     },
 

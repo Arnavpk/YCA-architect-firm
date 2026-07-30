@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRevealAnimation, useParallax } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,7 @@ export default function Philosophy() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           <div ref={img1Ref} className="lg:col-span-5 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" alt="" className="w-full aspect-[3/4] object-cover" loading="lazy" />
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785406564/IMG_5212_ggotmt.jpg" alt="" className="w-full aspect-[3/4] object-cover" loading="lazy" />
           </div>
           <div ref={pillarsRef} className="lg:col-span-7 flex flex-col justify-center">
             {pillars.map((pillar, i) => (

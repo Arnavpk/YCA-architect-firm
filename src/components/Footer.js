@@ -5,8 +5,8 @@ import { COMPANY } from '@/lib/constants';
 import { useRevealAnimation, useLineReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
-const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'journal', 'contact'];
-const NAV_HREFS = ['/', '/about', '/services', '/portfolio', '/process', '/journal', '/contact'];
+const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'contact'];
+const NAV_HREFS = ['/', '/about', '/services', '/portfolio', '/process', '/contact'];
 const SVC_KEYS = ['residential', 'commercial', 'office', 'kitchen', 'turnkey', 'architecture'];
 
 export default function Footer() {
