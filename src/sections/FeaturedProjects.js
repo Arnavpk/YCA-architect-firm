@@ -10,7 +10,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PROJECT_KEYS = ['sereneVilla', 'terraOffice', 'goldenHour', 'monochromeFlat', 'craftKitchen', 'lumiereRestaurant'];
+const PROJECT_KEYS = ['kanchanVilla', 'grandshaurya', 'gangaGold', 'monochromeFlat', 'craftKitchen', 'lumiereRestaurant'];
 
 function ProjectCard({ project, projectKey, index }) {
   const cardRef = useRef(null);

@@ -215,19 +215,12 @@ export const translations = {
       location: 'Location',
       year: 'Year',
       area: 'Area',
-      materials: 'Materials',
-      materialsValue: 'Italian Marble, Teak, Brass, Linen',
-      duration: 'Duration',
-      durationValue: '8 months',
+      materialsLabel: 'Materials',
+      durationLabel: 'Duration',
       briefHeading: 'The Brief',
-      briefText:
-        'The client envisioned a space that would feel both contemporary and timeless — a home that embraces natural light, celebrates material honesty, and provides a serene backdrop for daily life. The challenge was to create warmth within a minimalist framework, ensuring every element served both aesthetic and functional purpose.',
       approachHeading: 'Our Approach',
-      approachText:
-        'We began with the light — mapping how sunlight moves through the space across seasons and using this choreography to inform spatial planning, material selection, and furniture placement. Natural materials — warm teak, cool Italian marble, and aged brass — create a tactile dialogue that invites touch and evolves beautifully over time.',
       nextProject: 'Next Project',
     },
-
     /* ═══════════════════════════════════════
        CONTACT PAGE
        ═══════════════════════════════════════ */
@@ -381,35 +374,42 @@ export const translations = {
        PROJECTS DATA
        ═══════════════════════════════════════ */
     projectsList: {
-      sereneVilla: {
+      kanchanVilla: {
         title: 'Kanchan Villa',
-        description:
-          'A minimalist villa where natural light sculpts every room, blending indoor warmth with outdoor serenity.',
+        description: 'A celebration of understated luxury and refined living, Kanchan Villa blends timeless architecture, abundant natural light, and impeccable craftsmanship into a sanctuary of effortless elegance.',
+        brief: 'A vision brought to life with timeless elegance and modern sophistication. Designed to embrace natural light, celebrate authentic materials, and create a sense of effortless serenity, this residence reflects the perfect harmony of luxury and functionality. Every detail has been thoughtfully crafted to deliver a warm, minimalist living experience where exceptional craftsmanship meets enduring design.',
+        approach: 'Our approach focused on maximizing natural light, framing outdoor views, and creating a seamless flow between spaces. A palette of warm wood, natural stone, and soft neutrals brings timeless elegance, while every detail was thoughtfully curated to create a calm and welcoming home.',
+
       },
-      terraOffice: {
-        title: 'The Grand Shaurya',
-        description:
-          'A tech headquarters designed around biophilic principles, fostering innovation through connection with nature.',
+      grandshaurya: {
+        title: 'Grand Shaurya',
+        description: 'A statement of refined luxury, where timeless materials, sculptural design, and meticulous craftsmanship create an atmosphere of effortless elegance.',
+        brief: 'Designed for those who appreciate understated luxury, The Grand Shaurya embodies timeless architecture, refined craftsmanship, and thoughtfully curated spaces that elevate everyday living.',
+        approach: 'We believe true luxury lies in the details. Through purposeful design, exceptional craftsmanship, and carefully selected materials, we create sophisticated spaces that embody comfort, elegance, and enduring value. Guided by precision and a passion for excellence, every detail is meticulously refined to deliver timeless architecture, effortless sophistication, and an elevated living experience.',
       },
-      goldenHour: {
+      gangaGold: {
         title: 'Ganga Gold',
-        description:
-          'A boutique resort suite collection where every room captures the ephemeral beauty of dusk.',
+        description: 'A boutique resort suite collection where every room captures the ephemeral beauty of dusk.',
+        brief: 'The owner wanted each suite to feel like an experience, not just a room. The design had to evoke the warmth and intimacy of golden hour — that fleeting moment when everything glows.',
+        approach: 'West-facing windows frame the Sahyadri hills at sunset. Warm plaster walls, burnished copper fixtures, and raw linen create a material palette that shifts in tone as the light changes through the day.',
       },
       monochromeFlat: {
-        title: 'Pandharipuram Palace.',
-        description:
-          'A study in restraint — black, white, and the textures between. Proof that limitation breeds creativity.',
+        title: 'Monochrome Flat',
+        description: 'A study in restraint — black, white, and the textures between. Proof that limitation breeds creativity.',
+        brief: 'A young couple wanted a compact apartment that felt larger than its footprint. The only design constraint: no colour — just black, white, and everything in between.',
+        approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
       },
       craftKitchen: {
         title: 'The Craft Kitchen',
-        description:
-          'A culinary workspace where Italian marble meets Japanese joinery, designed for the passionate home chef.',
+        description: 'A culinary workspace where Italian marble meets Japanese joinery, designed for the passionate home chef.',
+        brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
+        approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
       },
       lumiereRestaurant: {
         title: 'Lumière Restaurant',
-        description:
-          'Fine dining reimagined — where the architecture is as memorable as the cuisine.',
+        description: 'Fine dining reimagined — where the architecture is as memorable as the cuisine.',
+        brief: 'The restaurateur envisioned a space where architecture elevates the dining experience — where guests remember the room as vividly as the food.',
+        approach: 'A dramatic arched ceiling clad in fluted plaster sets the tone. Intimate alcove seating, a theatrical open kitchen framed in blackened steel, and layered lighting that shifts from bright lunch to candlelit dinner.',
       },
     },
 
@@ -421,21 +421,21 @@ export const translations = {
         quote:
           'They did not just design our home — they understood how we live, how we breathe, and translated that into spaces that feel intrinsically ours.',
         author: 'Priya & Rohan Mehta',
-        project: 'Serene Villa, Koregaon Park',
+        project: 'Kanchan Villa, Koregaon Park',
         role: 'Homeowners',
       },
       {
         quote:
           'The attention to detail is extraordinary. Every corner, every texture, every light fixture tells a story. Our office feels like a second home.',
         author: 'Anand Kulkarni',
-        project: 'Terra Office, Hinjewadi',
+        project: 'Grand Shaurya, Hinjewadi',
         role: 'CEO, NexaTech Solutions',
       },
       {
         quote:
           'Working with Yogesh and his team was an education in taste. They challenged our assumptions and delivered something far beyond our imagination.',
         author: 'Meera Deshpande',
-        project: 'The Golden Hour, Lonavala',
+        project: 'Ganga Gold, Lonavala',
         role: 'Resort Owner',
       },
       {
@@ -777,18 +777,13 @@ export const translations = {
       location: 'स्थान',
       year: 'वर्ष',
       area: 'क्षेत्रफळ',
-      materials: 'साहित्य',
-      materialsValue: 'इटालियन संगमरवर, सागवान, पितळ, तागाचे कापड',
-      duration: 'कालावधी',
-      durationValue: '८ महिने',
+      materialsLabel: 'साहित्य',
+      durationLabel: 'कालावधी',
       briefHeading: 'कार्यसूचना',
-      briefText:
-        'ग्राहकाला अशी जागा हवी होती जी आधुनिक आणि कालातीत अशा दोन्ही प्रकारची वाटेल — नैसर्गिक प्रकाशाला आलिंगन देणारे, साहित्याच्या प्रामाणिकतेचा उत्सव साजरा करणारे आणि दैनंदिन जीवनासाठी शांत पार्श्वभूमी प्रदान करणारे घर.',
       approachHeading: 'आमचा दृष्टीकोन',
-      approachText:
-        'आम्ही प्रकाशापासून सुरुवात केली — ऋतूंमधून जागेत सूर्यप्रकाश कसा हलतो याचे मॅपिंग करून, जागा नियोजन, साहित्य निवड आणि फर्निचर मांडणीसाठी या नृत्यकलेचा उपयोग केला.',
       nextProject: 'पुढचा प्रकल्प',
     },
+
 
     contactPage: {
       eyebrow: 'संपर्क करा',
@@ -925,35 +920,59 @@ export const translations = {
     },
 
     projectsList: {
-      sereneVilla: {
-        title: 'Serene Villa',
+      kanchanVilla: {
+        title: 'Kanchan Villa',
         description:
           'नैसर्गिक प्रकाश प्रत्येक खोलीला आकार देतो अशी सौम्य विला — आतील उबदारपणा आणि बाहेरची शांतता एकत्र आणणारी.',
+        brief:
+          'ग्राहकाला अशी जागा हवी होती जी आधुनिक आणि कालातीत दोन्ही वाटेल — नैसर्गिक प्रकाशाला आलिंगन देणारे, साहित्याच्या प्रामाणिकतेचा उत्सव साजरा करणारे आणि दैनंदिन जीवनासाठी शांत पार्श्वभूमी प्रदान करणारे घर.',
+        approach:
+          'आम्ही प्रकाशापासून सुरुवात केली — ऋतूंमधून जागेत सूर्यप्रकाश कसा हलतो याचे मॅपिंग करून, जागा नियोजन, साहित्य निवड आणि फर्निचर मांडणीसाठी त्याचा उपयोग केला. उबदार सागवान, शीतल इटालियन संगमरवर आणि जुनाट पितळ यांनी स्पर्शाचा संवाद निर्माण केला.',
       },
-      terraOffice: {
-        title: 'Terra Office',
+      grandshaurya: {
+        title: 'Grand Shaurya',
         description:
           'बायोफिलिक तत्त्वांवर आधारित तंत्रज्ञान मुख्यालय — निसर्गाशी जोडणीतून नवनिर्मितीला चालना देणारे.',
+        brief:
+          'NexaTech ला अशी कामाची जागा हवी होती जी उत्कृष्ट प्रतिभा आकर्षित करेल आणि सहकार्याला प्रोत्साहन देईल. पारंपरिक IT कार्यालयासारखे न वाटणारे — जिथे निसर्ग, फ्लोरोसेंट दिवे नव्हे, वातावरण ठरवतो.',
+        approach:
+          'आम्ही मोकळ्या मजल्यावर जमिनीपासून छतापर्यंत काचेचे आवरण घातले, जिवंत भिंती आणि अंतर्गत अंगण आणले, आणि कच्चे काँक्रीट व पुनर्प्राप्त लाकूड वापरून जागा भक्कम केली. ध्वनिरोधक कक्ष आणि ब्रेकआउट झोन एकाग्रतेसाठी शांतता देतात.',
       },
-      goldenHour: {
-        title: 'The Golden Hour',
+      gangaGold: {
+        title: 'Ganga Gold',
         description:
           'प्रत्येक खोली संध्याकाळच्या क्षणिक सौंदर्याला पकडते अशी बुटीक रिसॉर्ट सुइट.',
+        brief:
+          'मालकाला प्रत्येक सुइट फक्त खोली नव्हे तर एक अनुभव वाटावा असे हवे होते. सजावटीने सुवर्ण तासाची उबदारता आणि आत्मीयता जागवायची होती — तो क्षणभंगुर क्षण जेव्हा सर्व काही चमकते.',
+        approach:
+          'पश्चिमाभिमुख खिडक्या सूर्यास्ताच्या वेळी सह्याद्रीच्या टेकड्या प्रदर्शित करतात. उबदार प्लास्टर भिंती, चमकदार तांब्याची उपकरणे आणि कच्चे तागाचे कापड — दिवसभर प्रकाश बदलताना रंग बदलणारा साहित्य संग्रह.',
       },
       monochromeFlat: {
         title: 'Monochrome Flat',
         description:
           'संयमाचा अभ्यास — काळे, पांढरे, आणि मधल्या पोतांचा. मर्यादा सर्जनशीलतेला जन्म देतात याचा पुरावा.',
+        brief:
+          'एका तरुण जोडप्याला त्यांच्या जागेपेक्षा मोठे वाटणारे संक्षिप्त अपार्टमेंट हवे होते. एकमात्र अट: रंग नाही — फक्त काळे, पांढरे, आणि मधले सर्व.',
+        approach:
+          'आम्ही कडक मोनोक्रोम पॅलेट वापरला पण पोत अंतहीन बदलले — घासलेला काळा ग्रॅनाइट, मॅट पांढरा प्लास्टर, पट्टेदार काच, बुक्ले कापड. आरसे आणि प्रकाश विहिरी जाणवणारी जागा विस्तारतात.',
       },
       craftKitchen: {
         title: 'The Craft Kitchen',
         description:
           'इटालियन संगमरवर आणि जपानी जोडकाम भेटतात अशी पाककला कार्यशाळा — उत्कट गृह पाकशास्त्रज्ञासाठी.',
+        brief:
+          'एका उत्साही गृह पाकशास्त्रज्ञाला व्यावसायिक कार्यशाळेसारखे कार्य करणारे पण मित्र आणि कुटुंबियांचे स्वागत करण्यासाठी उबदार वाटणारे किचन हवे होते. समान प्रमाणात अचूकता आणि आदरातिथ्य.',
+        approach:
+          'एक भव्य इटालियन संगमरवर बेट खोलीचा केंद्रबिंदू आहे. जपानी-प्रेरित लाकडी जोडकामाने पॅन्ट्री साठवण तयार केली. कॅबिनेटखालील प्रकाशयोजना आणि पॉट-फिलर टॅप शेफच्या प्रत्यक्ष कार्यप्रवाहानुसार डिझाइन केले.',
       },
       lumiereRestaurant: {
         title: 'Lumière Restaurant',
         description:
           'उत्कृष्ट जेवणाची पुनर्कल्पना — जिथे वास्तुकला जेवणाइतकीच संस्मरणीय असते.',
+        brief:
+          'उपाहारगृह मालकाला अशी जागा हवी होती जिथे वास्तुकला जेवणाचा अनुभव उंचावते — जिथे पाहुणे खोली जेवणाइतकीच स्पष्टपणे लक्षात ठेवतात.',
+        approach:
+          'पट्टेदार प्लास्टरने मढवलेल्या नाट्यमय कमानीदार छताने वातावरण ठरवले. आत्मीय कोपरा बसणे, काळ्या पोलादात बांधलेले नाट्यमय खुले किचन, आणि उजळ दुपारच्या जेवणापासून मेणबत्तीच्या रात्रीच्या जेवणापर्यंत बदलणारी स्तरित प्रकाशयोजना.',
       },
     },
 
@@ -962,21 +981,21 @@ export const translations = {
         quote:
           'त्यांनी फक्त आमचे घर सजवले नाही — आम्ही कसे जगतो, कसे श्वास घेतो ते समजून घेतले, आणि ते अशा जागांमध्ये उतरवले ज्या आमच्या स्वतःच्या वाटतात.',
         author: 'Priya & Rohan Mehta',
-        project: 'Serene Villa, Koregaon Park',
+        project: 'Kanchan Villa, Koregaon Park',
         role: 'गृहमालक',
       },
       {
         quote:
           'तपशीलांकडे लक्ष असाधारण आहे. प्रत्येक कोपरा, प्रत्येक पोत, प्रत्येक दिवा एक कथा सांगतो. आमचे कार्यालय दुसऱ्या घरासारखे वाटते.',
         author: 'Anand Kulkarni',
-        project: 'Terra Office, Hinjewadi',
+        project: 'Grand Shaurya, Hinjewadi',
         role: 'CEO, NexaTech Solutions',
       },
       {
         quote:
           'योगेश आणि त्यांच्या टीमसोबत काम करणे हे रुचीमधले शिक्षण होते. त्यांनी आमच्या गृहीतकांना आव्हान दिले आणि आमच्या कल्पनेच्या पलीकडे काहीतरी दिले.',
         author: 'Meera Deshpande',
-        project: 'The Golden Hour, Lonavala',
+        project: 'Ganga Gold, Lonavala',
         role: 'रिसॉर्ट मालक',
       },
       {

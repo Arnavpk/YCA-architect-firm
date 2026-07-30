@@ -6,7 +6,7 @@ import { PROJECTS } from '@/lib/constants';
 import { useRevealAnimation, useImageReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
-const PROJECT_KEYS = { 'serene-villa': 'sereneVilla', 'terra-office': 'terraOffice', 'the-golden-hour': 'goldenHour', 'monochrome-flat': 'monochromeFlat', 'craft-kitchen': 'craftKitchen', 'lumiere-restaurant': 'lumiereRestaurant' };
+const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'monochrome-flat': 'monochromeFlat', 'craft-kitchen': 'craftKitchen', 'lumiere-restaurant': 'lumiereRestaurant' };
 
 export default function ProjectDetail() {
   const { t } = useLanguage();
@@ -25,8 +25,8 @@ export default function ProjectDetail() {
     { label: t('projectDetail.location'), value: project.location },
     { label: t('projectDetail.year'), value: project.year },
     { label: t('projectDetail.area'), value: project.area },
-    { label: t('projectDetail.materials'), value: t('projectDetail.materialsValue') },
-    { label: t('projectDetail.duration'), value: t('projectDetail.durationValue') },
+    { label: t('projectDetail.materialsLabel'), value: project.materials },
+    { label: t('projectDetail.durationLabel'), value: project.duration },
   ];
 
   return (
@@ -53,12 +53,12 @@ export default function ProjectDetail() {
           </div>
           <div className="lg:col-span-2 space-y-8">
             <h2 className="font-serif text-heading text-charcoal">{t('projectDetail.briefHeading')}</h2>
-            <p className="text-dark-grey/70 leading-relaxed">{t('projectDetail.briefText')}</p>
+            <p className="text-dark-grey/70 leading-relaxed">{pk ? t(`projectsList.${pk}.brief`) : ''}</p>
             <h2 className="font-serif text-heading text-charcoal pt-8">{t('projectDetail.approachHeading')}</h2>
-            <p className="text-dark-grey/70 leading-relaxed">{t('projectDetail.approachText')}</p>
+            <p className="text-dark-grey/70 leading-relaxed">{pk ? t(`projectsList.${pk}.approach`) : ''}</p>
             <div className="grid grid-cols-2 gap-4 pt-8">
-              <div className="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
-              <div className="aspect-[3/4] overflow-hidden"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+              <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[0]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
+              <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[1]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
             </div>
           </div>
         </div>

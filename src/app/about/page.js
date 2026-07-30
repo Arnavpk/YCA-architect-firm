@@ -91,7 +91,7 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
-      <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-white">
+      {/* <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-white">
         <div ref={teamHeadingRef} className="text-center mb-16 md:mb-20 opacity-0">
           <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-4">{t('about.teamEyebrow')}</p>
           <h2 className="font-serif text-display text-charcoal">{t('about.teamHeading')}</h2>
@@ -100,7 +100,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {team.map((member, i) => <TeamMember key={member.name} member={member} index={i} />)}
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
