@@ -7,7 +7,7 @@ import { PROJECTS } from '@/lib/constants';
 import { useRevealAnimation } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
-const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'monochrome-flat': 'monochromeFlat', 'craft-kitchen': 'craftKitchen', 'lumiere-restaurant': 'lumiereRestaurant' };
+const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'Pandharpuram-Palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant' };
 const CATEGORIES_EN = ['All', ...new Set(PROJECTS.map(p => p.category))];
 
 export default function PortfolioPage() {

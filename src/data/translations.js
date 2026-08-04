@@ -389,18 +389,18 @@ export const translations = {
       },
       gangaGold: {
         title: 'Ganga Gold',
-        description: 'A boutique resort suite collection where every room captures the ephemeral beauty of dusk.',
+        description: 'Designed with precision and built for excellence, this landmark seamlessly combines contemporary aesthetics with functional luxury.',
         brief: 'The owner wanted each suite to feel like an experience, not just a room. The design had to evoke the warmth and intimacy of golden hour — that fleeting moment when everything glows.',
         approach: 'West-facing windows frame the Sahyadri hills at sunset. Warm plaster walls, burnished copper fixtures, and raw linen create a material palette that shifts in tone as the light changes through the day.',
       },
-      monochromeFlat: {
+      PandharpuramPalace: {
         title: 'Monochrome Flat',
         description: 'A study in restraint — black, white, and the textures between. Proof that limitation breeds creativity.',
         brief: 'A young couple wanted a compact apartment that felt larger than its footprint. The only design constraint: no colour — just black, white, and everything in between.',
         approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
       },
-      craftKitchen: {
-        title: 'The Craft Kitchen',
+      fancyrejewellerystudio: {
+        title: 'Fancy Re Jewellery Studio',
         description: 'A culinary workspace where Italian marble meets Japanese joinery, designed for the passionate home chef.',
         brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
         approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
@@ -947,7 +947,7 @@ export const translations = {
         approach:
           'पश्चिमाभिमुख खिडक्या सूर्यास्ताच्या वेळी सह्याद्रीच्या टेकड्या प्रदर्शित करतात. उबदार प्लास्टर भिंती, चमकदार तांब्याची उपकरणे आणि कच्चे तागाचे कापड — दिवसभर प्रकाश बदलताना रंग बदलणारा साहित्य संग्रह.',
       },
-      monochromeFlat: {
+      PandharpuramPalace: {
         title: 'Monochrome Flat',
         description:
           'संयमाचा अभ्यास — काळे, पांढरे, आणि मधल्या पोतांचा. मर्यादा सर्जनशीलतेला जन्म देतात याचा पुरावा.',
@@ -956,8 +956,8 @@ export const translations = {
         approach:
           'आम्ही कडक मोनोक्रोम पॅलेट वापरला पण पोत अंतहीन बदलले — घासलेला काळा ग्रॅनाइट, मॅट पांढरा प्लास्टर, पट्टेदार काच, बुक्ले कापड. आरसे आणि प्रकाश विहिरी जाणवणारी जागा विस्तारतात.',
       },
-      craftKitchen: {
-        title: 'The Craft Kitchen',
+      fancyrejewellerystudio: {
+        title: 'Fancy Re Jewellery Studio',
         description:
           'इटालियन संगमरवर आणि जपानी जोडकाम भेटतात अशी पाककला कार्यशाळा — उत्कट गृह पाकशास्त्रज्ञासाठी.',
         brief:
