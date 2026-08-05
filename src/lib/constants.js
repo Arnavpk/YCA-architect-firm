@@ -9,9 +9,9 @@ export const COMPANY = {
   email: 'studio@yogeshchavan.com',
   whatsapp: '+919657119911',
   address: {
-    line1: 'Studio 401, The Design Quarter',
-    line2: 'Baner Road, Pune 411045',
-    city: 'Pune',
+    line1: 'Near Clai Showroom',
+    line2: 'Old Station Road, Azad Chowk, Sangli',
+    city: 'Sangli',
     state: 'Maharashtra',
     country: 'India',
   },

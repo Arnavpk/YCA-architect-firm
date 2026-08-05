@@ -22,7 +22,7 @@ export default function ContactCTA() {
           <Link href="/contact" className="inline-flex items-center gap-3 bg-gold text-white px-8 py-4 text-[12px] tracking-[0.2em] uppercase hover:bg-gold/90 transition-colors duration-300">
             <span>{t('contactCta.btnPrimary')}</span>
           </Link>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 text-[12px] tracking-[0.2em] uppercase hover:bg-white/10 transition-colors duration-300">
+          <a href="https://wa.me/919657119911" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 text-[12px] tracking-[0.2em] uppercase hover:bg-white/10 transition-colors duration-300">
             <span>{t('contactCta.btnWhatsapp')}</span>
           </a>
         </div>
