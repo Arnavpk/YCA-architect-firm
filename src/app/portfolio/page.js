@@ -51,8 +51,8 @@ export default function PortfolioPage() {
             const title = pk ? t(`projectsList.${pk}.title`) : project.title;
             const catLabel = t(`categories.${project.category}`) || project.category;
             return (
-              <Link href={`/portfolio/${project.id}`} key={project.id} className={`project-card group block ${i === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-                <div className={`relative overflow-hidden mb-4 ${i === 0 ? 'aspect-[16/10]' : 'aspect-[4/5]'}`}>
+              <Link href={`/portfolio/${project.id}`} key={project.id} className={`project-card group block ${i === 0 ? 'md:col-span-2' : ''}`}>
+                <div className={`relative overflow-hidden mb-4 ${i === 0 ? 'aspect-[2/1]' : 'aspect-[4/5]'}`}>
                   <img src={project.image} alt={title} className="w-full h-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>

@@ -191,7 +191,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 'craft-kitchen',
+    id: 'fancy-re-jewellery-studio',
     title: 'Fancy Re Jewellery Studio',
     category: 'Residential',
     location: 'Sangli',
