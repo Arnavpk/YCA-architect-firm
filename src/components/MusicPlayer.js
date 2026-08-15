@@ -2,7 +2,10 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-const AUDIO_SRC = '/audio/ambient-music.mp3'; // path relative to /public, served at root
+const AUDIO_SOURCES = [
+  { src: '/audio/ambient-music.m4a', type: 'audio/mp4' },
+  { src: '/audio/ambient-music.mp3', type: 'audio/mpeg' },
+];
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true); // default ON
@@ -10,19 +13,23 @@ export default function MusicPlayer() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    const audio = new Audio(AUDIO_SRC);
+    const audio = new Audio();
     audio.loop = true;
     audio.volume = 0;
     audio.preload = 'auto';
+
+    const preferred = AUDIO_SOURCES.find(
+      (s) => audio.canPlayType(s.type) !== ''
+    );
+    audio.src = preferred ? preferred.src : AUDIO_SOURCES[0].src;
     audioRef.current = audio;
 
     const handleCanPlay = () => setIsReady(true);
-    const handleError = () => console.error('Failed to load audio:', AUDIO_SRC);
+    const handleError = () => console.error('Failed to load audio:', audio.src);
 
-    audio.addEventListener('canplaythrough', handleCanPlay);
+    audio.addEventListener('canplay', handleCanPlay);
     audio.addEventListener('error', handleError);
 
-    // Respect an explicit "off" choice from a previous visit; otherwise default to on.
     const savedPreference = localStorage.getItem('yca-music');
     if (savedPreference === 'off') {
       setIsPlaying(false);
@@ -31,7 +38,7 @@ export default function MusicPlayer() {
     return () => {
       audio.pause();
       audio.currentTime = 0;
-      audio.removeEventListener('canplaythrough', handleCanPlay);
+      audio.removeEventListener('canplay', handleCanPlay);
       audio.removeEventListener('error', handleError);
       audioRef.current = null;
     };
@@ -68,7 +75,7 @@ export default function MusicPlayer() {
             );
           };
 
-          const events = ['pointerdown', 'keydown', 'touchstart'];
+          const events = ['pointerdown', 'keydown', 'touchstart', 'scroll', 'wheel'];
           events.forEach((evt) =>
             document.addEventListener(evt, startOnInteraction, { once: true })
           );
