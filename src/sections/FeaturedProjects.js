@@ -14,7 +14,7 @@ const PROJECT_KEY_MAP = {
   'kanchan-villa': 'kanchanVilla',
   'grand-shaurya': 'grandshaurya',
   'ganga-gold': 'gangaGold',
-  'Pandharipuram-Palace.': 'PandharpuramPalace',
+  'pandharipuram-palace': 'PandharpuramPalace',
   'fancy-re-jewellery-studio': 'fancyrejewellerystudio',
   'lumiere-restaurant': 'lumiereRestaurant',
 };
@@ -62,7 +62,7 @@ function ProjectCard({ project, projectKey, index }) {
 export default function FeaturedProjects() {
   const { t } = useLanguage();
   const headingRef = useRevealAnimation({ y: 50 });
-  const EXCLUDED_IDS = ['grand-shaurya', 'Pandharipuram-Palace.'];
+  const EXCLUDED_IDS = ['grand-shaurya', 'pandharipuram-palace'];
   const featured = PROJECTS.filter(p => !EXCLUDED_IDS.includes(p.id)).slice(0, 4);
 
   return (

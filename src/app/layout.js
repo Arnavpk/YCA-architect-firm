@@ -60,6 +60,10 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/logo.svg',
+  },
 };
 
 export default function RootLayout({ children }) {

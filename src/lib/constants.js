@@ -181,8 +181,8 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 'Pandharipuram-Palace.',
-    title: 'Pandharipuram Palace.',
+    id: 'pandharipuram-palace',
+    title: 'Pandharipuram Palace',
     category: 'Residential',
     location: 'Isbavi, Pandharpur',
     year: '2023',

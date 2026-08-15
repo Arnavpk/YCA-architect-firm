@@ -15,7 +15,7 @@ export default function sitemap() {
     'kanchan-villa',
     'grand-shaurya',
     'ganga-gold',
-    'Pandharipuram-Palace.',
+    'pandharipuram-palace',
     'fancy-re-jewellery-studio',
     'lumiere-restaurant',
   ];

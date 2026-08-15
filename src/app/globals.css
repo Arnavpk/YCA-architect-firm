@@ -296,15 +296,6 @@ body {
   }
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
 /* ── Tap target minimums (44px for mobile) ── */
 @media (pointer: coarse) {
   /* Hero and testimonial dot indicators */

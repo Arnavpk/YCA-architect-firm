@@ -67,6 +67,7 @@ export const translations = {
       heading: 'Where architecture meets adornment',
       description:
         'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
+      viewProject: 'View Project',
     },
 
     /* ═══════════════════════════════════════
@@ -188,6 +189,9 @@ export const translations = {
       teamSubtitle:
         'A collective of architects, designers, and makers who share a passion for transforming spaces.',
       imageAlt: 'YCA Studio',
+      ctaHeading: 'Ready to create something extraordinary?',
+      ctaText: "Let's discuss how we can bring your vision to life.",
+      ctaButton: 'Book a Consultation',
     },
 
     /* ═══════════════════════════════════════
@@ -678,6 +682,7 @@ export const translations = {
       heading: 'वास्तुकला आणि अलंकार यांचा संगम',
       description:
         'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात.',
+      viewProject: 'प्रकल्प पहा',
     },
 
     servicesPreview: {
@@ -772,6 +777,9 @@ export const translations = {
       teamSubtitle:
         'जागा बदलण्याची आवड बाळगणारे वास्तुविशारद, डिझायनर आणि कलाकार यांचा एक संग्रह.',
       imageAlt: 'YCA स्टुडिओ',
+      ctaHeading: 'काहीतरी असामान्य निर्माण करायला तयार आहात?',
+      ctaText: 'तुमची दृष्टी साकार करण्यासाठी चर्चा करूया.',
+      ctaButton: 'सल्लामसलत बुक करा',
     },
 
     servicesPage: {

@@ -52,7 +52,7 @@ export default function JewelleryShowcase() {
                         href="/portfolio/fancy-re-jewellery-studio"
                         className="inline-flex items-center gap-2 text-[12px] tracking-[0.15em] uppercase text-gold hover:text-white transition-colors duration-300 shrink-0"
                     >
-                        View Project
+                        {t('jewelleryShowcase.viewProject')}
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1">
                             <path d="M3 8H13M13 8L8 3M13 8L8 13" />
                         </svg>

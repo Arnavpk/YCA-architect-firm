@@ -6,7 +6,7 @@ import { PROJECTS } from '@/lib/constants';
 import { useRevealAnimation, useImageReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
-const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'Pandharpuram-Palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant' };
+const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'pandharipuram-palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant' };
 
 export default function ProjectDetail() {
   const { t } = useLanguage();

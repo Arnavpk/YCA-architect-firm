@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRevealAnimation, useImageReveal, useLineReveal } from '@/hooks/useGSAP';
@@ -104,6 +105,11 @@ export default function AboutPage() {
           {team.map((member, i) => <TeamMember key={member.name} member={member} index={i} />)}
         </div>
       </section> */}
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-16 bg-warm-white text-center">
+        <h2 className="font-serif text-display text-charcoal mb-6">{t('about.ctaHeading')}</h2>
+        <p className="text-dark-grey/50 mb-8 max-w-lg mx-auto">{t('about.ctaText')}</p>
+        <Link href="/contact" className="btn-luxury btn-gold"><span>{t('about.ctaButton')}</span></Link>
+      </section>
     </>
   );
 }

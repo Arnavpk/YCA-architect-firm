@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
@@ -48,6 +48,31 @@ export default function Navigation() {
   }, [isOpen]);
 
   useEffect(() => { setIsOpen(false); }, [pathname]);
+
+  const handleTrapFocus = useCallback((e) => {
+    if (!isOpen || !menuRef.current) return;
+    const focusable = menuRef.current.querySelectorAll('a, button, input, [tabindex]:not([tabindex="-1"])');
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.key === 'Tab') {
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+    if (e.key === 'Escape') setIsOpen(false);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('keydown', handleTrapFocus);
+    }
+    return () => document.removeEventListener('keydown', handleTrapFocus);
+  }, [isOpen, handleTrapFocus]);
 
   const linkClass = (href) => {
     const isActive = pathname === href;
