@@ -227,6 +227,16 @@ body {
   background: #B08D57;
 }
 
+/* ── Hide scrollbar for horizontal jewellery scroll ── */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* ── Music Toggle ── */
 
 .music-toggle {

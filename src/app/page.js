@@ -16,7 +16,6 @@ export default function Home() {
       <Hero />
       <Introduction />
       <FeaturedProjects />
-      <JewelleryShowcase />
       <ServicesPreview />
       <Philosophy />
       <Testimonials />
