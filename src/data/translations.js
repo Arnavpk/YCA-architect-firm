@@ -28,9 +28,15 @@ export const translations = {
        HOME — HERO
        ═══════════════════════════════════════ */
     hero: {
-      slide1: { line1: 'Crafting', line2: 'Timeless', line3: 'Spaces', imageAlt: 'Luxury interior by Yogesh Chavan Associates' },
-      slide2: { line1: 'Spaces', line2: 'That', line3: 'Breathe', imageAlt: 'Open living space designed by YCA' },
-      slide3: { line1: 'Crafted', line2: 'With', line3: 'Intention', imageAlt: 'Intentional interior design by YCA' },
+      captions: [
+        'Architecture that speaks without words.',
+        'Space designed around the way you live.',
+        'Architecture that welcomes, inspires, and stays with you.',
+        'A space to pause, unwind, and belong.',
+        'Good architecture is felt before it is understood.',
+        'A celebration of craftsmanship, from space to jewel.',
+        'A celebration of craftsmanship, from space to jewel.',
+      ],
       description:
         'Architecture and interiors design studio creating spaces where form, function, and feeling come together.',
       cta: 'Explore Our Work',
@@ -68,6 +74,12 @@ export const translations = {
       description:
         'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
       viewProject: 'View Project',
+    },
+
+    jewelleryShowcaseHome: {
+      eyebrow: 'Our Specialty',
+      heading: 'Jewellery Shop Design',
+      viewAll: 'View All',
     },
 
     /* ═══════════════════════════════════════
@@ -649,9 +661,15 @@ export const translations = {
     },
 
     hero: {
-      slide1: { line1: 'कालातीत', line2: 'सुंदर', line3: 'जागा', imageAlt: 'Yogesh Chavan Associates ची विलासी अंतर्गत सजावट' },
-      slide2: { line1: 'श्वास', line2: 'घेणाऱ्या', line3: 'जागा', imageAlt: 'YCA ने डिझाइन केलेली मोकळी जागा' },
-      slide3: { line1: 'विचारपूर्ण', line2: 'सुंदर', line3: 'निर्मिती', imageAlt: 'YCA ची उद्देशपूर्ण अंतर्गत सजावट' },
+      captions: [
+        'शब्दांविना बोलणारी वास्तुकला.',
+        'तुमच्या जगण्याच्या पद्धतीभोवती रचलेली जागा.',
+        'स्वागत करणारी, प्रेरणा देणारी आणि मनात राहणारी वास्तुकला.',
+        'थांबण्यासाठी, विश्रांतीसाठी आणि आपलेसे वाटण्यासाठी एक जागा.',
+        'उत्कृष्ट वास्तुकला समजण्याआधी जाणवते.',
+        'कारागिरीचा उत्सव — जागेपासून अलंकारापर्यंत.',
+        'कारागिरीचा उत्सव — जागेपासून अलंकारापर्यंत.',
+      ],
       description:
         'आकार, कार्य आणि भावना एकत्र येतात अशा जागा निर्माण करणारा वास्तुकला आणि अंतर्गत सजावट स्टुडिओ.',
       cta: 'आमचे काम पहा',
@@ -683,6 +701,12 @@ export const translations = {
       description:
         'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात.',
       viewProject: 'प्रकल्प पहा',
+    },
+
+    jewelleryShowcaseHome: {
+      eyebrow: 'आमचे वैशिष्ट्य',
+      heading: 'ज्वेलरी शॉप डिझाइन',
+      viewAll: 'सर्व पहा',
     },
 
     servicesPreview: {
