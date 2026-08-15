@@ -20,9 +20,17 @@ export default function Testimonials() {
     <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-warm-beige">
       <div ref={sectionRef} className="max-w-5xl mx-auto text-center opacity-0">
         <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-12">{t('testimonials.eyebrow')}</p>
-        <div className="relative min-h-[240px] md:min-h-[200px] flex items-center justify-center">
+        <div className="relative overflow-hidden">
           {items.map((item, i) => (
-            <div key={i} className={`absolute inset-0 flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${i === active ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'}`}>
+            <div
+              key={i}
+              className={`flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                i === active
+                  ? 'relative opacity-100 translate-y-0'
+                  : 'absolute inset-0 opacity-0 translate-y-8 pointer-events-none'
+              }`}
+              aria-hidden={i !== active}
+            >
               <svg className="w-8 h-8 text-gold/30 mb-8" viewBox="0 0 24 24" fill="currentColor"><path d="M11 7.05V11H7.05C7.28 14.42 10.06 17.19 13.47 17.42V21.42C7.85 21.16 3.26 16.57 3 10.95H3V7.05H11ZM21 7.05V11H17.05C17.28 14.42 20.06 17.19 23.47 17.42V21.42C17.85 21.16 13.26 16.57 13 10.95V7.05H21Z" /></svg>
               <blockquote className="font-serif text-xl md:text-2xl lg:text-3xl text-charcoal leading-relaxed max-w-3xl italic">&ldquo;{item.quote}&rdquo;</blockquote>
               <div className="mt-8">
