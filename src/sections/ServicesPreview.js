@@ -52,7 +52,7 @@ export default function ServicesPreview() {
   }, []);
 
   const featured = SERVICES.slice(0, 6);
-  const SERVICE_KEYS = ['residential', 'commercial', 'office', 'kitchen', 'turnkey', 'architecture'];
+  const SERVICE_KEYS = ['residential', 'commercial', 'office', 'architecture', 'renovation', 'jewellery'];
 
   return (
     <section className="py-24 md:py-32 bg-white">
