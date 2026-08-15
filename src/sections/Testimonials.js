@@ -20,14 +20,14 @@ export default function Testimonials() {
     <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-warm-beige">
       <div ref={sectionRef} className="max-w-5xl mx-auto text-center opacity-0">
         <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-12">{t('testimonials.eyebrow')}</p>
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden min-h-[200px]">
           {items.map((item, i) => (
             <div
               key={i}
-              className={`flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              className={`flex flex-col items-center justify-center px-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                 i === active
-                  ? 'relative opacity-100 translate-y-0'
-                  : 'absolute inset-0 opacity-0 translate-y-8 pointer-events-none'
+                  ? 'relative opacity-100 translate-y-0 z-10'
+                  : 'absolute inset-0 opacity-0 translate-y-8 pointer-events-none z-0'
               }`}
               aria-hidden={i !== active}
             >
