@@ -1,6 +1,7 @@
 import Hero from '@/sections/Hero';
 import Introduction from '@/sections/Introduction';
 import FeaturedProjects from '@/sections/FeaturedProjects';
+import JewelleryShowcase from '@/sections/JewelleryShowcase';
 import ServicesPreview from '@/sections/ServicesPreview';
 import Philosophy from '@/sections/Philosophy';
 import Testimonials from '@/sections/Testimonials';
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Introduction />
       <FeaturedProjects />
+      <JewelleryShowcase />
       <ServicesPreview />
       <Philosophy />
       <Testimonials />

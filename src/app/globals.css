@@ -331,7 +331,8 @@ html[lang="mr"] p {
 }
 
 html[lang="mr"] .text-display-xl {
-  line-height: 1.1;
+  font-size: clamp(2.2rem, 6vw, 6rem);
+  line-height: 1.15;
   letter-spacing: 0;
 }
 

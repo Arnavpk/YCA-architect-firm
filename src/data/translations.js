@@ -32,7 +32,7 @@ export const translations = {
       slide2: { line1: 'Spaces', line2: 'That', line3: 'Breathe', imageAlt: 'Open living space designed by YCA' },
       slide3: { line1: 'Crafted', line2: 'With', line3: 'Intention', imageAlt: 'Intentional interior design by YCA' },
       description:
-        'Architecture and interior design studio creating thoughtful, refined spaces that transcend trends.',
+        'Architecture and interiors design studio creating spaces where form, function, and feeling come together.',
       cta: 'Explore Our Work',
       scroll: 'Scroll',
     },
@@ -50,6 +50,7 @@ export const translations = {
       statYears: 'Years',
       statTeam: 'Team',
       imageAlt: 'Yogesh Chavan Associates studio',
+      readMore: 'Read More',
     },
 
     /* ═══════════════════════════════════════
@@ -59,6 +60,13 @@ export const translations = {
       eyebrow: 'Selected Work',
       heading: 'Projects that define us',
       viewAll: 'View All Projects',
+    },
+
+    jewelleryShowcase: {
+      eyebrow: 'Jewellery Design',
+      heading: 'Where architecture meets adornment',
+      description:
+        'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
     },
 
     /* ═══════════════════════════════════════
@@ -368,6 +376,12 @@ export const translations = {
         description:
           'Professional project management ensuring timelines, budgets, and quality standards are met without exception.',
       },
+      jewellery: {
+        title: 'Jewellery Store Design',
+        subtitle: 'Where Architecture Meets Adornment',
+        description:
+          'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
+      },
     },
 
     /* ═══════════════════════════════════════
@@ -376,38 +390,38 @@ export const translations = {
     projectsList: {
       kanchanVilla: {
         title: 'Kanchan Villa',
-        description: 'A celebration of understated luxury and refined living, Kanchan Villa blends timeless architecture, abundant natural light, and impeccable craftsmanship into a sanctuary of effortless elegance.',
+        description: 'Architecture that speaks without words.',
         brief: 'A vision brought to life with timeless elegance and modern sophistication. Designed to embrace natural light, celebrate authentic materials, and create a sense of effortless serenity, this residence reflects the perfect harmony of luxury and functionality. Every detail has been thoughtfully crafted to deliver a warm, minimalist living experience where exceptional craftsmanship meets enduring design.',
         approach: 'Our approach focused on maximizing natural light, framing outdoor views, and creating a seamless flow between spaces. A palette of warm wood, natural stone, and soft neutrals brings timeless elegance, while every detail was thoughtfully curated to create a calm and welcoming home.',
 
       },
       grandshaurya: {
         title: 'Grand Shaurya',
-        description: 'A statement of refined luxury, where timeless materials, sculptural design, and meticulous craftsmanship create an atmosphere of effortless elegance.',
-        brief: 'Designed for those who appreciate understated luxury, The Grand Shaurya embodies timeless architecture, refined craftsmanship, and thoughtfully curated spaces that elevate everyday living.',
+        description: 'Space designed around the way you live.',
+        brief: 'Architecture that welcomes, inspires, and stays with you.',
         approach: 'We believe true luxury lies in the details. Through purposeful design, exceptional craftsmanship, and carefully selected materials, we create sophisticated spaces that embody comfort, elegance, and enduring value. Guided by precision and a passion for excellence, every detail is meticulously refined to deliver timeless architecture, effortless sophistication, and an elevated living experience.',
       },
       gangaGold: {
         title: 'Ganga Gold',
-        description: 'Designed with precision and built for excellence, this landmark seamlessly combines contemporary aesthetics with functional luxury.',
+        description: 'A space to pause, unwind, and belong.',
         brief: 'The owner wanted each suite to feel like an experience, not just a room. The design had to evoke the warmth and intimacy of golden hour — that fleeting moment when everything glows.',
         approach: 'West-facing windows frame the Sahyadri hills at sunset. Warm plaster walls, burnished copper fixtures, and raw linen create a material palette that shifts in tone as the light changes through the day.',
       },
       PandharpuramPalace: {
         title: 'Monochrome Flat',
-        description: 'A study in restraint — black, white, and the textures between. Proof that limitation breeds creativity.',
+        description: 'Architecture that welcomes, inspires, and stays with you.',
         brief: 'A young couple wanted a compact apartment that felt larger than its footprint. The only design constraint: no colour — just black, white, and everything in between.',
         approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
       },
       fancyrejewellerystudio: {
         title: 'Fancy Re Jewellery Studio',
-        description: 'A culinary workspace where Italian marble meets Japanese joinery, designed for the passionate home chef.',
+        description: 'A celebration of craftsmanship, from space to jewel.',
         brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
         approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
       },
       lumiereRestaurant: {
         title: 'Lumière Restaurant',
-        description: 'Fine dining reimagined — where the architecture is as memorable as the cuisine.',
+        description: 'Good architecture is felt before it is understood.',
         brief: 'The restaurateur envisioned a space where architecture elevates the dining experience — where guests remember the room as vividly as the food.',
         approach: 'A dramatic arched ceiling clad in fluted plaster sets the tone. Intimate alcove seating, a theatrical open kitchen framed in blackened steel, and layered lighting that shifts from bright lunch to candlelit dinner.',
       },
@@ -454,7 +468,7 @@ export const translations = {
       {
         title: 'Discover',
         description:
-          'We begin by listening. Understanding your lifestyle, aspirations, and the story you want your space to tell.',
+          'We begin by listening. Understanding your lifestyle, aspirations, and the story you want your space to tell. All the meetings and initial discussions will be done in the office.',
         details: 'Site visit, client brief, mood boards, inspiration gathering',
       },
       {
@@ -565,11 +579,9 @@ export const translations = {
       services: [
         'Residential Interiors',
         'Commercial Design',
-        'Office Interiors',
-        'Modular Kitchen',
-        'Turnkey Project',
         'Architecture Consultancy',
         'Renovation',
+        'Jewellery Store Design',
         'Other',
       ],
       budgets: [
@@ -588,6 +600,7 @@ export const translations = {
       Residential: 'Residential',
       Commercial: 'Commercial',
       Hospitality: 'Hospitality',
+      Jewellery: 'Jewellery',
     },
 
     /* ═══════════════════════════════════════
@@ -636,7 +649,7 @@ export const translations = {
       slide2: { line1: 'श्वास', line2: 'घेणाऱ्या', line3: 'जागा', imageAlt: 'YCA ने डिझाइन केलेली मोकळी जागा' },
       slide3: { line1: 'विचारपूर्ण', line2: 'सुंदर', line3: 'निर्मिती', imageAlt: 'YCA ची उद्देशपूर्ण अंतर्गत सजावट' },
       description:
-        'विचारपूर्ण, परिष्कृत आणि कालातीत अशा वास्तुशिल्प व अंतर्गत सजावटीचा अनुभव.',
+        'आकार, कार्य आणि भावना एकत्र येतात अशा जागा निर्माण करणारा वास्तुकला आणि अंतर्गत सजावट स्टुडिओ.',
       cta: 'आमचे काम पहा',
       scroll: 'स्क्रोल करा',
     },
@@ -651,12 +664,20 @@ export const translations = {
       statYears: 'वर्षे',
       statTeam: 'टीम',
       imageAlt: 'Yogesh Chavan Associates स्टुडिओ',
+      readMore: 'अधिक वाचा',
     },
 
     featuredProjects: {
       eyebrow: 'निवडक काम',
       heading: 'आम्हाला ओळख देणारे प्रकल्प',
       viewAll: 'सर्व प्रकल्प पहा',
+    },
+
+    jewelleryShowcase: {
+      eyebrow: 'ज्वेलरी डिझाइन',
+      heading: 'वास्तुकला आणि अलंकार यांचा संगम',
+      description:
+        'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात.',
     },
 
     servicesPreview: {
@@ -917,13 +938,19 @@ export const translations = {
         description:
           'वेळापत्रक, बजेट आणि गुणवत्ता मानके अपवाद न करता पूर्ण करणारे व्यावसायिक प्रकल्प व्यवस्थापन.',
       },
+      jewellery: {
+        title: 'ज्वेलरी स्टोअर डिझाइन',
+        subtitle: 'वास्तुकला आणि अलंकार यांचा संगम',
+        description:
+          'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात. प्रत्येक जागा अलंकारांना उंचावण्यासाठी, ब्रँड व्यक्त करण्यासाठी आणि अपवादात्मक ग्राहक अनुभव निर्माण करण्यासाठी विचारपूर्वक डिझाइन केलेली असते.',
+      },
     },
 
     projectsList: {
       kanchanVilla: {
         title: 'Kanchan Villa',
         description:
-          'नैसर्गिक प्रकाश प्रत्येक खोलीला आकार देतो अशी सौम्य विला — आतील उबदारपणा आणि बाहेरची शांतता एकत्र आणणारी.',
+          'शब्दांविना बोलणारी वास्तुकला.',
         brief:
           'ग्राहकाला अशी जागा हवी होती जी आधुनिक आणि कालातीत दोन्ही वाटेल — नैसर्गिक प्रकाशाला आलिंगन देणारे, साहित्याच्या प्रामाणिकतेचा उत्सव साजरा करणारे आणि दैनंदिन जीवनासाठी शांत पार्श्वभूमी प्रदान करणारे घर.',
         approach:
@@ -932,7 +959,7 @@ export const translations = {
       grandshaurya: {
         title: 'Grand Shaurya',
         description:
-          'बायोफिलिक तत्त्वांवर आधारित तंत्रज्ञान मुख्यालय — निसर्गाशी जोडणीतून नवनिर्मितीला चालना देणारे.',
+          'तुमच्या जगण्याच्या पद्धतीभोवती रचलेली जागा.',
         brief:
           'NexaTech ला अशी कामाची जागा हवी होती जी उत्कृष्ट प्रतिभा आकर्षित करेल आणि सहकार्याला प्रोत्साहन देईल. पारंपरिक IT कार्यालयासारखे न वाटणारे — जिथे निसर्ग, फ्लोरोसेंट दिवे नव्हे, वातावरण ठरवतो.',
         approach:
@@ -941,7 +968,7 @@ export const translations = {
       gangaGold: {
         title: 'Ganga Gold',
         description:
-          'प्रत्येक खोली संध्याकाळच्या क्षणिक सौंदर्याला पकडते अशी बुटीक रिसॉर्ट सुइट.',
+          'स्वागत करणारी, प्रेरणा देणारी आणि मनात राहणारी वास्तुकला.',
         brief:
           'मालकाला प्रत्येक सुइट फक्त खोली नव्हे तर एक अनुभव वाटावा असे हवे होते. सजावटीने सुवर्ण तासाची उबदारता आणि आत्मीयता जागवायची होती — तो क्षणभंगुर क्षण जेव्हा सर्व काही चमकते.',
         approach:
@@ -950,7 +977,7 @@ export const translations = {
       PandharpuramPalace: {
         title: 'Monochrome Flat',
         description:
-          'संयमाचा अभ्यास — काळे, पांढरे, आणि मधल्या पोतांचा. मर्यादा सर्जनशीलतेला जन्म देतात याचा पुरावा.',
+          'थांबण्यासाठी, विश्रांतीसाठी आणि आपलेसे वाटण्यासाठी एक जागा.',
         brief:
           'एका तरुण जोडप्याला त्यांच्या जागेपेक्षा मोठे वाटणारे संक्षिप्त अपार्टमेंट हवे होते. एकमात्र अट: रंग नाही — फक्त काळे, पांढरे, आणि मधले सर्व.',
         approach:
@@ -961,14 +988,14 @@ export const translations = {
         description:
           'इटालियन संगमरवर आणि जपानी जोडकाम भेटतात अशी पाककला कार्यशाळा — उत्कट गृह पाकशास्त्रज्ञासाठी.',
         brief:
-          'एका उत्साही गृह पाकशास्त्रज्ञाला व्यावसायिक कार्यशाळेसारखे कार्य करणारे पण मित्र आणि कुटुंबियांचे स्वागत करण्यासाठी उबदार वाटणारे किचन हवे होते. समान प्रमाणात अचूकता आणि आदरातिथ्य.',
+          'कारागिरीचा उत्सव — जागेपासून अलंकारापर्यंत.',
         approach:
           'एक भव्य इटालियन संगमरवर बेट खोलीचा केंद्रबिंदू आहे. जपानी-प्रेरित लाकडी जोडकामाने पॅन्ट्री साठवण तयार केली. कॅबिनेटखालील प्रकाशयोजना आणि पॉट-फिलर टॅप शेफच्या प्रत्यक्ष कार्यप्रवाहानुसार डिझाइन केले.',
       },
       lumiereRestaurant: {
         title: 'Lumière Restaurant',
         description:
-          'उत्कृष्ट जेवणाची पुनर्कल्पना — जिथे वास्तुकला जेवणाइतकीच संस्मरणीय असते.',
+          'उत्कृष्ट वास्तुकला समजण्याआधी जाणवते.',
         brief:
           'उपाहारगृह मालकाला अशी जागा हवी होती जिथे वास्तुकला जेवणाचा अनुभव उंचावते — जिथे पाहुणे खोली जेवणाइतकीच स्पष्टपणे लक्षात ठेवतात.',
         approach:
@@ -1011,7 +1038,7 @@ export const translations = {
       {
         title: 'शोध',
         description:
-          'आम्ही ऐकण्यापासून सुरुवात करतो. तुमची जीवनशैली, आकांक्षा आणि तुम्हाला तुमच्या जागेने कोणती कहाणी सांगावी हे समजून घेतो.',
+          'आम्ही ऐकण्यापासून सुरुवात करतो. तुमची जीवनशैली, आकांक्षा आणि तुम्हाला तुमच्या जागेने कोणती कहाणी सांगावी हे समजून घेतो. सर्व बैठका आणि प्रारंभिक चर्चा कार्यालयात होतील.',
         details: 'स्थळ भेट, ग्राहक कार्यसूचना, मूड बोर्ड, प्रेरणा संकलन',
       },
       {
@@ -1110,11 +1137,9 @@ export const translations = {
       services: [
         'निवासी सजावट',
         'व्यावसायिक सजावट',
-        'कार्यालय सजावट',
-        'मॉड्युलर किचन',
-        'टर्नकी प्रकल्प',
         'वास्तुकला सल्लामसलत',
         'नूतनीकरण',
+        'ज्वेलरी स्टोअर डिझाइन',
         'इतर',
       ],
       budgets: [
@@ -1130,6 +1155,7 @@ export const translations = {
       Residential: 'निवासी',
       Commercial: 'व्यावसायिक',
       Hospitality: 'आतिथ्य',
+      Jewellery: 'ज्वेलरी',
     },
 
     music: {

@@ -10,7 +10,14 @@ import { useLanguage } from '@/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PROJECT_KEYS = ['kanchanVilla', 'grandshaurya', 'gangaGold', 'PandharpuramPalace', 'fancyrejewellerystudio', 'lumiereRestaurant'];
+const PROJECT_KEY_MAP = {
+  'kanchan-villa': 'kanchanVilla',
+  'grand-shaurya': 'grandshaurya',
+  'ganga-gold': 'gangaGold',
+  'Pandharipuram-Palace.': 'PandharpuramPalace',
+  'fancy-re-jewellery-studio': 'fancyrejewellerystudio',
+  'lumiere-restaurant': 'lumiereRestaurant',
+};
 
 function ProjectCard({ project, projectKey, index }) {
   const cardRef = useRef(null);
@@ -52,7 +59,8 @@ function ProjectCard({ project, projectKey, index }) {
 export default function FeaturedProjects() {
   const { t } = useLanguage();
   const headingRef = useRevealAnimation({ y: 50 });
-  const featured = PROJECTS.slice(0, 4);
+  const EXCLUDED_IDS = ['grand-shaurya', 'Pandharipuram-Palace.'];
+  const featured = PROJECTS.filter(p => !EXCLUDED_IDS.includes(p.id)).slice(0, 4);
 
   return (
     <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-warm-white">
@@ -68,7 +76,7 @@ export default function FeaturedProjects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {featured.map((project, i) => (
-          <ProjectCard key={project.id} project={project} projectKey={PROJECT_KEYS[i]} index={i} />
+          <ProjectCard key={project.id} project={project} projectKey={PROJECT_KEY_MAP[project.id]} index={i} />
         ))}
       </div>
     </section>

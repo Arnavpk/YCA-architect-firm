@@ -10,7 +10,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SVC_KEYS = ['residential','commercial','office','kitchen','turnkey','architecture','renovation','furniture','landscape','visualization','spacePlanning','projectManagement'];
+const SVC_KEYS = ['residential', 'commercial', 'architecture', 'renovation', 'jewellery'];
 
 function ServiceRow({ service, svcKey, index }) {
   const ref = useRef(null);
