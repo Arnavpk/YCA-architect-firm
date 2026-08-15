@@ -3,45 +3,55 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { isMobileViewport, prefersReducedMotion } from '@/lib/motion';
 
 gsap.registerPlugin(ScrollTrigger);
+
+function canAnimate() {
+  return !prefersReducedMotion();
+}
 
 export function useRevealAnimation(options = {}) {
   const ref = useRef(null);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !canAnimate()) {
+      if (el) gsap.set(el, { opacity: 1, y: 0 });
+      return;
+    }
 
     const {
-      y = 60,
+      y = 40,
       opacity = 0,
-      duration = 1,
+      duration = 0.7,
       delay = 0,
-      ease = 'power3.out',
-      start = 'top 85%',
+      ease = 'power2.out',
+      start = 'top 88%',
     } = options;
 
-    gsap.fromTo(el,
-      { y, opacity },
+    const tween = gsap.fromTo(
+      el,
+      { y, opacity, force3D: true },
       {
         y: 0,
         opacity: 1,
         duration,
         delay,
         ease,
+        force3D: true,
         scrollTrigger: {
           trigger: el,
           start,
-          toggleActions: 'play none none none',
+          once: true,
+          fastScrollEnd: true,
         },
       }
     );
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === el) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, []);
 
@@ -53,26 +63,29 @@ export function useImageReveal() {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !canAnimate()) return;
 
-    gsap.fromTo(el,
-      { clipPath: 'inset(100% 0 0 0)' },
+    const tween = gsap.fromTo(
+      el,
+      { opacity: 0, y: 24, force3D: true },
       {
-        clipPath: 'inset(0% 0 0 0)',
-        duration: 1.2,
-        ease: 'power3.inOut',
+        opacity: 1,
+        y: 0,
+        duration: 0.9,
+        ease: 'power2.out',
+        force3D: true,
         scrollTrigger: {
           trigger: el,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
+          start: 'top 85%',
+          once: true,
+          fastScrollEnd: true,
         },
       }
     );
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === el) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, []);
 
@@ -84,25 +97,26 @@ export function useParallax(speed = 0.3) {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !canAnimate() || isMobileViewport()) return;
 
-    gsap.to(el, {
-      y: () => speed * 100,
+    const tween = gsap.to(el, {
+      y: () => speed * 80,
       ease: 'none',
+      force3D: true,
       scrollTrigger: {
         trigger: el,
         start: 'top bottom',
         end: 'bottom top',
-        scrub: true,
+        scrub: 0.4,
+        fastScrollEnd: true,
       },
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === el) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
-  }, []);
+  }, [speed]);
 
   return ref;
 }
@@ -112,26 +126,28 @@ export function useLineReveal() {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !canAnimate()) return;
 
-    gsap.fromTo(el,
-      { scaleX: 0, transformOrigin: 'left' },
+    const tween = gsap.fromTo(
+      el,
+      { scaleX: 0, transformOrigin: 'left', force3D: true },
       {
         scaleX: 1,
-        duration: 1,
-        ease: 'power3.inOut',
+        duration: 0.8,
+        ease: 'power2.out',
+        force3D: true,
         scrollTrigger: {
           trigger: el,
-          start: 'top 90%',
-          toggleActions: 'play none none none',
+          start: 'top 92%',
+          once: true,
+          fastScrollEnd: true,
         },
       }
     );
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === el) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, []);
 
@@ -143,30 +159,33 @@ export function useStaggerReveal() {
 
   useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
+    if (!container || !canAnimate()) return;
 
     const children = container.querySelectorAll('[data-stagger]');
+    if (!children.length) return;
 
-    gsap.fromTo(children,
-      { y: 50, opacity: 0 },
+    const tween = gsap.fromTo(
+      children,
+      { y: 32, opacity: 0, force3D: true },
       {
         y: 0,
         opacity: 1,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: 'power3.out',
+        duration: 0.6,
+        stagger: 0.08,
+        ease: 'power2.out',
+        force3D: true,
         scrollTrigger: {
           trigger: container,
-          start: 'top 80%',
-          toggleActions: 'play none none none',
+          start: 'top 85%',
+          once: true,
+          fastScrollEnd: true,
         },
       }
     );
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === container) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, []);
 
@@ -178,33 +197,37 @@ export function useSplitText() {
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !canAnimate()) return;
 
     const text = el.textContent;
     const words = text.split(' ');
 
-    el.innerHTML = words.map(word =>
-      `<span style="overflow:hidden;display:inline-block"><span style="display:inline-block;transform:translateY(110%)" class="split-word">${word}</span></span>`
-    ).join(' ');
+    el.innerHTML = words
+      .map(
+        (word) =>
+          `<span style="overflow:hidden;display:inline-block"><span style="display:inline-block;transform:translateY(110%)" class="split-word">${word}</span></span>`
+      )
+      .join(' ');
 
     const splitWords = el.querySelectorAll('.split-word');
 
-    gsap.to(splitWords, {
+    const tween = gsap.to(splitWords, {
       y: 0,
-      duration: 0.8,
-      stagger: 0.04,
-      ease: 'power3.out',
+      duration: 0.7,
+      stagger: 0.03,
+      ease: 'power2.out',
+      force3D: true,
       scrollTrigger: {
         trigger: el,
-        start: 'top 85%',
-        toggleActions: 'play none none none',
+        start: 'top 88%',
+        once: true,
+        fastScrollEnd: true,
       },
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => {
-        if (t.trigger === el) t.kill();
-      });
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, []);
 

@@ -5,7 +5,6 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRevealAnimation, useParallax } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
-import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,11 +19,14 @@ export default function Philosophy() {
     const el = pillarsRef.current;
     if (!el) return;
     const items = el.querySelectorAll('.pillar-item');
-    gsap.fromTo(items, { y: 50, opacity: 0 }, {
-      y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: 'power3.out',
-      scrollTrigger: { trigger: el, start: 'top 80%', toggleActions: 'play none none none' },
+    const tween = gsap.fromTo(items, { y: 40, opacity: 0, force3D: true }, {
+      y: 0, opacity: 1, stagger: 0.1, duration: 0.6, ease: 'power2.out', force3D: true,
+      scrollTrigger: { trigger: el, start: 'top 85%', once: true, fastScrollEnd: true },
     });
-    return () => { ScrollTrigger.getAll().forEach(st => { if (st.trigger === el) st.kill(); }); };
+    return () => {
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
   }, []);
 
   const pillars = [

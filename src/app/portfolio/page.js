@@ -21,7 +21,10 @@ export default function PortfolioPage() {
   useEffect(() => {
     const cards = gridRef.current?.querySelectorAll('.project-card');
     if (!cards) return;
-    gsap.fromTo(cards, { y: 60, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: 'power3.out' });
+    const tween = gsap.fromTo(cards, { y: 40, opacity: 0, force3D: true }, {
+      y: 0, opacity: 1, stagger: 0.08, duration: 0.6, ease: 'power2.out', force3D: true,
+    });
+    return () => tween.kill();
   }, [activeFilter]);
 
   return (

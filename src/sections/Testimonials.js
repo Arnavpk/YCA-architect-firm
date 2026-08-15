@@ -10,6 +10,12 @@ export default function Testimonials() {
   const { t, tArray } = useLanguage();
   const items = tArray('testimonialsList');
 
+  const goTo = (index) => {
+    if (index < 0) setActive(items.length - 1);
+    else if (index >= items.length) setActive(0);
+    else setActive(index);
+  };
+
   return (
     <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-warm-beige">
       <div ref={sectionRef} className="max-w-5xl mx-auto text-center opacity-0">
@@ -26,10 +32,28 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-center gap-3 mt-12">
-          {items.map((_, i) => (
-            <button key={i} onClick={() => setActive(i)} className={`transition-all duration-300 ${i === active ? 'w-8 h-[2px] bg-gold' : 'w-4 h-[2px] bg-charcoal/15 hover:bg-charcoal/30'}`} aria-label={`Testimonial ${i + 1}`} />
-          ))}
+        <div className="flex items-center justify-center gap-6 mt-12">
+          <button
+            type="button"
+            onClick={() => goTo(active - 1)}
+            className="w-10 h-10 border border-charcoal/15 flex items-center justify-center text-charcoal/50 hover:text-gold hover:border-gold/40 transition-all duration-300"
+            aria-label="Previous testimonial"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1"><path d="M10 3L5 8L10 13" /></svg>
+          </button>
+          <div className="flex items-center gap-3">
+            {items.map((_, i) => (
+              <button key={i} type="button" onClick={() => setActive(i)} className={`transition-all duration-300 ${i === active ? 'w-8 h-[2px] bg-gold' : 'w-4 h-[2px] bg-charcoal/15 hover:bg-charcoal/30'}`} aria-label={`Testimonial ${i + 1}`} />
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={() => goTo(active + 1)}
+            className="w-10 h-10 border border-charcoal/15 flex items-center justify-center text-charcoal/50 hover:text-gold hover:border-gold/40 transition-all duration-300"
+            aria-label="Next testimonial"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1"><path d="M6 3L11 8L6 13" /></svg>
+          </button>
         </div>
       </div>
     </section>

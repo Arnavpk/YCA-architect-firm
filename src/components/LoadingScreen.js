@@ -3,16 +3,26 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
+const SESSION_KEY = 'yca-loading-seen';
+
 export default function LoadingScreen() {
   const [hiding, setHiding] = useState(false);
   const [unmounted, setUnmounted] = useState(false);
   const { t } = useLanguage();
 
   useEffect(() => {
-    // Step 1: trigger the CSS fade-out
-    const fadeTimer = setTimeout(() => setHiding(true), 2400);
-    // Step 2: remove from DOM after the CSS transition ends (800ms)
-    const removeTimer = setTimeout(() => setUnmounted(true), 3200);
+    try {
+      if (sessionStorage.getItem(SESSION_KEY)) {
+        setUnmounted(true);
+        return;
+      }
+      sessionStorage.setItem(SESSION_KEY, '1');
+    } catch {
+      // sessionStorage unavailable
+    }
+
+    const fadeTimer = setTimeout(() => setHiding(true), 1800);
+    const removeTimer = setTimeout(() => setUnmounted(true), 2600);
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(removeTimer);

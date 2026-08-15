@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 
-export default function LanguageToggle({ variant = 'default' }) {
+export default function LanguageToggle({ variant = 'default', inverse = false }) {
   const { language, setLanguage, mounted } = useLanguage();
 
   // During SSR / before hydration, render the toggle but don't show active state
@@ -13,6 +13,12 @@ export default function LanguageToggle({ variant = 'default' }) {
     variant === 'mobile'
       ? 'flex items-center gap-3 mt-8 pt-6 border-t border-charcoal/10'
       : 'flex items-center gap-0';
+
+  const inactiveClass = inverse
+    ? 'text-white/40 hover:text-white'
+    : 'text-dark-grey/40 hover:text-charcoal';
+
+  const dividerClass = inverse ? 'text-white/20' : 'text-charcoal/15';
 
   return (
     <div className={baseClasses} role="radiogroup" aria-label="Select language">
@@ -25,12 +31,12 @@ export default function LanguageToggle({ variant = 'default' }) {
             ? `text-sm tracking-wide px-3 py-1.5 ${
                 isEn
                   ? 'text-gold font-medium'
-                  : 'text-dark-grey/40 hover:text-charcoal'
+                  : inactiveClass
               }`
             : `text-[11px] tracking-[0.1em] px-2.5 py-1.5 ${
                 isEn
                   ? 'text-gold font-medium'
-                  : 'text-dark-grey/40 hover:text-charcoal'
+                  : inactiveClass
               }`
         }`}
       >
@@ -40,8 +46,8 @@ export default function LanguageToggle({ variant = 'default' }) {
       <span
         className={`${
           variant === 'mobile'
-            ? 'text-charcoal/15 text-sm'
-            : 'text-charcoal/15 text-[11px]'
+            ? `${dividerClass} text-sm`
+            : `${dividerClass} text-[11px]`
         }`}
         aria-hidden="true"
       >
@@ -57,12 +63,12 @@ export default function LanguageToggle({ variant = 'default' }) {
             ? `text-sm px-3 py-1.5 ${
                 isMr
                   ? 'text-gold font-medium'
-                  : 'text-dark-grey/40 hover:text-charcoal'
+                  : inactiveClass
               }`
             : `text-[12px] px-2.5 py-1.5 ${
                 isMr
                   ? 'text-gold font-medium'
-                  : 'text-dark-grey/40 hover:text-charcoal'
+                  : inactiveClass
               }`
         }`}
         style={{ fontFamily: "'Noto Sans Devanagari', 'DM Sans', sans-serif" }}

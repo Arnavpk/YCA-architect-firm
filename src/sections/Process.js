@@ -18,13 +18,23 @@ export default function Process() {
     const el = stepsRef.current;
     if (!el) return;
     const items = el.querySelectorAll('.process-step');
-    items.forEach((step) => {
-      gsap.fromTo(step, { y: 60, opacity: 0 }, {
-        y: 0, opacity: 1, duration: 0.8, ease: 'power3.out',
-        scrollTrigger: { trigger: step, start: 'top 85%', toggleActions: 'play none none none' },
-      });
-    });
-    return () => { ScrollTrigger.getAll().forEach(st => { items.forEach(step => { if (st.trigger === step) st.kill(); }); }); };
+    const tween = gsap.fromTo(
+      items,
+      { y: 40, opacity: 0, force3D: true },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power2.out',
+        force3D: true,
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true, fastScrollEnd: true },
+      }
+    );
+    return () => {
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
   }, []);
 
   return (

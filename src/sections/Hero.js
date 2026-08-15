@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLanguage } from '@/context/LanguageContext';
@@ -124,22 +125,30 @@ export default function Hero() {
   useEffect(() => {
     timelineRef.current = playHeadingIn(true);
 
-    gsap.to(containerRef.current?.querySelector('.hero-image.active'), {
-      y: 150,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-      },
-    });
+    const heroImage = containerRef.current?.querySelector('.hero-image.active');
+    let parallaxTween = null;
+
+    if (heroImage && !window.matchMedia('(prefers-reduced-motion: reduce)').matches && !window.matchMedia('(max-width: 767px)').matches) {
+      parallaxTween = gsap.to(heroImage, {
+        y: 100,
+        ease: 'none',
+        force3D: true,
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.4,
+          fastScrollEnd: true,
+        },
+      });
+    }
 
     resetAutoplay();
 
     return () => {
       if (autoplayRef.current) clearInterval(autoplayRef.current);
-      ScrollTrigger.getAll().forEach((st) => st.kill());
+      parallaxTween?.scrollTrigger?.kill();
+      parallaxTween?.kill();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -202,14 +211,13 @@ export default function Hero() {
               {t('hero.description')}
             </p>
 
-            <a href="/portfolio"
+            <Link href="/portfolio"
               className="inline-flex items-center gap-3 text-[11px] tracking-[0.2em] uppercase text-white/80 hover:text-gold transition-colors duration-300 shrink-0">
-
               <span>{t('hero.cta')}</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" />
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Dot indicators */}

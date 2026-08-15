@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SERVICES } from '@/lib/constants';
 import { useRevealAnimation } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
+import { isMobileViewport, prefersReducedMotion } from '@/lib/motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,18 +16,39 @@ export default function ServicesPreview() {
   const headingRef = useRevealAnimation({ y: 50 });
   const scrollContainerRef = useRef(null);
   const trackRef = useRef(null);
+  const pinTriggerRef = useRef(null);
 
   useEffect(() => {
     const container = scrollContainerRef.current;
     const track = trackRef.current;
-    if (!container || !track) return;
+    if (!container || !track || prefersReducedMotion() || isMobileViewport()) return;
+
     const totalScroll = track.scrollWidth - container.offsetWidth;
-    const st = ScrollTrigger.create({
-      trigger: container, start: 'top 15%', end: () => `+=${totalScroll}`,
-      pin: true, scrub: 1, anticipatePin: 1,
-      animation: gsap.to(track, { x: -totalScroll, ease: 'none' }),
+    if (totalScroll <= 0) return;
+
+    const animation = gsap.to(track, {
+      x: -totalScroll,
+      ease: 'none',
+      force3D: true,
     });
-    return () => st.kill();
+
+    pinTriggerRef.current = ScrollTrigger.create({
+      trigger: container,
+      start: 'top 15%',
+      end: () => `+=${totalScroll}`,
+      pin: true,
+      pinType: 'transform',
+      scrub: 0.4,
+      anticipatePin: 1,
+      fastScrollEnd: true,
+      animation,
+    });
+
+    return () => {
+      pinTriggerRef.current?.kill();
+      animation.kill();
+      pinTriggerRef.current = null;
+    };
   }, []);
 
   const featured = SERVICES.slice(0, 6);
@@ -43,14 +65,21 @@ export default function ServicesPreview() {
           </Link>
         </div>
       </div>
-      <div ref={scrollContainerRef} className="overflow-hidden">
-        <div ref={trackRef} className="flex gap-6 md:gap-8 pl-6 md:pl-12 lg:pl-16 pr-24">
+      <div
+        ref={scrollContainerRef}
+        className="overflow-hidden md:overflow-hidden overflow-x-auto md:overflow-x-hidden snap-x snap-mandatory md:snap-none scrollbar-hide"
+      >
+        <div ref={trackRef} className="flex gap-6 md:gap-8 pl-6 md:pl-12 lg:pl-16 pr-6 md:pr-24 w-max md:w-auto">
           {featured.map((service, i) => {
             const key = SERVICE_KEYS[i];
             return (
-              <Link href={`/services#${service.id}`} key={service.id} className="group shrink-0 w-[300px] md:w-[380px]">
+              <Link
+                href={`/services#${service.id}`}
+                key={service.id}
+                className="group shrink-0 w-[280px] md:w-[380px] snap-start"
+              >
                 <div className="relative overflow-hidden aspect-[3/4] mb-5">
-                  <img src={service.image} alt={t(`servicesList.${key}.title`)} className="w-full h-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110" loading="lazy" />
+                  <img src={service.image} alt={t(`servicesList.${key}.title`)} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <span className="text-white/50 text-[10px] tracking-[0.2em] uppercase">{t(`servicesList.${key}.subtitle`)}</span>

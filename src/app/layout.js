@@ -9,7 +9,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 export const metadata = {
   title: 'Yogesh Chavan Associates — Architecture & Interior Design Studio',
   description:
-    'Premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends. Residential, commercial, and hospitality design in Pune, India.',
+    'Premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends. Residential, commercial, and hospitality design in Sangli, Maharashtra, India.',
 };
 
 export default function RootLayout({ children }) {

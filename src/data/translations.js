@@ -617,7 +617,7 @@ export const translations = {
     seo: {
       homeTitle: 'Yogesh Chavan Associates — Architecture & Interior Design Studio',
       homeDescription:
-        'Premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends. Residential, commercial, and hospitality design in Pune, India.',
+        'Premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends. Residential, commercial, and hospitality design in Sangli, Maharashtra, India.',
       ogTitle: 'Yogesh Chavan Associates',
       ogDescription: 'Crafting Timeless Spaces — Architecture & Interior Design Studio',
     },
@@ -1166,7 +1166,7 @@ export const translations = {
     seo: {
       homeTitle: 'Yogesh Chavan Associates — वास्तुकला आणि अंतर्गत सजावट स्टुडिओ',
       homeDescription:
-        'विचारपूर्ण, परिष्कृत आणि कालातीत जागा निर्माण करणारा प्रीमियम वास्तुकला आणि अंतर्गत सजावट स्टुडिओ. पुणे, भारत.',
+        'विचारपूर्ण, परिष्कृत आणि कालातीत जागा निर्माण करणारा प्रीमियम वास्तुकला आणि अंतर्गत सजावट स्टुडिओ. सांगली, महाराष्ट्र, भारत.',
       ogTitle: 'Yogesh Chavan Associates',
       ogDescription: 'कालातीत सुंदर जागा — वास्तुकला आणि अंतर्गत सजावट स्टुडिओ',
     },

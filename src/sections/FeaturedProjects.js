@@ -26,11 +26,14 @@ function ProjectCard({ project, projectKey, index }) {
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;
-    gsap.fromTo(card, { y: 80, opacity: 0 }, {
-      y: 0, opacity: 1, duration: 1, delay: index * 0.15, ease: 'power3.out',
-      scrollTrigger: { trigger: card, start: 'top 85%', toggleActions: 'play none none none' },
+    const tween = gsap.fromTo(card, { y: 50, opacity: 0, force3D: true }, {
+      y: 0, opacity: 1, duration: 0.7, delay: index * 0.1, ease: 'power2.out', force3D: true,
+      scrollTrigger: { trigger: card, start: 'top 88%', once: true, fastScrollEnd: true },
     });
-    return () => { ScrollTrigger.getAll().forEach(st => { if (st.trigger === card) st.kill(); }); };
+    return () => {
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
   }, [index]);
 
   const title = t(`projectsList.${projectKey}.title`);

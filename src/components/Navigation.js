@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
+import { COMPANY } from '@/lib/constants';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from '@/components/LanguageToggle';
 
@@ -19,11 +20,14 @@ export default function Navigation() {
   const linksRef = useRef([]);
   const overlayRef = useRef(null);
 
+  const isHomeHero = pathname === '/' && !scrolled;
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     if (isOpen) {
@@ -45,14 +49,22 @@ export default function Navigation() {
 
   useEffect(() => { setIsOpen(false); }, [pathname]);
 
+  const linkClass = (href) => {
+    const isActive = pathname === href;
+    if (isHomeHero) {
+      return `relative text-[13px] tracking-[0.1em] uppercase transition-colors duration-300 ${isActive ? 'text-gold' : 'text-white/80 hover:text-white'}`;
+    }
+    return `relative text-[13px] tracking-[0.1em] uppercase transition-colors duration-300 ${isActive ? 'text-gold' : 'text-dark-grey hover:text-charcoal'}`;
+  };
+
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]' : 'bg-transparent'}`}>
+      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]' : isHomeHero ? 'bg-gradient-to-b from-charcoal/50 to-transparent' : 'bg-transparent'}`}>
         <nav className="flex items-center justify-between px-6 md:px-12 lg:px-16 h-20 md:h-24">
           <Link href="/" className="relative z-50">
             <div className="flex flex-col">
-              <span className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-charcoal">YCA</span>
-              <span className="text-[9px] tracking-[0.3em] uppercase text-dark-grey/60 -mt-1 hidden md:block">
+              <span className={`font-serif text-xl md:text-2xl font-semibold tracking-tight transition-colors duration-300 ${isHomeHero ? 'text-white' : 'text-charcoal'}`}>YCA</span>
+              <span className={`text-[9px] tracking-[0.3em] uppercase -mt-1 hidden md:block transition-colors duration-300 ${isHomeHero ? 'text-white/50' : 'text-dark-grey/60'}`}>
                 {t('nav.architectureInteriors')}
               </span>
             </div>
@@ -60,8 +72,7 @@ export default function Navigation() {
 
           <div className="hidden lg:flex items-center gap-10">
             {NAV_KEYS.map((key, i) => (
-              <Link key={key} href={NAV_HREFS[i]}
-                className={`relative text-[13px] tracking-[0.1em] uppercase transition-colors duration-300 ${pathname === NAV_HREFS[i] ? 'text-gold' : 'text-dark-grey hover:text-charcoal'}`}>
+              <Link key={key} href={NAV_HREFS[i]} className={linkClass(NAV_HREFS[i])}>
                 {t(`nav.${key}`)}
                 {pathname === NAV_HREFS[i] && <span className="absolute -bottom-1 left-0 w-full h-px bg-gold" />}
               </Link>
@@ -69,16 +80,16 @@ export default function Navigation() {
           </div>
 
           <div className="hidden lg:flex items-center gap-4">
-            <LanguageToggle />
+            <LanguageToggle inverse={isHomeHero} />
             <Link href="/contact"
-              className="text-[12px] tracking-[0.15em] uppercase text-charcoal border border-charcoal/20 px-6 py-3 hover:bg-charcoal hover:text-white transition-all duration-500">
+              className={`text-[12px] tracking-[0.15em] uppercase px-6 py-3 transition-all duration-500 ${isHomeHero ? 'text-white border border-white/30 hover:bg-white hover:text-charcoal' : 'text-charcoal border border-charcoal/20 hover:bg-charcoal hover:text-white'}`}>
               {t('nav.bookConsultation')}
             </Link>
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="relative z-50 lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Toggle menu">
-            <span className={`w-6 h-px bg-charcoal transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-[3.5px]' : ''}`} />
-            <span className={`w-6 h-px bg-charcoal transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[3.5px]' : ''}`} />
+            <span className={`w-6 h-px transition-all duration-300 ${isHomeHero && !isOpen ? 'bg-white' : 'bg-charcoal'} ${isOpen ? 'rotate-45 translate-y-[3.5px]' : ''}`} />
+            <span className={`w-6 h-px transition-all duration-300 ${isHomeHero && !isOpen ? 'bg-white' : 'bg-charcoal'} ${isOpen ? '-rotate-45 -translate-y-[3.5px]' : ''}`} />
           </button>
         </nav>
       </header>
@@ -97,9 +108,16 @@ export default function Navigation() {
           ))}
         </div>
         <LanguageToggle variant="mobile" />
+        <Link
+          href="/contact"
+          onClick={() => setIsOpen(false)}
+          className="mt-6 inline-flex items-center justify-center text-[12px] tracking-[0.15em] uppercase text-charcoal border border-charcoal/20 px-6 py-3 hover:bg-charcoal hover:text-white transition-all duration-500"
+        >
+          {t('nav.bookConsultation')}
+        </Link>
         <div className="mt-8 pt-6 border-t border-charcoal/10">
-          <p className="text-sm text-dark-grey/60 mb-2">studio@yogeshchavan.com</p>
-          <p className="text-sm text-dark-grey/60">+91 98765 43210</p>
+          <a href={`mailto:${COMPANY.email}`} className="text-sm text-dark-grey/60 hover:text-gold transition-colors duration-300 block mb-2">{COMPANY.email}</a>
+          <a href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} className="text-sm text-dark-grey/60 hover:text-gold transition-colors duration-300 block">{COMPANY.phone}</a>
         </div>
       </div>
     </>

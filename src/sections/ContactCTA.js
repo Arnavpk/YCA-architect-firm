@@ -12,7 +12,7 @@ export default function ContactCTA() {
   return (
     <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
       <div ref={bgRef} className="absolute inset-0 w-full h-[130%] -top-[15%]">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80" alt="" className="w-full h-full object-cover" loading="lazy" />
+        <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785406717/IMG_5239_jzrtz2.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-charcoal/50" />
       </div>
       <div ref={contentRef} className="relative z-10 text-center px-6 opacity-0">

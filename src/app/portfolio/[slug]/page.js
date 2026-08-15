@@ -11,7 +11,18 @@ const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grands
 export default function ProjectDetail() {
   const { t } = useLanguage();
   const params = useParams();
-  const project = PROJECTS.find(p => p.id === params.slug) || PROJECTS[0];
+  const project = PROJECTS.find(p => p.id === params.slug);
+
+  if (!project) {
+    return (
+      <section className="pt-32 md:pt-40 pb-24 px-6 md:px-12 lg:px-16 bg-white min-h-[60vh] flex flex-col items-center justify-center text-center">
+        <h1 className="font-serif text-display text-charcoal mb-4">Project not found</h1>
+        <p className="text-dark-grey/50 mb-8">The project you are looking for does not exist.</p>
+        <Link href="/portfolio" className="btn-luxury"><span>{t('projectDetail.backToPortfolio')}</span></Link>
+      </section>
+    );
+  }
+
   const pk = PROJECT_KEYS[project.id];
   const title = pk ? t(`projectsList.${pk}.title`) : project.title;
   const desc = pk ? t(`projectsList.${pk}.description`) : project.description;
