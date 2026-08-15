@@ -44,7 +44,7 @@ export default function Philosophy() {
             <h2 className="font-serif text-display-lg text-white/90">{t('philosophy.heading')}</h2>
           </div>
           <div ref={quoteRef} className="flex items-end opacity-0">
-            <p className="text-white/40 leading-relaxed max-w-md">{t('philosophy.description')}</p>
+            <p className="text-white/60 leading-relaxed max-w-md">{t('philosophy.description')}</p>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -58,7 +58,7 @@ export default function Philosophy() {
                   <span className="text-gold/40 text-sm font-serif mt-1 shrink-0">{String(i + 1).padStart(2, '0')}</span>
                   <div>
                     <h3 className="font-serif text-xl md:text-2xl text-white/90 mb-3">{pillar.title}</h3>
-                    <p className="text-white/40 leading-relaxed max-w-lg">{pillar.text}</p>
+                    <p className="text-white/55 leading-relaxed max-w-lg">{pillar.text}</p>
                   </div>
                 </div>
               </div>

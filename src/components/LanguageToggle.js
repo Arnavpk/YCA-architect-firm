@@ -15,10 +15,10 @@ export default function LanguageToggle({ variant = 'default', inverse = false })
       : 'flex items-center gap-0';
 
   const inactiveClass = inverse
-    ? 'text-white/40 hover:text-white'
-    : 'text-dark-grey/40 hover:text-charcoal';
+    ? 'text-white/60 hover:text-white'
+    : 'text-dark-grey/60 hover:text-charcoal';
 
-  const dividerClass = inverse ? 'text-white/20' : 'text-charcoal/15';
+  const dividerClass = inverse ? 'text-white/35' : 'text-charcoal/25';
 
   return (
     <div className={baseClasses} role="radiogroup" aria-label="Select language">
@@ -33,7 +33,7 @@ export default function LanguageToggle({ variant = 'default', inverse = false })
                   ? 'text-gold font-medium'
                   : inactiveClass
               }`
-            : `text-[11px] tracking-[0.1em] px-2.5 py-1.5 ${
+            : `text-[11px] tracking-[0.1em] px-3 py-2 ${
                 isEn
                   ? 'text-gold font-medium'
                   : inactiveClass
@@ -65,7 +65,7 @@ export default function LanguageToggle({ variant = 'default', inverse = false })
                   ? 'text-gold font-medium'
                   : inactiveClass
               }`
-            : `text-[12px] px-2.5 py-1.5 ${
+            : `text-[12px] px-3 py-2 ${
                 isMr
                   ? 'text-gold font-medium'
                   : inactiveClass

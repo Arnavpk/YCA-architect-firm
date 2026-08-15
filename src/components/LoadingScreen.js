@@ -35,10 +35,10 @@ export default function LoadingScreen() {
     <div className={`loading-screen ${hiding ? 'hidden' : ''}`}>
       <div className="flex flex-col items-center">
         <span className="font-serif text-3xl md:text-4xl text-white/90 tracking-tight">YCA</span>
-        <span className="text-[13px] tracking-[0.4em] uppercase text-white/30 mt-4">
+        <span className="text-[13px] tracking-[0.4em] uppercase text-white/55 mt-4">
           {t('loading.name')}
         </span>
-        <span className="text-[9px] tracking-[0.4em] uppercase text-white/30 mt-1">
+        <span className="text-[11px] tracking-[0.3em] uppercase text-white/45 mt-1">
           {t('loading.subtitle')}
         </span>
       </div>

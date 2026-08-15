@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/30 mb-6">{t('footer.navigate')}</h4>
+            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/50 mb-6">{t('footer.navigate')}</h4>
             <ul className="space-y-3">
               {NAV_KEYS.map((key, i) => (
                 <li key={key}><Link href={NAV_HREFS[i]} className="text-sm text-white/50 hover:text-gold transition-colors duration-300">{t(`nav.${key}`)}</Link></li>
@@ -79,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/30 mb-6">{t('footer.services')}</h4>
+            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/50 mb-6">{t('footer.services')}</h4>
             <ul className="space-y-3">
               {SVC_KEYS.map((key) => (
                 <li key={key}><Link href={`/services#${key}`} className="text-sm text-white/50 hover:text-gold transition-colors duration-300">{t(`servicesList.${key}.title`)}</Link></li>
@@ -87,20 +87,20 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/30 mb-6">{t('footer.studio')}</h4>
+            <h4 className="text-[11px] tracking-[0.3em] uppercase text-white/50 mb-6">{t('footer.studio')}</h4>
             <div className="space-y-4 text-sm text-white/50">
               <p>{COMPANY.address.line1}<br />{COMPANY.address.line2}</p>
               <a href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} className="block hover:text-gold transition-colors duration-300">{COMPANY.phone}</a>
               <a href={`mailto:${COMPANY.email}`} className="block hover:text-gold transition-colors duration-300">{COMPANY.email}</a>
-              <p className="text-white/30">{COMPANY.hours}</p>
+              <p className="text-white/45">{COMPANY.hours}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="px-6 md:px-12 lg:px-16 py-6 border-t border-white/5">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-white/25">{t('footer.copyright').replace('{year}', new Date().getFullYear())}</p>
-          <Link href="/privacy" className="text-[11px] text-white/25 hover:text-white/40 transition-colors">{t('footer.privacy')}</Link>
+          <p className="text-[11px] text-white/45">{t('footer.copyright').replace('{year}', new Date().getFullYear())}</p>
+          <Link href="/privacy" className="text-[11px] text-white/45 hover:text-white/70 transition-colors">{t('footer.privacy')}</Link>
         </div>
       </div>
     </footer>

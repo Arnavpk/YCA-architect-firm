@@ -51,7 +51,7 @@ export default function Process() {
             <div>
               <h3 className="font-serif text-2xl md:text-3xl text-charcoal mb-3">{step.title}</h3>
               <p className="text-dark-grey/70 leading-relaxed mb-4 max-w-xl">{step.description}</p>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-dark-grey/35">{step.details}</p>
+              <p className="text-[11px] tracking-[0.15em] uppercase text-dark-grey/50">{step.details}</p>
             </div>
           </div>
         ))}

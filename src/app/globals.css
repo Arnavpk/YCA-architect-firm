@@ -20,15 +20,15 @@
 
   /* Font sizes */
   --text-display-xl: clamp(3rem, 8vw, 8rem);
-  --text-display-xl--line-height: 0.95;
+  --text-display-xl--line-height: 1.1;
   --text-display-xl--letter-spacing: -0.03em;
 
   --text-display-lg: clamp(2.5rem, 6vw, 6rem);
-  --text-display-lg--line-height: 1;
+  --text-display-lg--line-height: 1.15;
   --text-display-lg--letter-spacing: -0.02em;
 
   --text-display: clamp(2rem, 4vw, 4rem);
-  --text-display--line-height: 1.1;
+  --text-display--line-height: 1.15;
   --text-display--letter-spacing: -0.02em;
 
   --text-heading: clamp(1.5rem, 3vw, 2.5rem);
@@ -87,6 +87,10 @@ body {
   color: #1A1A1A;
   background-color: #fff;
   overflow-x: clip;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -291,6 +295,19 @@ body {
   display: none;
 }
 
+/* ── Tap target minimums (44px for mobile) ── */
+@media (pointer: coarse) {
+  /* Hero and testimonial dot indicators */
+  section button[aria-label*="slide"],
+  section button[aria-label*="Testimonial"] {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* ── Reduced Motion ── */
 
 @media (prefers-reduced-motion: reduce) {
@@ -308,6 +325,36 @@ body {
   }
 }
 
+/* ── No-JS / GSAP failure fallbacks ── */
+/* Elements that start invisible for animation must become visible after a timeout
+   or if animation framework fails. CSS @supports + animation trick provides this. */
+
+@keyframes revealFallback {
+  to { opacity: 1; transform: none; }
+}
+
+/* After 3s, force all animated elements visible if GSAP hasn't touched them */
+.opacity-0 {
+  animation: revealFallback 0s 3s forwards;
+}
+
+/* Elements that use GSAP fromTo with opacity: 0 inline (process steps, cards, etc.) */
+.process-step,
+.pillar-item,
+.project-card,
+[data-stagger] {
+  animation: revealFallback 0s 3.5s forwards;
+}
+
+/* Hero overlay: ensure it hides after animation window even without GSAP */
+.loading-screen ~ main .hero-overlay-mask {
+  animation: heroOverlayFallback 0s 3s forwards;
+}
+
+@keyframes heroOverlayFallback {
+  to { transform: scaleY(0); visibility: hidden; pointer-events: none; }
+}
+
 @media (max-width: 768px) {
   .music-toggle {
     bottom: 1rem;
@@ -315,6 +362,14 @@ body {
     width: 40px;
     height: 40px;
   }
+}
+
+/* ── Base Typography Improvements ── */
+
+/* Ensure minimum readability for small text in both languages */
+.text-xs {
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 /* ── Marathi Typography ── */
@@ -331,31 +386,97 @@ html[lang="mr"] .font-sans {
   font-family: 'Noto Sans Devanagari', 'DM Sans', system-ui, sans-serif;
 }
 
-/* Marathi text needs slightly more line-height and reduced letter-spacing */
+/* Marathi headings */
 html[lang="mr"] h1,
 html[lang="mr"] h2,
 html[lang="mr"] h3,
 html[lang="mr"] h4 {
-  line-height: 1.3;
+  line-height: 1.35;
   letter-spacing: 0;
 }
 
+/* Marathi body text */
 html[lang="mr"] p {
-  line-height: 1.85;
+  font-size: 1.05em;
+  line-height: 1.9;
 }
 
+/* Marathi small / label / eyebrow text — bump size so Devanagari stays legible */
+html[lang="mr"] .text-xs,
+html[lang="mr"] .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+/* Marathi display sizes */
 html[lang="mr"] .text-display-xl {
-  font-size: clamp(2.2rem, 6vw, 6rem);
-  line-height: 1.15;
+  font-size: clamp(2.2rem, 6vw, 5.5rem);
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
 html[lang="mr"] .text-display-lg {
-  line-height: 1.15;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
 html[lang="mr"] .text-display {
-  line-height: 1.2;
+  font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+  line-height: 1.25;
   letter-spacing: 0;
+}
+
+html[lang="mr"] .text-heading {
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+/* Marathi nav and buttons — prevent text from becoming too small */
+html[lang="mr"] nav a,
+html[lang="mr"] nav button,
+html[lang="mr"] .btn-luxury span {
+  font-size: max(0.85rem, 1em);
+  letter-spacing: 0.05em;
+}
+
+/*
+ * Catch all Tailwind arbitrary sizes below 12px (e.g. text-[9px], text-[10px], text-[11px])
+ * In English: bump to 11px minimum for readability
+ * In Marathi: bump to 13px because Devanagari needs more space
+ */
+
+/* English minimum floor for micro-text */
+[class*="text-[9px]"],
+[class*="text-[10px]"],
+[class*="text-[11px]"] {
+  font-size: 12px !important;
+}
+
+/* Marathi: all tiny labels become legible */
+html[lang="mr"] [class*="text-[9px]"],
+html[lang="mr"] [class*="text-[10px]"],
+html[lang="mr"] [class*="text-[11px]"] {
+  font-size: 13px !important;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+html[lang="mr"] [class*="text-[12px]"],
+html[lang="mr"] [class*="text-[13px]"] {
+  font-size: 14px !important;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+/* Marathi: form labels need extra bump */
+html[lang="mr"] label {
+  font-size: 0.85rem !important;
+  line-height: 1.5;
+}
+
+/* Marathi: footer/copyright small text */
+html[lang="mr"] footer [class*="text-[11px]"] {
+  font-size: 12px !important;
 }

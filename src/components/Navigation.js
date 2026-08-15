@@ -59,12 +59,15 @@ export default function Navigation() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]' : isHomeHero ? 'bg-gradient-to-b from-charcoal/50 to-transparent' : 'bg-transparent'}`}>
-        <nav className="flex items-center justify-between px-6 md:px-12 lg:px-16 h-20 md:h-24">
+      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(0,0,0,0.06)]' : isHomeHero ? '' : 'bg-transparent'}`}>
+        {isHomeHero && !scrolled && (
+          <div className="absolute inset-0 h-[150%] bg-gradient-to-b from-charcoal/70 via-charcoal/25 to-transparent pointer-events-none" />
+        )}
+        <nav className={`relative flex items-center justify-between px-6 md:px-12 lg:px-16 h-20 md:h-24 ${isHomeHero ? '[text-shadow:0_1px_3px_rgba(0,0,0,0.3)]' : ''}`}>
           <Link href="/" className="relative z-50">
             <div className="flex flex-col">
               <span className={`font-serif text-xl md:text-2xl font-semibold tracking-tight transition-colors duration-300 ${isHomeHero ? 'text-white' : 'text-charcoal'}`}>YCA</span>
-              <span className={`text-[9px] tracking-[0.3em] uppercase -mt-1 hidden md:block transition-colors duration-300 ${isHomeHero ? 'text-white/50' : 'text-dark-grey/60'}`}>
+              <span className={`text-[10px] tracking-[0.25em] uppercase -mt-1 hidden md:block transition-colors duration-300 ${isHomeHero ? 'text-white/50' : 'text-dark-grey/60'}`}>
                 {t('nav.architectureInteriors')}
               </span>
             </div>

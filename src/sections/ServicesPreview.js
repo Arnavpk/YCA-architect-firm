@@ -82,7 +82,7 @@ export default function ServicesPreview() {
                   <img src={service.image} alt={t(`servicesList.${key}.title`)} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="text-white/50 text-[10px] tracking-[0.2em] uppercase">{t(`servicesList.${key}.subtitle`)}</span>
+                    <span className="text-white/70 text-[10px] tracking-[0.2em] uppercase">{t(`servicesList.${key}.subtitle`)}</span>
                     <h3 className="font-serif text-xl text-white mt-1">{t(`servicesList.${key}.title`)}</h3>
                   </div>
                 </div>

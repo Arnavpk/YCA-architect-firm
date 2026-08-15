@@ -62,9 +62,9 @@ export default function PortfolioPage() {
                 <div className="flex items-start justify-between">
                   <div>
                     <h3 className="font-serif text-lg text-charcoal group-hover:text-gold transition-colors duration-300">{title}</h3>
-                    <p className="text-dark-grey/40 text-sm mt-0.5">{catLabel} — {project.location}</p>
+                    <p className="text-dark-grey/55 text-sm mt-0.5">{catLabel} — {project.location}</p>
                   </div>
-                  <span className="text-dark-grey/25 text-sm">{project.year}</span>
+                  <span className="text-dark-grey/50 text-sm">{project.year}</span>
                 </div>
               </Link>
             );

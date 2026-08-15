@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           <div><h2 className="font-serif text-xl text-charcoal mb-3">{t('privacyPage.section2Title')}</h2><p>{t('privacyPage.section2Text')}</p></div>
           <div><h2 className="font-serif text-xl text-charcoal mb-3">{t('privacyPage.section3Title')}</h2><p>{t('privacyPage.section3Text')}</p></div>
           <div><h2 className="font-serif text-xl text-charcoal mb-3">{t('privacyPage.section4Title')}</h2><p>{t('privacyPage.section4ContactPrefix')}{' '}<a href={`mailto:${COMPANY.email}`} className="text-gold hover:underline">{COMPANY.email}</a>.</p></div>
-          <p className="text-sm text-dark-grey/40 pt-8 border-t border-soft-grey">{t('privacyPage.lastUpdated')}</p>
+          <p className="text-sm text-dark-grey/55 pt-8 border-t border-soft-grey">{t('privacyPage.lastUpdated')}</p>
         </div>
       </div>
     </section>

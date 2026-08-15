@@ -89,7 +89,7 @@ export default function AboutPage() {
             <div key={n} className="text-center md:text-left">
               <span className="text-gold/30 font-serif text-5xl block mb-4">{String(n).padStart(2, '0')}</span>
               <h3 className="font-serif text-xl text-white/90 mb-3">{t(`about.value${n}Title`)}</h3>
-              <p className="text-white/40 leading-relaxed text-sm">{t(`about.value${n}Text`)}</p>
+              <p className="text-white/55 leading-relaxed text-sm">{t(`about.value${n}Text`)}</p>
             </div>
           ))}
         </div>

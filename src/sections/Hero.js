@@ -189,12 +189,12 @@ export default function Hero() {
         </div>
       ))}
 
-      <div ref={overlayRef} className="absolute inset-0 bg-charcoal z-10" />
+      <div ref={overlayRef} className="hero-overlay-mask absolute inset-0 bg-charcoal z-10" />
 
       <div className="relative z-20 h-full flex flex-col justify-end px-6 md:px-12 lg:px-16 pb-16 md:pb-24">
         <div className="max-w-5xl">
           <div ref={headingRef} className="overflow-hidden">
-            <h1 className="font-serif text-display-xl text-white leading-[0.95]">
+            <h1 className="font-serif text-display-xl text-white leading-[1.1]">
               <span className="block overflow-hidden">
                 <span className="block">{current.line1}</span>
               </span>
@@ -237,7 +237,7 @@ export default function Hero() {
       </div>
 
       <div ref={scrollRef} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-        <span className="text-[9px] tracking-[0.3em] uppercase text-white/30">{t('hero.scroll')}</span>
+        <span className="text-[10px] tracking-[0.3em] uppercase text-white/50">{t('hero.scroll')}</span>
         <div className="w-px h-8 bg-white/20 relative overflow-hidden">
           <div
             className="absolute top-0 left-0 w-full h-full bg-white/60 animate-pulse"
