@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { COMPANY } from '@/lib/constants';
-import { useRevealAnimation, useLineReveal } from '@/hooks/useGSAP';
+import { useLineReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
 const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'contact'];
@@ -34,21 +34,10 @@ const SOCIAL_ICONS = {
 
 export default function Footer() {
   const { t } = useLanguage();
-  const titleRef = useRevealAnimation({ y: 40 });
   const lineRef = useLineReveal();
 
   return (
     <footer className="bg-charcoal text-white">
-      <div className="px-6 md:px-12 lg:px-16 py-24 md:py-32">
-        <div ref={titleRef} className="max-w-4xl">
-          <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-6">{t('footer.ctaEyebrow')}</p>
-          <h2 className="font-serif text-display-lg text-white/90 mb-8">{t('footer.ctaHeading')}</h2>
-          <Link href="/contact" className="inline-flex items-center gap-3 border border-gold/40 px-8 py-4 text-[12px] tracking-[0.2em] uppercase text-gold hover:bg-gold hover:text-charcoal transition-all duration-500">
-            <span>{t('footer.ctaButton')}</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" /></svg>
-          </Link>
-        </div>
-      </div>
       <div ref={lineRef} className="mx-6 md:mx-12 lg:mx-16 h-px bg-white/10" />
       <div className="px-6 md:px-12 lg:px-16 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">

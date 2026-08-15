@@ -22,8 +22,9 @@ export default function Introduction() {
           <div ref={textRef} className="space-y-5 opacity-0">
             <p className="text-dark-grey leading-relaxed">{t('intro.para1')}</p>
             <p className="text-dark-grey/70 leading-relaxed">{t('intro.para2')}</p>
-            <a href="/about" className="inline-flex items-center gap-3 mt-8 text-[12px] tracking-[0.2em] uppercase text-charcoal border border-charcoal/20 px-8 py-4 hover:bg-charcoal hover:text-white transition-all duration-500">
+            <a href="/about" className="inline-flex items-center gap-2 mt-8 text-[12px] tracking-[0.15em] uppercase text-charcoal hover:text-gold transition-colors duration-300">
               <span>{t('intro.readMore')}</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1"><path d="M3 8H13M13 8L8 3M13 8L8 13" /></svg>
             </a>
           </div>
           <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-soft-grey opacity-0">
