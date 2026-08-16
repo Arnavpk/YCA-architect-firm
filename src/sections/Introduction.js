@@ -13,8 +13,15 @@ export default function Introduction() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-white relative overflow-hidden">
+      {/* Background watermark text */}
+      <div className="absolute top-12 md:top-16 left-6 md:left-12 lg:left-16 pointer-events-none select-none" aria-hidden="true">
+        <span className="font-serif text-[5rem] md:text-[7rem] lg:text-[9rem] font-bold uppercase tracking-[0.2em] text-charcoal/[0.04] leading-none">
+          ABOUT
+        </span>
+      </div>
+
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
         <div className="lg:pt-12">
           <p ref={eyebrowRef} className="text-gold text-[11px] tracking-[0.3em] uppercase mb-6 opacity-0">{t('intro.eyebrow')}</p>
           <h2 ref={headingRef} className="font-serif text-display text-charcoal mb-8 opacity-0">{t('intro.heading')}</h2>

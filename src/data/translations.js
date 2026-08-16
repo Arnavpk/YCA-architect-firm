@@ -423,24 +423,24 @@ export const translations = {
         brief: 'The owner wanted each suite to feel like an experience, not just a room. The design had to evoke the warmth and intimacy of golden hour — that fleeting moment when everything glows.',
         approach: 'West-facing windows frame the Sahyadri hills at sunset. Warm plaster walls, burnished copper fixtures, and raw linen create a material palette that shifts in tone as the light changes through the day.',
       },
-      PandharpuramPalace: {
-        title: 'Monochrome Flat',
-        description: 'Architecture that welcomes, inspires, and stays with you.',
-        brief: 'A young couple wanted a compact apartment that felt larger than its footprint. The only design constraint: no colour — just black, white, and everything in between.',
-        approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
-      },
+      // PandharpuramPalace: {
+      //   title: 'Monochrome Flat',
+      //   description: 'Architecture that welcomes, inspires, and stays with you.',
+      //   brief: 'A young couple wanted a compact apartment that felt larger than its footprint. The only design constraint: no colour — just black, white, and everything in between.',
+      //   approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
+      // },
       fancyrejewellerystudio: {
         title: 'Fancy Re Jewellery Studio',
         description: 'A celebration of craftsmanship, from space to jewel.',
         brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
         approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
       },
-      lumiereRestaurant: {
-        title: 'Lumière Restaurant',
-        description: 'Good architecture is felt before it is understood.',
-        brief: 'The restaurateur envisioned a space where architecture elevates the dining experience — where guests remember the room as vividly as the food.',
-        approach: 'A dramatic arched ceiling clad in fluted plaster sets the tone. Intimate alcove seating, a theatrical open kitchen framed in blackened steel, and layered lighting that shifts from bright lunch to candlelit dinner.',
-      },
+      // lumiereRestaurant: {
+      //   title: 'Lumière Restaurant',
+      //   description: 'Good architecture is felt before it is understood.',
+      //   brief: 'The restaurateur envisioned a space where architecture elevates the dining experience — where guests remember the room as vividly as the food.',
+      //   approach: 'A dramatic arched ceiling clad in fluted plaster sets the tone. Intimate alcove seating, a theatrical open kitchen framed in blackened steel, and layered lighting that shifts from bright lunch to candlelit dinner.',
+      // },
     },
 
     /* ═══════════════════════════════════════
@@ -1006,15 +1006,15 @@ export const translations = {
         approach:
           'पश्चिमाभिमुख खिडक्या सूर्यास्ताच्या वेळी सह्याद्रीच्या टेकड्या प्रदर्शित करतात. उबदार प्लास्टर भिंती, चमकदार तांब्याची उपकरणे आणि कच्चे तागाचे कापड — दिवसभर प्रकाश बदलताना रंग बदलणारा साहित्य संग्रह.',
       },
-      PandharpuramPalace: {
-        title: 'Monochrome Flat',
-        description:
-          'थांबण्यासाठी, विश्रांतीसाठी आणि आपलेसे वाटण्यासाठी एक जागा.',
-        brief:
-          'एका तरुण जोडप्याला त्यांच्या जागेपेक्षा मोठे वाटणारे संक्षिप्त अपार्टमेंट हवे होते. एकमात्र अट: रंग नाही — फक्त काळे, पांढरे, आणि मधले सर्व.',
-        approach:
-          'आम्ही कडक मोनोक्रोम पॅलेट वापरला पण पोत अंतहीन बदलले — घासलेला काळा ग्रॅनाइट, मॅट पांढरा प्लास्टर, पट्टेदार काच, बुक्ले कापड. आरसे आणि प्रकाश विहिरी जाणवणारी जागा विस्तारतात.',
-      },
+      // PandharpuramPalace: {
+      //   title: 'Monochrome Flat',
+      //   description:
+      //     'थांबण्यासाठी, विश्रांतीसाठी आणि आपलेसे वाटण्यासाठी एक जागा.',
+      //   brief:
+      //     'एका तरुण जोडप्याला त्यांच्या जागेपेक्षा मोठे वाटणारे संक्षिप्त अपार्टमेंट हवे होते. एकमात्र अट: रंग नाही — फक्त काळे, पांढरे, आणि मधले सर्व.',
+      //   approach:
+      //     'आम्ही कडक मोनोक्रोम पॅलेट वापरला पण पोत अंतहीन बदलले — घासलेला काळा ग्रॅनाइट, मॅट पांढरा प्लास्टर, पट्टेदार काच, बुक्ले कापड. आरसे आणि प्रकाश विहिरी जाणवणारी जागा विस्तारतात.',
+      // },
       fancyrejewellerystudio: {
         title: 'Fancy Re Jewellery Studio',
         description:
@@ -1024,15 +1024,15 @@ export const translations = {
         approach:
           'एक भव्य इटालियन संगमरवर बेट खोलीचा केंद्रबिंदू आहे. जपानी-प्रेरित लाकडी जोडकामाने पॅन्ट्री साठवण तयार केली. कॅबिनेटखालील प्रकाशयोजना आणि पॉट-फिलर टॅप शेफच्या प्रत्यक्ष कार्यप्रवाहानुसार डिझाइन केले.',
       },
-      lumiereRestaurant: {
-        title: 'Lumière Restaurant',
-        description:
-          'उत्कृष्ट वास्तुकला समजण्याआधी जाणवते.',
-        brief:
-          'उपाहारगृह मालकाला अशी जागा हवी होती जिथे वास्तुकला जेवणाचा अनुभव उंचावते — जिथे पाहुणे खोली जेवणाइतकीच स्पष्टपणे लक्षात ठेवतात.',
-        approach:
-          'पट्टेदार प्लास्टरने मढवलेल्या नाट्यमय कमानीदार छताने वातावरण ठरवले. आत्मीय कोपरा बसणे, काळ्या पोलादात बांधलेले नाट्यमय खुले किचन, आणि उजळ दुपारच्या जेवणापासून मेणबत्तीच्या रात्रीच्या जेवणापर्यंत बदलणारी स्तरित प्रकाशयोजना.',
-      },
+      // lumiereRestaurant: {
+      //   title: 'Lumière Restaurant',
+      //   description:
+      //     'उत्कृष्ट वास्तुकला समजण्याआधी जाणवते.',
+      //   brief:
+      //     'उपाहारगृह मालकाला अशी जागा हवी होती जिथे वास्तुकला जेवणाचा अनुभव उंचावते — जिथे पाहुणे खोली जेवणाइतकीच स्पष्टपणे लक्षात ठेवतात.',
+      //   approach:
+      //     'पट्टेदार प्लास्टरने मढवलेल्या नाट्यमय कमानीदार छताने वातावरण ठरवले. आत्मीय कोपरा बसणे, काळ्या पोलादात बांधलेले नाट्यमय खुले किचन, आणि उजळ दुपारच्या जेवणापासून मेणबत्तीच्या रात्रीच्या जेवणापर्यंत बदलणारी स्तरित प्रकाशयोजना.',
+      // },
     },
 
     testimonialsList: [

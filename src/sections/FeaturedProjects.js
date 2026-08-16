@@ -14,9 +14,9 @@ const PROJECT_KEY_MAP = {
   'kanchan-villa': 'kanchanVilla',
   'grand-shaurya': 'grandshaurya',
   'ganga-gold': 'gangaGold',
-  'pandharipuram-palace': 'PandharpuramPalace',
+
   'fancy-re-jewellery-studio': 'fancyrejewellerystudio',
-  'lumiere-restaurant': 'lumiereRestaurant',
+
 };
 
 function ProjectCard({ project, projectKey, index }) {
@@ -53,7 +53,7 @@ function ProjectCard({ project, projectKey, index }) {
           <h3 className="font-serif text-xl md:text-2xl text-charcoal group-hover:text-gold transition-colors duration-300">{title}</h3>
           <p className="text-dark-grey/50 text-sm mt-1">{project.location}</p>
         </div>
-          <span className="text-dark-grey/50 text-sm mt-1">{project.year}</span>
+        <span className="text-dark-grey/50 text-sm mt-1">{project.year}</span>
       </div>
     </Link>
   );

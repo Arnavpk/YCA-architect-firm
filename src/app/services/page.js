@@ -15,7 +15,7 @@ const SVC_KEYS = ['residential', 'commercial', 'architecture', 'renovation', 'je
 const JEWELLERY_IMAGES = [
   'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',
   'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814982/7C79AE14-61A3-4435-9983-68943FB83BF0_crwo6y.png',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814959/527D6BC1-0382-45B5-B2F1-C0BBB2DE68C2_phzhxk.png',
+  ' https://res.cloudinary.com/dmjaisk94/image/upload/v1786905306/ChatGPT_Image_Aug_17_2026_12_04_52_AM_gmvr8x.png',
   'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814934/F4A9E657-90FC-4C7A-9239-D2DE51588728_qehbrb.png',
   'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814911/333CC337-F49A-4CFB-8FF9-151737EFC390_lobmao.png',
 ];
