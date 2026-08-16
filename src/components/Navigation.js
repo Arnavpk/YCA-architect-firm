@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import gsap from 'gsap';
 import { COMPANY } from '@/lib/constants';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from '@/components/LanguageToggle';
@@ -18,7 +17,6 @@ export default function Navigation() {
   const pathname = usePathname();
   const menuRef = useRef(null);
   const linksRef = useRef([]);
-  const overlayRef = useRef(null);
 
   const isHomeHero = pathname === '/' && !scrolled;
 
@@ -32,18 +30,8 @@ export default function Navigation() {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      const tl = gsap.timeline();
-      tl.to(overlayRef.current, { opacity: 1, visibility: 'visible', duration: 0.4, ease: 'power2.out' })
-        .to(menuRef.current, { x: 0, duration: 0.6, ease: 'power3.out' }, '-=0.2')
-        .fromTo(linksRef.current.filter(Boolean),
-          { x: 40, opacity: 0 },
-          { x: 0, opacity: 1, stagger: 0.06, duration: 0.5, ease: 'power3.out' },
-          '-=0.3'
-        );
     } else {
       document.body.style.overflow = '';
-      gsap.to(menuRef.current, { x: '100%', duration: 0.5, ease: 'power3.inOut' });
-      gsap.to(overlayRef.current, { opacity: 0, visibility: 'hidden', duration: 0.3 });
     }
   }, [isOpen]);
 
@@ -122,14 +110,15 @@ export default function Navigation() {
         </nav>
       </header>
 
-      <div ref={overlayRef} className="fixed inset-0 bg-charcoal/40 z-40 opacity-0 invisible" onClick={() => setIsOpen(false)} />
+      <div className={`fixed inset-0 bg-charcoal/40 z-40 transition-[opacity,visibility] duration-300 ease-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={() => setIsOpen(false)} />
 
-      <div ref={menuRef} className="fixed top-0 right-0 h-full w-full md:w-[420px] bg-warm-white z-40 translate-x-full flex flex-col justify-center px-12 md:px-16">
+      <div ref={menuRef} className={`fixed top-0 right-0 h-full w-full md:w-[420px] bg-warm-white z-40 flex flex-col justify-center px-12 md:px-16 will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col gap-1">
           {NAV_KEYS.map((key, i) => (
             <Link key={key} href={NAV_HREFS[i]}
               ref={(el) => (linksRef.current[i] = el)}
-              className={`font-serif text-3xl md:text-4xl py-3 transition-colors duration-300 ${pathname === NAV_HREFS[i] ? 'text-gold' : 'text-charcoal hover:text-gold'}`}
+              className={`font-serif text-3xl md:text-4xl py-3 transition-all duration-400 ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} ${pathname === NAV_HREFS[i] ? 'text-gold' : 'text-charcoal hover:text-gold'}`}
+              style={{ transitionDelay: isOpen ? `${150 + i * 50}ms` : '0ms' }}
               onClick={() => setIsOpen(false)}>
               {t(`nav.${key}`)}
             </Link>
