@@ -16,14 +16,13 @@ export default function Navigation() {
   const { t } = useLanguage();
   const pathname = usePathname();
   const menuRef = useRef(null);
-  const linksRef = useRef([]);
 
   const isHomeHero = pathname === '/' && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [pathname]);
 
@@ -33,6 +32,9 @@ export default function Navigation() {
     } else {
       document.body.style.overflow = '';
     }
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [isOpen]);
 
   useEffect(() => { setIsOpen(false); }, [pathname]);
@@ -110,14 +112,23 @@ export default function Navigation() {
         </nav>
       </header>
 
-      <div className={`fixed inset-0 bg-charcoal/40 z-40 transition-[opacity,visibility] duration-300 ease-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`} onClick={() => setIsOpen(false)} />
+      {/* Overlay — pointer-events-none when not open so it never blocks the page */}
+      <div
+        className={`fixed inset-0 bg-charcoal/40 z-40 transition-opacity duration-300 ease-out ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        onClick={() => setIsOpen(false)}
+        aria-hidden={!isOpen}
+      />
 
-      <div ref={menuRef} className={`fixed top-0 right-0 h-full w-full md:w-[420px] bg-warm-white z-40 flex flex-col justify-center px-12 md:px-16 will-change-transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      {/* Slide panel — pointer-events-none when closed */}
+      <div
+        ref={menuRef}
+        className={`fixed top-0 right-0 h-full w-full md:w-[420px] bg-warm-white z-40 flex flex-col justify-center px-12 md:px-16 transform-gpu transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen ? 'translate-x-0 pointer-events-auto' : 'translate-x-full pointer-events-none'}`}
+        aria-hidden={!isOpen}
+      >
         <div className="flex flex-col gap-1">
           {NAV_KEYS.map((key, i) => (
             <Link key={key} href={NAV_HREFS[i]}
-              ref={(el) => (linksRef.current[i] = el)}
-              className={`font-serif text-3xl md:text-4xl py-3 transition-all duration-400 ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} ${pathname === NAV_HREFS[i] ? 'text-gold' : 'text-charcoal hover:text-gold'}`}
+              className={`font-serif text-3xl md:text-4xl py-3 transition-[opacity,transform] duration-400 ease-out ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} ${pathname === NAV_HREFS[i] ? 'text-gold' : 'text-charcoal hover:text-gold'}`}
               style={{ transitionDelay: isOpen ? `${150 + i * 50}ms` : '0ms' }}
               onClick={() => setIsOpen(false)}>
               {t(`nav.${key}`)}
@@ -128,7 +139,7 @@ export default function Navigation() {
         <Link
           href="/contact"
           onClick={() => setIsOpen(false)}
-          className="mt-6 inline-flex items-center justify-center text-[12px] tracking-[0.15em] uppercase text-charcoal border border-charcoal/20 px-6 py-3 hover:bg-charcoal hover:text-white transition-all duration-500"
+          className="mt-6 inline-flex items-center justify-center text-[12px] tracking-[0.15em] uppercase text-charcoal border border-charcoal/20 px-6 py-3 hover:bg-charcoal hover:text-white transition-colors duration-300"
         >
           {t('nav.bookConsultation')}
         </Link>
