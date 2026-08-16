@@ -112,9 +112,10 @@ export default function Navigation() {
         </nav>
       </header>
 
-      {/* Overlay — pointer-events-none when not open so it never blocks the page */}
+      {/* Overlay — hidden via inline opacity so the .opacity-0 CSS fallback doesn't force it visible */}
       <div
-        className={`fixed inset-0 bg-charcoal/40 z-40 transition-opacity duration-300 ease-out ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        style={{ opacity: isOpen ? 1 : 0 }}
+        className={`fixed inset-0 bg-charcoal/40 z-40 transition-opacity duration-300 ease-out ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
         onClick={() => setIsOpen(false)}
         aria-hidden={!isOpen}
       />
