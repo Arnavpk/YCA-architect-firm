@@ -11,13 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 const SLIDE_INTERVAL = 6000;
 
 const SLIDE_IMAGES = [
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406630/IMG_5216_jbygfj.jpg',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406717/IMG_5239_jzrtz2.jpg',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406403/Grand_Shaurya_2_of_15_1_qedt9o.jpg',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406274/Grand_Shaurya_1_of_15_1_1_pj1lj0.jpg',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406213/Ganga_Gold_qsypm5.jpg',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814982/7C79AE14-61A3-4435-9983-68943FB83BF0_crwo6y.png',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1785406630/IMG_5216_jbygfj.jpg',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1785406717/IMG_5239_jzrtz2.jpg',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1785406403/Grand_Shaurya_2_of_15_1_qedt9o.jpg',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1785406274/Grand_Shaurya_1_of_15_1_1_pj1lj0.jpg',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1785406213/Ganga_Gold_qsypm5.jpg',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',
+  'https://res.cloudinary.com/dmjaisk94/image/upload/w_1920,q_auto,f_auto/v1786814982/7C79AE14-61A3-4435-9983-68943FB83BF0_crwo6y.png',
 ];
 
 export default function Hero() {
@@ -58,9 +58,14 @@ export default function Hero() {
   const goToSlide = useCallback((nextIndex) => {
     const current = activeIndexRef.current;
     if (nextIndex === current) return;
+
+    const nextEl = imageRefs.current[nextIndex];
+    const currentEl = imageRefs.current[current];
+    if (!nextEl || !currentEl) return;
+
     const outTl = playCaptionOut();
-    gsap.to(imageRefs.current[current], { opacity: 0, duration: 0.9, ease: 'power2.inOut' });
-    gsap.to(imageRefs.current[nextIndex], { opacity: 1, duration: 0.9, ease: 'power2.inOut' });
+    gsap.to(currentEl, { opacity: 0, duration: 0.9, ease: 'power2.inOut' });
+    gsap.to(nextEl, { opacity: 1, duration: 0.9, ease: 'power2.inOut' });
     outTl.eventCallback('onComplete', () => {
       activeIndexRef.current = nextIndex;
       setActiveIndex(nextIndex);
@@ -74,6 +79,17 @@ export default function Hero() {
       goToSlide(next);
     }, SLIDE_INTERVAL);
   }, [goToSlide, slideCount]);
+
+  // Preload upcoming slide so it's decoded before the transition fires
+  useEffect(() => {
+    const nextIndex = (activeIndex + 1) % slideCount;
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.as = 'image';
+    link.href = SLIDE_IMAGES[nextIndex];
+    document.head.appendChild(link);
+    return () => { link.remove(); };
+  }, [activeIndex, slideCount]);
 
   useEffect(() => {
     playCaptionIn(true);
@@ -103,12 +119,12 @@ export default function Hero() {
   const handleDotClick = (index) => { goToSlide(index); resetAutoplay(); };
 
   return (
-    <section ref={containerRef} className="relative h-screen w-full overflow-hidden">
+    <section ref={containerRef} className="relative h-screen w-full overflow-hidden [contain:paint]">
       {SLIDE_IMAGES.map((src, i) => (
         <div key={i} ref={(el) => (imageRefs.current[i] = el)}
-          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] ${i === activeIndex ? 'active' : ''}`}
+          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] will-change-[opacity] ${i === activeIndex ? 'active' : ''}`}
           style={{ opacity: i === activeIndex ? 1 : 0 }}>
-          <img src={src} alt={captions[i] || ''} className="w-full h-full object-cover" loading={i === 0 ? 'eager' : 'lazy'} />
+          <img src={src} alt={captions[i] || ''} className="w-full h-full object-cover" loading={i === 0 ? 'eager' : 'lazy'} decoding={i === 0 ? 'sync' : 'async'} fetchPriority={i === 0 ? 'high' : 'low'} />
           <div className="absolute inset-0 bg-charcoal/30" />
         </div>
       ))}
