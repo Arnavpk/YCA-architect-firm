@@ -80,17 +80,6 @@ export default function Hero() {
     }, SLIDE_INTERVAL);
   }, [goToSlide, slideCount]);
 
-  // Preload upcoming slide so it's decoded before the transition fires
-  useEffect(() => {
-    const nextIndex = (activeIndex + 1) % slideCount;
-    const link = document.createElement('link');
-    link.rel = 'prefetch';
-    link.as = 'image';
-    link.href = SLIDE_IMAGES[nextIndex];
-    document.head.appendChild(link);
-    return () => { link.remove(); };
-  }, [activeIndex, slideCount]);
-
   useEffect(() => {
     playCaptionIn(true);
     const heroImage = containerRef.current?.querySelector('.hero-image.active');
@@ -119,12 +108,12 @@ export default function Hero() {
   const handleDotClick = (index) => { goToSlide(index); resetAutoplay(); };
 
   return (
-    <section ref={containerRef} className="relative h-screen w-full overflow-hidden [contain:paint]">
+    <section ref={containerRef} className="relative h-screen w-full overflow-hidden">
       {SLIDE_IMAGES.map((src, i) => (
         <div key={i} ref={(el) => (imageRefs.current[i] = el)}
-          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] will-change-[opacity] ${i === activeIndex ? 'active' : ''}`}
+          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] ${i === activeIndex ? 'active' : ''}`}
           style={{ opacity: i === activeIndex ? 1 : 0 }}>
-          <img src={src} alt={captions[i] || ''} className="w-full h-full object-cover" loading={i === 0 ? 'eager' : 'lazy'} decoding={i === 0 ? 'sync' : 'async'} fetchPriority={i === 0 ? 'high' : 'low'} />
+          <img src={src} alt={captions[i] || ''} className="w-full h-full object-cover" loading={i === 0 ? 'eager' : 'lazy'} />
           <div className="absolute inset-0 bg-charcoal/30" />
         </div>
       ))}
