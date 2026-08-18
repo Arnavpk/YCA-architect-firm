@@ -47,10 +47,10 @@ export const translations = {
        HOME — INTRODUCTION
        ═══════════════════════════════════════ */
     intro: {
-      eyebrow: 'Since 2008',
+      eyebrow: 'Since 2011',
       heading: 'Where architecture meets the art of living',
-      para1: 'At Yogesh Chavan Associates, we believe that great design is invisible — it simply feels right. For over 15+ years, we have been creating spaces that honour the relationship between people and the environments they inhabit.',
-      para2: 'Every project begins with a conversation, not a blueprint. We listen to understand not just what you want, but how you live, work, and dream. From this understanding emerges design that is deeply personal yet universally beautiful.',
+      para1: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
+      para2: 'A graduate of Walchand College of Engineering, Sangli, in 2010, he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
       established: 'Established',
       statProjects: 'Projects',
       statYears: 'Years',
@@ -174,17 +174,23 @@ export const translations = {
        ═══════════════════════════════════════ */
     about: {
       eyebrow: 'About Us',
-      heading: 'We design spaces that honour the way people live.',
+      heading: 'Design should not only be seen. It should be experienced.',
       description:
-        'Founded in 2008, Yogesh Chavan Associates is a multidisciplinary architecture and interior design studio rooted in the belief that exceptional design emerges from understanding, empathy, and meticulous craft.',
+        'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
       storyEyebrow: 'Our Story',
-      storyHeading: '15+ years of designing with purpose',
+      storyHeading: 'A journey shaped by design and purpose',
       storyPara1:
-        'What began as a one-person practice driven by a passion for thoughtful design has grown into a studio of 35+ talented designers, architects, and project managers united by a shared philosophy: design should elevate everyday life.',
+        'A graduate of Walchand College of Engineering, Sangli, in 2010, he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
       storyPara2:
-        'Over 100+ projects across residential, commercial, and hospitality sectors, we have developed a design language that balances contemporary aesthetics with timeless principles — spaces that feel inevitable rather than imposed.',
+        'Over the years, his experience has been shaped not only by design but also by the realities of execution. Working closely with clients, consultants, contractors and craftsmen has developed an approach that looks at a project as a whole — from the first line on paper to the final detail on site.',
       storyPara3:
-        'Our work has been recognized by the Indian Design Awards, IIID, and Architecture Digest India, but our most meaningful recognition comes from clients who tell us their spaces changed the way they live.',
+        'His design language is contemporary yet timeless, with a strong emphasis on proportion, material, light, functionality and detailing. Rather than imposing a signature style on every project, he believes that each space should develop its own character through its context, purpose and the people who inhabit it.',
+      storyPara4:
+        'The practice has grown through a diverse body of work, ranging from residences and luxury interiors to commercial, institutional, hospitality and specialised projects. Each project brings a new opportunity to explore ideas, materials and ways of creating spaces that are both visually distinctive and comfortable to experience.',
+      storyPara5:
+        'For Mr. Yogesh Chavan, architecture is a continuous process of learning. Every project, every site and every client contributes something to the evolution of the practice.',
+      storyPara6:
+        'Today, more than a decade after its inception, Yogesh Chavan Associates continues to pursue design with the same curiosity and commitment with which it began — creating spaces that are carefully considered, individually expressive and made to stand the test of time.',
       valuesEyebrow: 'Values',
       valuesHeading: 'What guides us',
       value1Title: 'Integrity',
@@ -201,9 +207,6 @@ export const translations = {
       teamSubtitle:
         'A collective of architects, designers, and makers who share a passion for transforming spaces.',
       imageAlt: 'YCA Studio',
-      ctaHeading: 'Ready to create something extraordinary?',
-      ctaText: "Let's discuss how we can bring your vision to life.",
-      ctaButton: 'Book a Consultation',
     },
 
     /* ═══════════════════════════════════════
@@ -677,10 +680,10 @@ export const translations = {
     },
 
     intro: {
-      eyebrow: '२००८ पासून',
+      eyebrow: '२०११ पासून',
       heading: 'जिथे वास्तुकला आणि जगण्याची कला एकत्र येतात',
-      para1: 'Yogesh Chavan Associates मध्ये आम्ही विश्वास ठेवतो की उत्कृष्ट सजावट अदृश्य असते — ती फक्त योग्य वाटते. गेल्या १६ वर्षांहून अधिक काळ आम्ही माणसांच्या आणि त्यांच्या वातावरणाच्या नात्याचा सन्मान करणाऱ्या जागा निर्माण करत आहोत.',
-      para2: 'प्रत्येक प्रकल्पाची सुरुवात संवादाने होते, ब्लूप्रिंटने नव्हे. आम्ही फक्त तुम्हाला काय हवे आहे हे नाही, तर तुम्ही कसे राहता, काम करता आणि स्वप्ने पाहता हे समजून घेण्यासाठी ऐकतो.',
+      para1: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
+      para2: 'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर, त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
       established: 'स्थापना',
       statProjects: 'प्रकल्प',
       statYears: 'वर्षे',
@@ -774,17 +777,23 @@ export const translations = {
 
     about: {
       eyebrow: 'आमच्याबद्दल',
-      heading: 'आम्ही अशा जागा डिझाइन करतो ज्या माणसांच्या जगण्याचा सन्मान करतात.',
+      heading: 'डिझाइन फक्त पाहण्यासाठी नसते. ते अनुभवण्यासाठी असते.',
       description:
-        '२००८ मध्ये स्थापन झालेला, Yogesh Chavan Associates हा एक बहुविषयक वास्तुकला आणि अंतर्गत सजावट स्टुडिओ आहे — समजूतदारपणा, सहानुभूती आणि सूक्ष्म कारागिरी यातून उत्कृष्ट सजावट निर्माण होते या विश्वासावर आधारित.',
+        'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
       storyEyebrow: 'आमची कहाणी',
-      storyHeading: '१५+ वर्षे उद्देशपूर्ण सजावट',
+      storyHeading: 'डिझाइन आणि उद्देशाने आकारलेला प्रवास',
       storyPara1:
-        'विचारपूर्ण सजावटीच्या आवडीतून सुरू झालेली एकट्या व्यक्तीची सराव आज ३५+ प्रतिभावंत डिझायनर, वास्तुविशारद आणि प्रकल्प व्यवस्थापकांचा एक स्टुडिओ बनला आहे.',
+        'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर, त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
       storyPara2:
-        'निवासी, व्यावसायिक आणि आतिथ्य क्षेत्रातील १००+ प्रकल्पांतून आम्ही एक अशी सजावट भाषा विकसित केली आहे जी आधुनिक सौंदर्यशास्त्र आणि कालातीत तत्त्वे यांचा समतोल साधते.',
+        'वर्षानुवर्षे, त्यांचा अनुभव केवळ डिझाइननेच नव्हे तर अंमलबजावणीच्या वास्तवानेही आकारला गेला आहे. ग्राहक, सल्लागार, कंत्राटदार आणि कारागीर यांच्याशी जवळून काम केल्याने एक दृष्टीकोन विकसित झाला जो प्रकल्पाला संपूर्णतेने पाहतो — कागदावरील पहिल्या रेषेपासून साइटवरील शेवटच्या तपशीलापर्यंत.',
       storyPara3:
-        'आमच्या कामाला Indian Design Awards, IIID आणि Architecture Digest India ने मान्यता दिली आहे, पण सर्वात अर्थपूर्ण मान्यता म्हणजे ग्राहकांचे सांगणे — की आमच्या जागांनी त्यांच्या जगण्याचा दृष्टीकोन बदलला.',
+        'त्यांची डिझाइन भाषा आधुनिक तरीही कालातीत आहे, प्रमाण, साहित्य, प्रकाश, कार्यक्षमता आणि तपशीलांवर विशेष भर देऊन. प्रत्येक प्रकल्पावर एक ठरावीक शैली लादण्याऐवजी, ते विश्वास ठेवतात की प्रत्येक जागेने तिच्या संदर्भ, उद्दिष्ट आणि तिथे राहणाऱ्या माणसांमधून स्वतःचे व्यक्तिमत्व विकसित करावे.',
+      storyPara4:
+        'निवासी आणि विलासी अंतर्गत सजावटीपासून व्यावसायिक, संस्थात्मक, आतिथ्य आणि विशेष प्रकल्पांपर्यंत विविध कामांतून ही सराव वाढत गेली आहे. प्रत्येक प्रकल्प कल्पना, साहित्य आणि दृष्टीने विशिष्ट आणि अनुभवण्यास आरामदायक अशा जागा निर्माण करण्याच्या नवीन संधी आणतो.',
+      storyPara5:
+        'श्री. योगेश चव्हाण यांच्यासाठी, वास्तुकला ही सतत शिकण्याची प्रक्रिया आहे. प्रत्येक प्रकल्प, प्रत्येक स्थळ आणि प्रत्येक ग्राहक सरावाच्या उत्क्रांतीत काहीतरी योगदान देतो.',
+      storyPara6:
+        'आज, स्थापनेनंतर एक दशकाहून अधिक काळानंतर, Yogesh Chavan Associates त्याच जिज्ञासा आणि बांधिलकीने डिझाइनचा पाठपुरावा करत आहे — विचारपूर्ण, वैयक्तिकरित्या अभिव्यक्त आणि काळाच्या कसोटीवर टिकणाऱ्या जागा निर्माण करत.',
       valuesEyebrow: 'मूल्ये',
       valuesHeading: 'आम्हाला काय मार्गदर्शन करते',
       value1Title: 'सचोटी',
@@ -801,9 +810,6 @@ export const translations = {
       teamSubtitle:
         'जागा बदलण्याची आवड बाळगणारे वास्तुविशारद, डिझायनर आणि कलाकार यांचा एक संग्रह.',
       imageAlt: 'YCA स्टुडिओ',
-      ctaHeading: 'काहीतरी असामान्य निर्माण करायला तयार आहात?',
-      ctaText: 'तुमची दृष्टी साकार करण्यासाठी चर्चा करूया.',
-      ctaButton: 'सल्लामसलत बुक करा',
     },
 
     servicesPage: {

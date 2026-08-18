@@ -77,6 +77,9 @@ export default function AboutPage() {
             <p>{t('about.storyPara1')}</p>
             <p>{t('about.storyPara2')}</p>
             <p>{t('about.storyPara3')}</p>
+            <p>{t('about.storyPara4')}</p>
+            <p>{t('about.storyPara5')}</p>
+            <p>{t('about.storyPara6')}</p>
           </div>
         </div>
       </section>
