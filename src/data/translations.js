@@ -183,8 +183,9 @@ export const translations = {
         ' with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
       storyEyebrow: 'Our Story',
       storyHeading: 'A journey shaped by design and purpose',
+      storyPara1bold: 'A graduate of Walchand College of Engineering, Sangli, in 2010,',
       storyPara1:
-        'A graduate of Walchand College of Engineering, Sangli, in 2010, he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
+        ' he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
       storyPara2:
         'Over the years, his experience has been shaped not only by design but also by the realities of execution. Working closely with clients, consultants, contractors and craftsmen has developed an approach that looks at a project as a whole — from the first line on paper to the final detail on site.',
       storyPara3:
@@ -793,8 +794,9 @@ export const translations = {
         ' एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
       storyEyebrow: 'आमची कहाणी',
       storyHeading: 'डिझाइन आणि उद्देशाने आकारलेला प्रवास',
+      storyPara1bold: 'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर,',
       storyPara1:
-        'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर, त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
+        ' त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
       storyPara2:
         'वर्षानुवर्षे, त्यांचा अनुभव केवळ डिझाइननेच नव्हे तर अंमलबजावणीच्या वास्तवानेही आकारला गेला आहे. ग्राहक, सल्लागार, कंत्राटदार आणि कारागीर यांच्याशी जवळून काम केल्याने एक दृष्टीकोन विकसित झाला जो प्रकल्पाला संपूर्णतेने पाहतो — कागदावरील पहिल्या रेषेपासून साइटवरील शेवटच्या तपशीलापर्यंत.',
       storyPara3:

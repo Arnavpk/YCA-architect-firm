@@ -74,7 +74,7 @@ export default function AboutPage() {
             <div ref={lineRef} className="w-16 h-px bg-gold mb-8" />
           </div>
           <div className="space-y-6 text-dark-grey/70 leading-relaxed lg:pt-4">
-            <p>{t('about.storyPara1')}</p>
+            <p><strong className="font-semibold">{t('about.storyPara1bold')}</strong>{t('about.storyPara1')}</p>
             <p>{t('about.storyPara2')}</p>
             <p>{t('about.storyPara3')}</p>
             <p>{t('about.storyPara4')}</p>
