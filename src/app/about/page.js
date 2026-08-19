@@ -58,7 +58,7 @@ export default function AboutPage() {
         <div ref={heroRef} className="max-w-4xl opacity-0">
           <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-6">{t('about.eyebrow')}</p>
           <h1 className="font-serif text-display-lg text-charcoal mb-8">{t('about.heading')}</h1>
-          <p className="text-dark-grey/60 text-lg leading-relaxed max-w-2xl">{t('about.description')}</p>
+          <p className="text-dark-grey/60 text-lg leading-relaxed max-w-2xl"><strong className="font-semibold text-charcoal">{t('about.descriptionPrefix')}</strong>{t('about.description')}</p>
         </div>
       </section>
       <section ref={imgRef} className="px-6 md:px-12 lg:px-16 pb-24">

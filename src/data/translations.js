@@ -175,8 +175,10 @@ export const translations = {
     about: {
       eyebrow: 'About Us',
       heading: 'Design should not only be seen. It should be experienced.',
+      descriptionPrefix: 'Yogesh Chavan Associates',
       description:
-        'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
+        ', founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
+
       storyEyebrow: 'Our Story',
       storyHeading: 'A journey shaped by design and purpose',
       storyPara1:
@@ -778,8 +780,9 @@ export const translations = {
     about: {
       eyebrow: 'आमच्याबद्दल',
       heading: 'डिझाइन फक्त पाहण्यासाठी नसते. ते अनुभवण्यासाठी असते.',
+      descriptionPrefix: 'Yogesh Chavan Associates',
       description:
-        'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
+        ' ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
       storyEyebrow: 'आमची कहाणी',
       storyHeading: 'डिझाइन आणि उद्देशाने आकारलेला प्रवास',
       storyPara1:

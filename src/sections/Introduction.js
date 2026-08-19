@@ -27,7 +27,9 @@ export default function Introduction() {
           <h2 ref={headingRef} className="font-serif text-display text-charcoal mb-8 opacity-0">{t('intro.heading')}</h2>
           <div ref={lineRef} className="w-16 h-px bg-gold mb-8" />
           <div ref={textRef} className="space-y-5 opacity-0">
-            <p className="text-dark-grey leading-relaxed">{t('intro.para1')}</p>
+            <p className="text-dark-grey leading-relaxed">
+              <strong>Yogesh Chavan Associates</strong>, {t('intro.para1').split('Yogesh Chavan Associates,')[1] || t('intro.para1')}
+            </p>
             <p className="text-dark-grey/70 leading-relaxed">{t('intro.para2')}</p>
             <a href="/about" className="inline-flex items-center gap-2 mt-8 text-[12px] tracking-[0.15em] uppercase text-charcoal hover:text-gold transition-colors duration-300">
               <span>{t('intro.readMore')}</span>
