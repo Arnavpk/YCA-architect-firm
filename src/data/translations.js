@@ -49,8 +49,11 @@ export const translations = {
     intro: {
       eyebrow: 'Since 2011',
       heading: 'Dreaming. Designing. Creating.',
-      para1: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
-      para2: 'A graduate of Walchand College of Engineering, Sangli, in 2010, he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
+      para1bold: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011',
+      para1: ' with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
+      // para1: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
+      para2bold: 'A graduate of Walchand College of Engineering, Sangli, in 2010,',
+      para2: ' he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
       established: 'Established',
       statProjects: 'Projects',
       statYears: 'Years',
@@ -175,10 +178,9 @@ export const translations = {
     about: {
       eyebrow: 'About Us',
       heading: 'Design should not only be seen. It should be experienced.',
-      descriptionPrefix: 'Yogesh Chavan Associates',
+      descriptionBold: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011',
       description:
-        ', founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
-
+        ' with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
       storyEyebrow: 'Our Story',
       storyHeading: 'A journey shaped by design and purpose',
       storyPara1:
@@ -687,8 +689,11 @@ export const translations = {
     intro: {
       eyebrow: '२०११ पासून',
       heading: 'स्वप्न. डिझाइन. निर्माण.',
-      para1: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
-      para2: 'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर, त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
+      para1bold: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये',
+      para1: ' एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
+      // para1: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
+      para2bold: 'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर,',
+      para2: ' त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
       established: 'स्थापना',
       statProjects: 'प्रकल्प',
       statYears: 'वर्षे',
@@ -783,9 +788,9 @@ export const translations = {
     about: {
       eyebrow: 'आमच्याबद्दल',
       heading: 'डिझाइन फक्त पाहण्यासाठी नसते. ते अनुभवण्यासाठी असते.',
-      descriptionPrefix: 'Yogesh Chavan Associates',
+      descriptionBold: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये',
       description:
-        ' ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
+        ' एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
       storyEyebrow: 'आमची कहाणी',
       storyHeading: 'डिझाइन आणि उद्देशाने आकारलेला प्रवास',
       storyPara1:

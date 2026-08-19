@@ -27,10 +27,8 @@ export default function Introduction() {
           <h2 ref={headingRef} className="font-serif text-display text-charcoal mb-8 opacity-0">{t('intro.heading')}</h2>
           <div ref={lineRef} className="w-16 h-px bg-gold mb-8" />
           <div ref={textRef} className="space-y-5 opacity-0">
-            <p className="text-dark-grey leading-relaxed">
-              <strong>Yogesh Chavan Associates</strong>, {t('intro.para1').split('Yogesh Chavan Associates,')[1] || t('intro.para1')}
-            </p>
-            <p className="text-dark-grey/70 leading-relaxed">{t('intro.para2')}</p>
+            <p className="text-dark-grey leading-relaxed"><strong className="font-semibold">{t('intro.para1bold')}</strong>{t('intro.para1')}</p>
+            <p className="text-dark-grey leading-relaxed"><strong className="font-semibold">{t('intro.para2bold')}</strong>{t('intro.para2')}</p>
             <a href="/about" className="inline-flex items-center gap-2 mt-8 text-[12px] tracking-[0.15em] uppercase text-charcoal hover:text-gold transition-colors duration-300">
               <span>{t('intro.readMore')}</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1"><path d="M3 8H13M13 8L8 3M13 8L8 13" /></svg>
@@ -50,7 +48,7 @@ export default function Introduction() {
           </div>
         </div>
         <div ref={imageRef} className="relative aspect-[3/4] lg:aspect-[4/5]">
-          <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785406489/IMG_5203_m9qekn.jpg" alt={t('intro.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
+          <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1787139206/The_Grand_Shaurya_16_of_25_1_thohpm.jpg" alt={t('intro.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
           <div className="absolute bottom-0 right-0 bg-gold text-white px-6 py-4 md:px-8 md:py-6">
             <span className="text-[10px] tracking-[0.2em] uppercase block">{t('intro.established')}</span>
             <span className="font-serif text-2xl">2008</span>
