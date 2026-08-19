@@ -209,6 +209,9 @@ export const translations = {
       teamSubtitle:
         'A collective of architects, designers, and makers who share a passion for transforming spaces.',
       imageAlt: 'YCA Studio',
+      ctaHeading: 'Ready to start your project?',
+      ctaText: 'The first step is always a conversation. Tell us about your space and let us show you what is possible.',
+      ctaButton: 'Get in Touch',
     },
 
     /* ═══════════════════════════════════════
@@ -813,6 +816,9 @@ export const translations = {
       teamSubtitle:
         'जागा बदलण्याची आवड बाळगणारे वास्तुविशारद, डिझायनर आणि कलाकार यांचा एक संग्रह.',
       imageAlt: 'YCA स्टुडिओ',
+      ctaHeading: 'तुमचा प्रकल्प सुरू करायला तयार?',
+      ctaText: 'पहिले पाऊल नेहमी संवादच असतो. तुमच्या जागेबद्दल सांगा आणि काय शक्य आहे ते आम्हाला दाखवू द्या.',
+      ctaButton: 'संपर्क साधा',
     },
 
     servicesPage: {
