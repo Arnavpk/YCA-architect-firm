@@ -48,7 +48,7 @@ export const translations = {
        ═══════════════════════════════════════ */
     intro: {
       eyebrow: 'Since 2011',
-      heading: 'Where architecture meets the art of living',
+      heading: 'Dreaming. Designing. Creating.',
       para1: 'Yogesh Chavan Associates, founded by Mr. Yogesh Chavan, began its journey in 2011 with a simple belief — that thoughtful design has the power to transform the way people experience a space.',
       para2: 'A graduate of Walchand College of Engineering, Sangli, in 2010, he chose to begin his professional journey independently soon after completing his education. What started as a young architect\'s pursuit of meaningful design gradually evolved into a multidisciplinary practice working across architecture, interior design and specialised spaces.',
       established: 'Established',
@@ -683,7 +683,7 @@ export const translations = {
 
     intro: {
       eyebrow: '२०११ पासून',
-      heading: 'जिथे वास्तुकला आणि जगण्याची कला एकत्र येतात',
+      heading: 'स्वप्न. डिझाइन. निर्माण.',
       para1: 'Yogesh Chavan Associates ची स्थापना श्री. योगेश चव्हाण यांनी २०११ मध्ये एका सोप्या विश्वासाने केली — विचारपूर्ण डिझाइनमध्ये माणसांचा जागा अनुभवण्याचा दृष्टीकोन बदलण्याची ताकद आहे.',
       para2: 'सांगली येथील वालचंद अभियांत्रिकी महाविद्यालयातून २०१० मध्ये पदवीधर झाल्यानंतर, त्यांनी शिक्षण पूर्ण होताच स्वतंत्रपणे व्यावसायिक प्रवास सुरू करण्याचा निर्णय घेतला. एका तरुण वास्तुविशारदाच्या अर्थपूर्ण डिझाइनच्या शोधातून हळूहळू वास्तुकला, अंतर्गत सजावट आणि विशेष जागांमध्ये कार्यरत एक बहुविषयक सराव विकसित झाला.',
       established: 'स्थापना',
