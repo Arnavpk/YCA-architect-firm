@@ -15,7 +15,7 @@ export const COMPANY = {
     state: 'Maharashtra',
     country: 'India',
   },
-  hours: 'Mon – Sat: 10:00 AM – 7:00 PM',
+  hours: 'Mon – Sat: 10:00 AM – 6:30 PM',
   social: {
     instagram: 'https://www.instagram.com/yogeshchavan_associates?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     linkedin: 'https://linkedin.com/company/yogeshchavanassociates',
@@ -23,7 +23,7 @@ export const COMPANY = {
     facebook: 'https://facebook.com/yogeshchavanassociates',
   },
   founded: '2011',
-  projectsCompleted: '100+',
+  projectsCompleted: '250+',
   teamSize: '35+',
   experience: '15+',
 };
@@ -79,13 +79,6 @@ export const SERVICES = [
     subtitle: 'Form Follows Vision',
     description: 'Architectural design and consultancy that shapes buildings with purpose. Sustainable, context-sensitive design that respects both site and aspiration.',
     image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1786813429/9F7ED9F2-EF4F-4976-A7C1-9B5D3504DDF2_jjhwix.png",
-  },
-  {
-    id: 'renovation',
-    title: 'Renovation',
-    subtitle: 'Reimagine What Exists',
-    description: 'Thoughtful renovation and restoration that breathes new life into existing structures while honoring their original character.',
-    image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1785412793/IMG_5230_in0nkn.jpg',
   },
   {
     id: 'jewellery',
@@ -155,7 +148,7 @@ export const PROJECTS = [
     location: 'Atpadi, Sangli',
     year: '2024',
     area: '12,000 sq ft',
-    image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406403/Grand_Shaurya_2_of_15_1_qedt9o.jpg",
+    image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1787445270/The_Grand_Shaurya_9_of_13_1_ccuu9c.jpg",
     description: 'A statement of refined luxury, where timeless materials, sculptural design, and meticulous craftsmanship create an atmosphere of effortless elegance.',
     materials: 'Italian Marble, Teak, Brass, Linen',
     duration: '8 months',
@@ -168,7 +161,7 @@ export const PROJECTS = [
     id: 'ganga-gold',
     title: 'Ganga Gold',
     category: 'Hospitality',
-    location: 'Lonavala',
+    location: 'Pandharpur',
     year: '2023',
     area: '8,500 sq ft',
     image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406213/Ganga_Gold_qsypm5.jpg",
@@ -246,7 +239,7 @@ export const TESTIMONIALS = [
   {
     quote: 'Working with Yogesh and his team was an education in taste. They challenged our assumptions and delivered something far beyond our imagination.',
     author: 'Meera Deshpande',
-    project: 'Ganga Gold, Lonavala',
+    project: 'Ganga Gold, Pandharpur',
     role: 'Resort Owner',
   },
   {

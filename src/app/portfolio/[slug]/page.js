@@ -63,10 +63,18 @@ export default function ProjectDetail() {
             ))}
           </div>
           <div className="lg:col-span-2 space-y-8">
-            <h2 className="font-serif text-heading text-charcoal">{t('projectDetail.briefHeading')}</h2>
-            <p className="text-dark-grey/70 leading-relaxed">{pk ? t(`projectsList.${pk}.brief`) : ''}</p>
-            <h2 className="font-serif text-heading text-charcoal pt-8">{t('projectDetail.approachHeading')}</h2>
-            <p className="text-dark-grey/70 leading-relaxed">{pk ? t(`projectsList.${pk}.approach`) : ''}</p>
+            {pk && t(`projectsList.${pk}.brief`) !== `projectsList.${pk}.brief` && (
+              <>
+                <h2 className="font-serif text-heading text-charcoal">{t('projectDetail.briefHeading')}</h2>
+                <p className="text-dark-grey/70 leading-relaxed">{t(`projectsList.${pk}.brief`)}</p>
+              </>
+            )}
+            {pk && t(`projectsList.${pk}.approach`) !== `projectsList.${pk}.approach` && (
+              <>
+                <h2 className="font-serif text-heading text-charcoal pt-8">{t('projectDetail.approachHeading')}</h2>
+                <p className="text-dark-grey/70 leading-relaxed">{t(`projectsList.${pk}.approach`)}</p>
+              </>
+            )}
             <div className="grid grid-cols-2 gap-4 pt-8">
               <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[0]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
               <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[1]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>

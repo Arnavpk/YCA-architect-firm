@@ -36,7 +36,7 @@ export default function Introduction() {
           </div>
           <div ref={statsRef} className="grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-soft-grey opacity-0">
             {[
-              { number: '100+', label: t('intro.statProjects') },
+              { number: '250+', label: t('intro.statProjects') },
               { number: '15+', label: t('intro.statYears') },
               { number: '35+', label: t('intro.statTeam') },
             ].map((stat) => (

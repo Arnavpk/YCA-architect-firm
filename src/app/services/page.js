@@ -10,7 +10,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const SVC_KEYS = ['residential', 'commercial', 'architecture', 'renovation', 'jewellery'];
+const SVC_KEYS = ['residential', 'commercial', 'architecture', 'jewellery'];
 
 const JEWELLERY_IMAGES = [
   'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',

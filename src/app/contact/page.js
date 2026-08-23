@@ -14,9 +14,17 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '', budget: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+      ...(name === 'service' ? { budget: '' } : {}),
+    }));
+  };
   const svcOptions = t('formOptions.services');
-  const budgetOptions = t('formOptions.budgets');
+  const budgetsByService = t('formOptions.budgetsByService');
+  const budgetOptions = budgetsByService?.[formData.service] || [];
 
   return (
     <>
@@ -64,7 +72,13 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label className="text-[11px] tracking-[0.15em] uppercase text-dark-grey/60 mb-2 block">{t('contactPage.formBudget')}</label>
-                  <select name="budget" value={formData.budget} onChange={handleChange} className="w-full border-b border-soft-grey py-3 bg-transparent text-charcoal outline-none focus:border-gold transition-colors duration-300 appearance-none">
+                  <select
+                    name="budget"
+                    value={formData.budget}
+                    onChange={handleChange}
+                    disabled={!formData.service}
+                    className="w-full border-b border-soft-grey py-3 bg-transparent text-charcoal outline-none focus:border-gold transition-colors duration-300 appearance-none disabled:opacity-40"
+                  >
                     <option value="">{t('contactPage.formBudgetPlaceholder')}</option>
                     {Array.isArray(budgetOptions) && budgetOptions.map(o => <option key={o}>{o}</option>)}
                   </select>

@@ -367,12 +367,6 @@ export const translations = {
         description:
           'Architectural design and consultancy that shapes buildings with purpose. Sustainable, context-sensitive design that respects both site and aspiration.',
       },
-      renovation: {
-        title: 'Renovation',
-        subtitle: 'Reimagine What Exists',
-        description:
-          'Thoughtful renovation and restoration that breathes new life into existing structures while honoring their original character.',
-      },
       furniture: {
         title: 'Furniture Design',
         subtitle: 'Object & Intention',
@@ -430,9 +424,7 @@ export const translations = {
       },
       gangaGold: {
         title: 'Ganga Gold',
-        description: 'A space to pause, unwind, and belong.',
-        brief: 'The owner wanted each suite to feel like an experience, not just a room. The design had to evoke the warmth and intimacy of golden hour — that fleeting moment when everything glows.',
-        approach: 'West-facing windows frame the Sahyadri hills at sunset. Warm plaster walls, burnished copper fixtures, and raw linen create a material palette that shifts in tone as the light changes through the day.',
+        description: 'Architecture that welcomes, inspires, and stays with you.',
       },
       // PandharpuramPalace: {
       //   title: 'Monochrome Flat',
@@ -476,7 +468,7 @@ export const translations = {
         quote:
           'Working with Yogesh and his team was an education in taste. They challenged our assumptions and delivered something far beyond our imagination.',
         author: 'Meera Deshpande',
-        project: 'Ganga Gold, Lonavala',
+        project: 'Ganga Gold, Pandharpur',
         role: 'Resort Owner',
       },
       {
@@ -607,19 +599,17 @@ export const translations = {
         'Residential Interiors',
         'Commercial Design',
         'Architecture Consultancy',
-        'Renovation',
         'Jewellery Store Design',
         'Other',
       ],
-      budgets: [
-        'Below ₹10 Lakhs',
-        '₹10–25 Lakhs',
-        '₹25–50 Lakhs',
-        '₹50 Lakhs – ₹1 Crore',
-        'Above ₹1 Crore',
-      ],
+      budgetsByService: {
+        'Residential Interiors': ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
+        'Commercial Design': ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
+        'Architecture Consultancy': ['₹50 Lakhs', '₹60 Lakhs', '₹60–75 Lakhs', '₹1 Crore & Above'],
+        'Jewellery Store Design': ['₹50 Lakhs', '₹60 Lakhs', '₹60–75 Lakhs', '₹1 Crore & Above'],
+        'Other': ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
+      },
     },
-
     /* ═══════════════════════════════════════
        CATEGORIES
        ═══════════════════════════════════════ */
@@ -956,12 +946,6 @@ export const translations = {
         description:
           'उद्देशपूर्ण इमारतींना आकार देणारे वास्तुशिल्प डिझाइन आणि सल्लामसलत. शाश्वत, संदर्भ-संवेदनशील सजावट.',
       },
-      renovation: {
-        title: 'नूतनीकरण',
-        subtitle: 'जुन्याची नवी ओळख',
-        description:
-          'विद्यमान संरचनांमध्ये नवे जीवन फुंकणारे विचारपूर्ण नूतनीकरण आणि जीर्णोद्धार.',
-      },
       furniture: {
         title: 'फर्निचर डिझाइन',
         subtitle: 'वस्तू आणि उद्दिष्ट',
@@ -1021,12 +1005,7 @@ export const translations = {
       },
       gangaGold: {
         title: 'Ganga Gold',
-        description:
-          'स्वागत करणारी, प्रेरणा देणारी आणि मनात राहणारी वास्तुकला.',
-        brief:
-          'मालकाला प्रत्येक सुइट फक्त खोली नव्हे तर एक अनुभव वाटावा असे हवे होते. सजावटीने सुवर्ण तासाची उबदारता आणि आत्मीयता जागवायची होती — तो क्षणभंगुर क्षण जेव्हा सर्व काही चमकते.',
-        approach:
-          'पश्चिमाभिमुख खिडक्या सूर्यास्ताच्या वेळी सह्याद्रीच्या टेकड्या प्रदर्शित करतात. उबदार प्लास्टर भिंती, चमकदार तांब्याची उपकरणे आणि कच्चे तागाचे कापड — दिवसभर प्रकाश बदलताना रंग बदलणारा साहित्य संग्रह.',
+        description: 'स्वागत करणारी, प्रेरणा देणारी आणि मनात राहणारी वास्तुकला.',
       },
       // PandharpuramPalace: {
       //   title: 'Monochrome Flat',
@@ -1076,7 +1055,7 @@ export const translations = {
         quote:
           'योगेश आणि त्यांच्या टीमसोबत काम करणे हे रुचीमधले शिक्षण होते. त्यांनी आमच्या गृहीतकांना आव्हान दिले आणि आमच्या कल्पनेच्या पलीकडे काहीतरी दिले.',
         author: 'Meera Deshpande',
-        project: 'Ganga Gold, Lonavala',
+        project: 'Ganga Gold, Pandharpur',
         role: 'रिसॉर्ट मालक',
       },
       {

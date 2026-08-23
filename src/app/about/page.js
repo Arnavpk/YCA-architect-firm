@@ -61,11 +61,11 @@ export default function AboutPage() {
           <p className="text-dark-grey/60 text-lg leading-relaxed max-w-2xl"><strong className="font-semibold">{t('about.descriptionBold')}</strong>{t('about.description')}</p>
         </div>
       </section>
-      <section ref={imgRef} className="px-6 md:px-12 lg:px-16 pb-24">
+      {/* <section ref={imgRef} className="px-6 md:px-12 lg:px-16 pb-24">
         <div className="w-full aspect-[21/9] overflow-hidden">
           <img src="https://res.cloudinary.com/dmjaisk94/image/upload/v1785412337/About_page_1_xwieya.jpg" alt={t('about.imageAlt')} className="w-full h-full object-cover" loading="lazy" />
         </div>
-      </section>
+      </section> */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-16 bg-warm-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           <div ref={storyRef} className="opacity-0">
