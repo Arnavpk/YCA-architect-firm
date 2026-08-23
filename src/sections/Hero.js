@@ -220,8 +220,7 @@ export default function Hero() {
         <div
           key={i}
           ref={(el) => (imageRefs.current[i] = el)}
-          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] ${i === activeIndex ? 'active' : ''
-            }`}
+          className={`hero-image absolute inset-0 w-full h-[120%] -top-[10%] ${i === activeIndex ? 'active' : ''}`}
           style={{ opacity: i === activeIndex ? 1 : 0 }}
         >
           <img
@@ -232,6 +231,9 @@ export default function Hero() {
           />
         </div>
       ))}
+
+      {/* Persistent readability scrim — sits above images, below text */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-[15] pointer-events-none" />
 
       <div
         ref={overlayRef}
@@ -282,8 +284,8 @@ export default function Hero() {
                 onClick={() => handleDotClick(i)}
                 aria-label={`Go to slide ${i + 1}`}
                 className={`h-[2px] transition-all duration-500 ${i === activeIndex
-                    ? 'w-8 bg-gold'
-                    : 'w-4 bg-white/30'
+                  ? 'w-8 bg-gold'
+                  : 'w-4 bg-white/30'
                   }`}
               />
             ))}
