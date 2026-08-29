@@ -239,6 +239,9 @@ export const translations = {
       description:
         'A curated selection of projects that represent our design philosophy — spaces where beauty meets purpose.',
       filterAll: 'All',
+      galleryEyebrow: 'From the Archive',
+      galleryHeading: 'Details & Moments',
+      showMore: 'Show More',
     },
 
     /* ═══════════════════════════════════════
@@ -862,6 +865,9 @@ export const translations = {
       description:
         'आमच्या सजावट तत्त्वज्ञानाचे प्रतिनिधित्व करणारे निवडक प्रकल्प — जिथे सौंदर्य आणि उद्दिष्ट भेटतात.',
       filterAll: 'सर्व',
+      galleryEyebrow: 'संग्रहातून',
+      galleryHeading: 'तपशील आणि क्षण',
+      showMore: 'अधिक पहा',
     },
 
     projectDetail: {

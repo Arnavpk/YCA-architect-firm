@@ -223,6 +223,45 @@ export const PROJECTS = [
   // },
 ];
 
+// Supplementary photography for the portfolio masonry wall. Stored as Cloudinary
+// public IDs so the delivery transform can be tuned in one place — the wall never
+// renders wider than a single column, so 800px covers retina.
+const CLOUDINARY_BASE = 'https://res.cloudinary.com/dmjaisk94/image/upload';
+const galleryUrl = (publicId) => `${CLOUDINARY_BASE}/w_800,q_auto,f_auto/${publicId}`;
+
+export const PORTFOLIO_GALLERY = [
+  'v1787547828/EXTERIOR_VIEW_FOR_HOTEL_SAYAJIRAJE_PALACE_AT_-AKLUJ_2_fg4scb.png',
+  'v1785406274/Grand_Shaurya_1_of_15_1_1_pj1lj0.jpg',
+  'v1786814911/333CC337-F49A-4CFB-8FF9-151737EFC390_lobmao.png',
+  'v1785431587/Kanchan_Villa_IMG_i7jfmj.jpg',
+  'v1785822471/The_Grand_Shaurya_20_of_25_1_mempkl.jpg',
+  'v1785751941/Fancy_re_2_evfgmx.jpg',
+  'v1787547852/111_ifzepk.png',
+  'v1785406403/Grand_Shaurya_2_of_15_1_qedt9o.jpg',
+  'v1786814934/F4A9E657-90FC-4C7A-9239-D2DE51588728_qehbrb.png',
+  'v1785406564/IMG_5212_ggotmt.jpg',
+  'v1785406825/The_Grand_Shaurya_19_of_25_1_vk4p3j.jpg',
+  'v1785757036/insta1_vixgkq.jpg',
+  'v1786813429/9F7ED9F2-EF4F-4976-A7C1-9B5D3504DDF2_jjhwix.png',
+  'v1785406435/Grand_Shaurya_7_of_15_1_dgdlbn.jpg',
+  'v1786904793/DFB79894-C02F-4508-A161-567AAFA73E9F_grriwr.png',
+  'v1785406680/IMG_5233_j4li14.jpg',
+  'v1787139206/The_Grand_Shaurya_16_of_25_1_thohpm.jpg',
+  'v1785757189/insta2_di30h0.jpg',
+  'v1786813639/CEE94C44-3033-4907-9AC8-549A709C6526_ha2fyi.png',
+  'v1785406762/Recidential_Interior_wqnad2.jpg',
+  'v1785822621/The_Grand_Shaurya_8_of_25_1_a7fqhg.jpg',
+  'v1785406630/IMG_5216_jbygfj.jpg',
+  'v1786904900/7D2AF0F1-C2FC-4FAF-8906-0194B879828F_duerf5.png',
+  'v1785406736/Pandharpuram_plaza_1_ddmobr.jpg',
+  'v1785440347/The_Grand_Shaurya_1_of_13_1_li6ic5.jpg',
+  'v1785757761/insta3_vqu5k3.webp',
+  'v1786814982/7C79AE14-61A3-4435-9983-68943FB83BF0_crwo6y.png',
+  'v1785406795/The_Grand_Shaurya_10_of_13_1_lcycru.jpg',
+  'v1785748529/Pandharpuram_Palace_2_ijthbr.jpg',
+  'v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',
+].map(galleryUrl);
+
 export const TESTIMONIALS = [
   {
     quote: 'They did not just design our home — they understood how we live, how we breathe, and translated that into spaces that feel intrinsically ours.',

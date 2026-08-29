@@ -6,15 +6,10 @@ import gsap from 'gsap';
 import { PROJECTS } from '@/lib/constants';
 import { useRevealAnimation } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
+import PortfolioGallery from '@/sections/PortfolioGallery';
 
 const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio' };
 const CATEGORIES_EN = ['All', ...new Set(PROJECTS.map(p => p.category))];
-
-const EXTRA_IMAGES = [
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1787547828/EXTERIOR_VIEW_FOR_HOTEL_SAYAJIRAJE_PALACE_AT_-AKLUJ_2_fg4scb.png',
-  'https://res.cloudinary.com/dmjaisk94/image/upload/v1787547852/111_ifzepk.png',
-  // ...
-];
 
 export default function PortfolioPage() {
   const { t } = useLanguage();
@@ -76,20 +71,7 @@ export default function PortfolioPage() {
             );
           })}
         </div>
-      </section>
-      <section className="px-6 md:px-12 lg:px-16 pb-24 md:pb-40 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {EXTRA_IMAGES.map((src, i) => (
-            <div key={i} className="relative overflow-hidden aspect-[4/5]">
-              <img
-                src={src}
-                alt=""
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        {activeFilter === 'All' && <PortfolioGallery />}
       </section>
     </>
   );
