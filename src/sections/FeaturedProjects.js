@@ -48,12 +48,12 @@ function ProjectCard({ project, projectKey, index }) {
           <span className="text-white/70 text-[11px] tracking-[0.2em] uppercase">{project.category} — {project.area}</span>
         </div>
       </div>
-      <div className="flex items-start justify-between">
-        <div>
-          <h3 className="font-serif text-xl md:text-2xl text-charcoal group-hover:text-gold transition-colors duration-300">{title}</h3>
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h3 className="font-serif text-xl md:text-lg lg:text-xl xl:text-2xl text-charcoal group-hover:text-gold transition-colors duration-300">{title}</h3>
           <p className="text-dark-grey/50 text-sm mt-1">{project.location}</p>
         </div>
-        <span className="text-dark-grey/50 text-sm mt-1">{project.year}</span>
+        <span className="text-dark-grey/50 text-sm mt-1 shrink-0">{project.year}</span>
       </div>
     </Link>
   );
@@ -63,7 +63,7 @@ export default function FeaturedProjects() {
   const { t } = useLanguage();
   const headingRef = useRevealAnimation({ y: 50 });
   const EXCLUDED_IDS = ['grand-shaurya', 'pandharipuram-palace'];
-  const featured = PROJECTS.filter(p => !EXCLUDED_IDS.includes(p.id)).slice(0, 4);
+  const featured = PROJECTS.filter(p => !EXCLUDED_IDS.includes(p.id)).slice(0, 3);
 
   return (
     <section className="py-24 md:py-40 px-6 md:px-12 lg:px-16 bg-warm-white">
@@ -77,7 +77,7 @@ export default function FeaturedProjects() {
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1"><path d="M3 8H13M13 8L8 3M13 8L8 13" /></svg>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
         {featured.map((project, i) => (
           <ProjectCard key={project.id} project={project} projectKey={PROJECT_KEY_MAP[project.id]} index={i} />
         ))}
