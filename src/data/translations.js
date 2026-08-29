@@ -452,31 +452,59 @@ export const translations = {
     testimonialsList: [
       {
         quote:
-          'They did not just design our home — they understood how we live, how we breathe, and translated that into spaces that feel intrinsically ours.',
-        author: 'Priya & Rohan Mehta',
-        project: 'Kanchan Villa, Koregaon Park',
-        role: 'Homeowners',
+          'Yogesh and his team transformed our vision into a home that feels both timeless and deeply personal. Every room has a purpose, every detail a reason — it is architecture that truly understands how a family lives.',
+        author: 'Mr. Taraapurkar',
+        project: 'Residential',
+        role: 'Homeowner',
       },
       {
         quote:
-          'The attention to detail is extraordinary. Every corner, every texture, every light fixture tells a story. Our office feels like a second home.',
-        author: 'Anand Kulkarni',
-        project: 'Grand Shaurya, Hinjewadi',
-        role: 'CEO, NexaTech Solutions',
+          'What impressed us most was their patience. They listened to every small preference, every concern, and wove it all into a design that exceeded what we had imagined. Our home feels like it was always meant to be this way.',
+        author: 'Mr. Deshpande',
+        project: 'Residential',
+        role: 'Homeowner',
       },
       {
         quote:
-          'Working with Yogesh and his team was an education in taste. They challenged our assumptions and delivered something far beyond our imagination.',
-        author: 'Meera Deshpande',
-        project: 'Ganga Gold, Pandharpur',
-        role: 'Resort Owner',
+          'As someone who values precision in my own profession, I deeply appreciate the meticulousness YCA brought to our residence. The spatial planning, the natural light, the material choices — everything reflects thoughtful craftsmanship.',
+        author: 'Dr. Ghadge',
+        project: 'Residential',
+        role: 'Homeowner',
       },
       {
         quote:
-          'From concept to completion, the process was seamless. They managed everything with precision while keeping the creative vision alive.',
-        author: 'Vikram Joshi',
-        project: 'Lumière Restaurant, Camp',
-        role: 'Restaurateur',
+          'YCA understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
+        author: 'Fancy Re',
+        project: 'Jewellery Store Design',
+        role: 'Jewellery Studio',
+      },
+      {
+        quote:
+          'They created a space where our customers feel the heritage behind every piece before they even see the collection. The interiors reflect the trust and tradition our brand stands for.',
+        author: 'Navarantna Jewellers',
+        project: 'Jewellery Store Design',
+        role: 'Jewellers',
+      },
+      {
+        quote:
+          'Our showroom needed to feel luxurious without being intimidating. YCA struck that balance perfectly — warm materials, elegant lighting, and a layout that makes every visit feel like an experience.',
+        author: 'Ganga Gold Jewellers',
+        project: 'Jewellery Store Design',
+        role: 'Jewellers',
+      },
+      {
+        quote:
+          'From the grand entrance to the finest display niche, the design captures the essence of Maharaja. YCA delivered a space that elevates our brand and leaves a lasting impression on every customer who walks in.',
+        author: 'Maharaja Jewellers',
+        project: 'Jewellery Store Design',
+        role: 'Jewellers',
+      },
+      {
+        quote:
+          'The scale and complexity of our project demanded a team that could think big while managing every detail. YCA delivered on both counts — the result is a commercial space that sets a new benchmark.',
+        author: 'Grand Shaurya',
+        project: 'Commercial',
+        role: 'Commercial Project',
       },
     ],
 
@@ -1039,31 +1067,59 @@ export const translations = {
     testimonialsList: [
       {
         quote:
-          'त्यांनी फक्त आमचे घर सजवले नाही — आम्ही कसे जगतो, कसे श्वास घेतो ते समजून घेतले, आणि ते अशा जागांमध्ये उतरवले ज्या आमच्या स्वतःच्या वाटतात.',
-        author: 'Priya & Rohan Mehta',
-        project: 'Kanchan Villa, Koregaon Park',
+          'योगेश आणि त्यांच्या टीमने आमच्या स्वप्नाचे एका कालातीत आणि वैयक्तिक घरात रूपांतर केले. प्रत्येक खोलीला एक उद्देश आहे, प्रत्येक तपशीलाला एक कारण — हे वास्तुकला खरोखरच कुटुंब कसे जगते ते समजून घेते.',
+        author: 'श्री. तारापूरकर',
+        project: 'निवासी',
         role: 'गृहमालक',
       },
       {
         quote:
-          'तपशीलांकडे लक्ष असाधारण आहे. प्रत्येक कोपरा, प्रत्येक पोत, प्रत्येक दिवा एक कथा सांगतो. आमचे कार्यालय दुसऱ्या घरासारखे वाटते.',
-        author: 'Anand Kulkarni',
-        project: 'Grand Shaurya, Hinjewadi',
-        role: 'CEO, NexaTech Solutions',
+          'आम्हाला सर्वात जास्त प्रभावित केले ते त्यांचा संयम. त्यांनी प्रत्येक लहान पसंती, प्रत्येक चिंता ऐकली आणि ते सर्व एका अशा डिझाइनमध्ये विणले जे आमच्या कल्पनेपेक्षा अधिक होते. आमचे घर नेहमीच असे असायला हवे होते असे वाटते.',
+        author: 'श्री. देशपांडे',
+        project: 'निवासी',
+        role: 'गृहमालक',
       },
       {
         quote:
-          'योगेश आणि त्यांच्या टीमसोबत काम करणे हे रुचीमधले शिक्षण होते. त्यांनी आमच्या गृहीतकांना आव्हान दिले आणि आमच्या कल्पनेच्या पलीकडे काहीतरी दिले.',
-        author: 'Meera Deshpande',
-        project: 'Ganga Gold, Pandharpur',
-        role: 'रिसॉर्ट मालक',
+          'माझ्या स्वतःच्या व्यवसायात अचूकतेला महत्त्व देणारा म्हणून, YCA ने आमच्या निवासस्थानासाठी आणलेल्या काटेकोरपणाची मी मनापासून कदर करतो. जागा नियोजन, नैसर्गिक प्रकाश, साहित्य निवड — सर्व काही विचारपूर्ण कारागिरी प्रतिबिंबित करते.',
+        author: 'डॉ. घाडगे',
+        project: 'निवासी',
+        role: 'गृहमालक',
       },
       {
         quote:
-          'संकल्पनेपासून पूर्णत्वापर्यंत, प्रक्रिया अखंड होती. सर्जनशील दृष्टी जिवंत ठेवत त्यांनी सर्व काही अचूकतेने व्यवस्थापित केले.',
-        author: 'Vikram Joshi',
-        project: 'Lumière Restaurant, Camp',
-        role: 'उपाहारगृह मालक',
+          'YCA ला समजले की ज्वेलरी स्टोअर म्हणजे केवळ दुकान नाही — ती आमच्या कलेसाठी एक रंगमंच आहे. प्रकाशयोजना, डिस्प्ले डिझाइन, जागेचा प्रवाह — प्रत्येक घटक अलंकारांना स्वतःहून बोलू देण्यासाठी डिझाइन केला.',
+        author: 'Fancy Re',
+        project: 'ज्वेलरी स्टोअर डिझाइन',
+        role: 'ज्वेलरी स्टुडिओ',
+      },
+      {
+        quote:
+          'त्यांनी अशी जागा निर्माण केली जिथे आमचे ग्राहक संग्रह पाहण्यापूर्वीच प्रत्येक तुकड्यामागील वारसा अनुभवतात. अंतर्गत सजावट आमच्या ब्रँडचा विश्वास आणि परंपरा प्रतिबिंबित करते.',
+        author: 'नवरत्न ज्वेलर्स',
+        project: 'ज्वेलरी स्टोअर डिझाइन',
+        role: 'ज्वेलर्स',
+      },
+      {
+        quote:
+          'आमचा शोरूम भव्य वाटायला हवा होता पण भीतीदायक नाही. YCA ने तो समतोल अचूकपणे साधला — उबदार साहित्य, सुंदर प्रकाशयोजना आणि प्रत्येक भेट एक अनुभव बनवणारी मांडणी.',
+        author: 'गंगा गोल्ड ज्वेलर्स',
+        project: 'ज्वेलरी स्टोअर डिझाइन',
+        role: 'ज्वेलर्स',
+      },
+      {
+        quote:
+          'भव्य प्रवेशद्वारापासून सूक्ष्मतम डिस्प्ले कोनाड्यापर्यंत, डिझाइन महाराजाचे सार पकडते. YCA ने अशी जागा दिली जी आमच्या ब्रँडला उंचावते आणि प्रत्येक ग्राहकावर चिरस्थायी प्रभाव पाडते.',
+        author: 'महाराजा ज्वेलर्स',
+        project: 'ज्वेलरी स्टोअर डिझाइन',
+        role: 'ज्वेलर्स',
+      },
+      {
+        quote:
+          'आमच्या प्रकल्पाच्या व्याप्तीसाठी आणि जटिलतेसाठी मोठा विचार करणारी पण प्रत्येक तपशील सांभाळणारी टीम आवश्यक होती. YCA ने दोन्ही बाबतीत उत्कृष्ट कामगिरी केली — परिणाम एक नवा मापदंड ठरवणारी व्यावसायिक जागा आहे.',
+        author: 'Grand Shaurya',
+        project: 'व्यावसायिक',
+        role: 'व्यावसायिक प्रकल्प',
       },
     ],
 
