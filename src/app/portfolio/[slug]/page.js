@@ -9,8 +9,8 @@ import { useLanguage } from '@/context/LanguageContext';
 
 const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'pandharipuram-palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant', 'dr-gholaps-residence': 'drGholapsResidence', 'maharaja-jewellers': 'maharajaJewellers' };
 
-const INITIAL_GALLERY = 4;
-const GALLERY_BATCH = 4;
+const INITIAL_GALLERY = 3;
+const GALLERY_BATCH = 3;
 
 export default function ProjectDetail() {
   const { t } = useLanguage();
