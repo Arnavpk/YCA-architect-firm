@@ -223,11 +223,13 @@ export const PROJECTS = [
   // },
 ];
 
-// Supplementary photography for the portfolio masonry wall. Stored as Cloudinary
-// public IDs so the delivery transform can be tuned in one place — the wall never
-// renders wider than a single column, so 800px covers retina.
+// Supplementary photography for the portfolio collage. Stored as Cloudinary public
+// IDs rather than finished URLs so the same image can be requested at a thumbnail
+// width for the wall and a larger width when opened full screen.
 const CLOUDINARY_BASE = 'https://res.cloudinary.com/dmjaisk94/image/upload';
-const galleryUrl = (publicId) => `${CLOUDINARY_BASE}/w_800,q_auto,f_auto/${publicId}`;
+
+export const cloudinaryImage = (publicId, width) =>
+  `${CLOUDINARY_BASE}/w_${width},q_auto,f_auto/${publicId}`;
 
 export const PORTFOLIO_GALLERY = [
   'v1787547828/EXTERIOR_VIEW_FOR_HOTEL_SAYAJIRAJE_PALACE_AT_-AKLUJ_2_fg4scb.png',
@@ -260,7 +262,7 @@ export const PORTFOLIO_GALLERY = [
   'v1785406795/The_Grand_Shaurya_10_of_13_1_lcycru.jpg',
   'v1785748529/Pandharpuram_Palace_2_ijthbr.jpg',
   'v1786814984/0F28CF92-69E0-4702-AAFC-8B72D4ADF00E_gv7p0a.png',
-].map(galleryUrl);
+];
 
 export const TESTIMONIALS = [
   {

@@ -241,7 +241,11 @@ export const translations = {
       filterAll: 'All',
       galleryEyebrow: 'From the Archive',
       galleryHeading: 'Details & Moments',
+      galleryNote: 'Spaces, textures and details captured across our completed work.',
       showMore: 'Show More',
+      closeImage: 'Close image',
+      previousImage: 'Previous image',
+      nextImage: 'Next image',
     },
 
     /* ═══════════════════════════════════════
@@ -867,7 +871,11 @@ export const translations = {
       filterAll: 'सर्व',
       galleryEyebrow: 'संग्रहातून',
       galleryHeading: 'तपशील आणि क्षण',
+      galleryNote: 'आमच्या पूर्ण झालेल्या कामांतील जागा, पोत आणि बारकावे.',
       showMore: 'अधिक पहा',
+      closeImage: 'प्रतिमा बंद करा',
+      previousImage: 'मागील प्रतिमा',
+      nextImage: 'पुढील प्रतिमा',
     },
 
     projectDetail: {
