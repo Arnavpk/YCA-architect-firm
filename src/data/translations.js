@@ -261,6 +261,9 @@ export const translations = {
       briefHeading: 'The Brief',
       approachHeading: 'Our Approach',
       nextProject: 'Next Project',
+      showMorePhotos: 'Show More Photos',
+      showLessPhotos: 'Show Less',
+      galleryHeading: 'Project Gallery',
     },
     /* ═══════════════════════════════════════
        CONTACT PAGE
@@ -899,6 +902,9 @@ export const translations = {
       briefHeading: 'कार्यसूचना',
       approachHeading: 'आमचा दृष्टीकोन',
       nextProject: 'पुढचा प्रकल्प',
+      showMorePhotos: 'अधिक फोटो पहा',
+      showLessPhotos: 'कमी दाखवा',
+      galleryHeading: 'प्रकल्प गॅलरी',
     },
 
 
