@@ -8,7 +8,7 @@ import { useRevealAnimation } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 import PortfolioGallery from '@/sections/PortfolioGallery';
 
-const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio' };
+const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'dr-gholaps-residence': 'drGholapsResidence', 'maharaja-jewellers': 'maharajaJewellers' };
 const CATEGORIES_EN = ['All', ...new Set(PROJECTS.map(p => p.category))];
 
 export default function PortfolioPage() {

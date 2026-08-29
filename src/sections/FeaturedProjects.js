@@ -14,9 +14,9 @@ const PROJECT_KEY_MAP = {
   'kanchan-villa': 'kanchanVilla',
   'grand-shaurya': 'grandshaurya',
   'ganga-gold': 'gangaGold',
-
   'fancy-re-jewellery-studio': 'fancyrejewellerystudio',
-
+  'dr-gholaps-residence': 'drGholapsResidence',
+  'maharaja-jewellers': 'maharajaJewellers',
 };
 
 function ProjectCard({ project, projectKey, index }) {

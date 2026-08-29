@@ -257,7 +257,6 @@ export const translations = {
       location: 'Location',
       year: 'Year',
       area: 'Area',
-      materialsLabel: 'Materials',
       durationLabel: 'Duration',
       briefHeading: 'The Brief',
       approachHeading: 'Our Approach',
@@ -444,6 +443,18 @@ export const translations = {
         description: 'A celebration of craftsmanship, from space to jewel.',
         brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
         approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
+      },
+      drGholapsResidence: {
+        title: "Dr. Gholap's Residence",
+        description: 'Contemporary living shaped by light, space, and quiet refinement.',
+        brief: "A distinguished homeowner sought a residence that would embody modern sensibility without sacrificing warmth — a home where generous proportions, curated textures, and natural light create an atmosphere of effortless sophistication.",
+        approach: "The design centres on an open floor plan that maintains distinct zones through material transitions and ceiling heights rather than walls. Floor-to-ceiling glazing brings the garden in, while a restrained palette of natural stone, warm wood, and muted neutrals keeps every room grounded and serene.",
+      },
+      maharajaJewellers: {
+        title: 'Maharaja Jewellers',
+        description: 'A regal stage where every jewel commands attention.',
+        brief: 'Maharaja Jewellers envisioned a showroom that would convey heritage, grandeur, and trust from the very first step inside — a space where the architecture amplifies the brand and every display becomes a moment of discovery.',
+        approach: 'Rich material layering — veined marble, brushed brass, and tinted glass — sets a tone of opulence without excess. Precision-calibrated display lighting isolates each piece, while the circulation gently guides visitors through curated zones that build from everyday collections to the signature vault.',
       },
       // lumiereRestaurant: {
       //   title: 'Lumière Restaurant',
@@ -884,7 +895,6 @@ export const translations = {
       location: 'स्थान',
       year: 'वर्ष',
       area: 'क्षेत्रफळ',
-      materialsLabel: 'साहित्य',
       durationLabel: 'कालावधी',
       briefHeading: 'कार्यसूचना',
       approachHeading: 'आमचा दृष्टीकोन',
@@ -1066,6 +1076,18 @@ export const translations = {
           'कारागिरीचा उत्सव — जागेपासून अलंकारापर्यंत.',
         approach:
           'एक भव्य इटालियन संगमरवर बेट खोलीचा केंद्रबिंदू आहे. जपानी-प्रेरित लाकडी जोडकामाने पॅन्ट्री साठवण तयार केली. कॅबिनेटखालील प्रकाशयोजना आणि पॉट-फिलर टॅप शेफच्या प्रत्यक्ष कार्यप्रवाहानुसार डिझाइन केले.',
+      },
+      drGholapsResidence: {
+        title: 'डॉ. घोलापांचे निवासस्थान',
+        description: 'प्रकाश, जागा आणि शांत परिष्करणातून आकारलेले समकालीन राहणीमान.',
+        brief: 'एका प्रतिष्ठित गृहमालकाला आधुनिक संवेदनशीलता जपताना उबदारपणा न गमावणारे निवासस्थान हवे होते — जिथे उदार प्रमाण, निवडक पोत आणि नैसर्गिक प्रकाश सहज परिष्कृततेचे वातावरण निर्माण करतात.',
+        approach: 'भिंतींऐवजी साहित्य बदल आणि छताची उंची यांद्वारे वेगळे क्षेत्र राखणाऱ्या मोकळ्या मजल्याच्या योजनेभोवती डिझाइन केंद्रित आहे. जमिनीपासून छतापर्यंतच्या काचेतून बाग आत येते, तर नैसर्गिक दगड, उबदार लाकूड आणि मंद तटस्थ रंगांचा संयमित पॅलेट प्रत्येक खोली शांत आणि स्थिर ठेवतो.',
+      },
+      maharajaJewellers: {
+        title: 'महाराजा ज्वेलर्स',
+        description: 'प्रत्येक अलंकार लक्ष वेधून घेतो अशी राजेशाही रंगमंच.',
+        brief: 'महाराजा ज्वेलर्सने अशा शोरूमची कल्पना केली जी पहिल्या पावलापासूनच वारसा, भव्यता आणि विश्वास व्यक्त करेल — जिथे वास्तुकला ब्रँडला उंचावते आणि प्रत्येक प्रदर्शन एक शोधाचा क्षण बनते.',
+        approach: 'शिरायुक्त संगमरवर, ब्रश केलेले पितळ आणि रंगीत काचेचे समृद्ध साहित्य स्तर — अतिरेकाशिवाय ऐश्वर्याचा स्वर सेट करते. अचूकतेने मोजलेली प्रदर्शन प्रकाशयोजना प्रत्येक तुकडा वेगळा करते, तर रचना अभ्यागतांना दैनंदिन संग्रहापासून स्वाक्षरी तिजोरीपर्यंत निवडक क्षेत्रांतून हळुवारपणे मार्गदर्शन करते.',
       },
       // lumiereRestaurant: {
       //   title: 'Lumière Restaurant',

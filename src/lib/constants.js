@@ -131,11 +131,10 @@ export const PROJECTS = [
     category: 'Residential',
     location: 'Nagaland chowk manish nagar, Pandharpur',
     year: '2024',
-    area: '4,200 sq ft',
+    area: '2,700 sq ft',
     image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406717/IMG_5239_jzrtz2.jpg",
     description: 'A celebration of understated luxury and refined living, Kanchan Villa blends timeless architecture, abundant natural light, and impeccable craftsmanship into a sanctuary of effortless elegance.',
-    materials: 'Italian Marble, Teak, Brass, Linen',
-    duration: '8 months',
+    duration: '2 Years',
     gallery: [
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785431587/Kanchan_Villa_IMG_i7jfmj.jpg',
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406564/IMG_5212_ggotmt.jpg',
@@ -147,11 +146,10 @@ export const PROJECTS = [
     category: 'Commercial',
     location: 'Atpadi, Sangli',
     year: '2024',
-    area: '12,000 sq ft',
+    area: '3,000 sq ft',
     image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1787445270/The_Grand_Shaurya_9_of_13_1_ccuu9c.jpg",
     description: 'A statement of refined luxury, where timeless materials, sculptural design, and meticulous craftsmanship create an atmosphere of effortless elegance.',
-    materials: 'Italian Marble, Teak, Brass, Linen',
-    duration: '8 months',
+    duration: '2.5 Years',
     gallery: [
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406435/Grand_Shaurya_7_of_15_1_dgdlbn.jpg',
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785440347/The_Grand_Shaurya_1_of_13_1_li6ic5.jpg',
@@ -166,7 +164,6 @@ export const PROJECTS = [
     area: '8,500 sq ft',
     image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406213/Ganga_Gold_qsypm5.jpg",
     description: 'Designed with precision and built for excellence, this landmark seamlessly combines contemporary aesthetics with functional luxury.',
-    materials: 'Italian Marble, Teak, Brass, Linen',
     duration: '8 months',
     gallery: [
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406213/Ganga_Gold_qsypm5.jpg',
@@ -198,12 +195,35 @@ export const PROJECTS = [
     area: '320 sq ft',
     image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1785751941/Fancy_re_1_habzol.jpg',
     description: 'A culinary workspace where Italian marble meets Japanese joinery, designed for the passionate home chef.',
-    materials: 'Italian Marble, Teak, Brass, Linen',
     duration: '8 months',
     gallery: [
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785751941/Fancy_re_2_evfgmx.jpg',
       'https://res.cloudinary.com/dmjaisk94/image/upload/v1785751941/Fancy_re_1_habzol.jpg',
     ],
+  },
+  {
+    id: 'dr-gholaps-residence',
+    title: "Dr. Gholap's Residence",
+    category: 'Residential',
+    location: 'Sangli',
+    year: '2024–2025',
+    area: '3,000 sq ft',
+    image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1785406762/Recidential_Interior_wqnad2.jpg',
+    description: 'A contemporary residence that balances openness and privacy, designed around the rhythms of daily life with generous proportions, curated textures, and abundant natural light.',
+    duration: '1.5 Years',
+    gallery: [],
+  },
+  {
+    id: 'maharaja-jewellers',
+    title: 'Maharaja Jewellers',
+    category: 'Jewellery',
+    location: 'Sangli',
+    year: '2025–2026',
+    area: '900 sq ft',
+    image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1786814911/333CC337-F49A-4CFB-8FF9-151737EFC390_lobmao.png',
+    description: 'A regal jewellery showroom where opulent interiors, precision lighting, and considered display design create an immersive brand experience from the threshold inward.',
+    duration: '1.5 Years',
+    gallery: [],
   },
   // {
   //   id: 'lumiere-restaurant',
@@ -226,10 +246,7 @@ export const PROJECTS = [
 // Supplementary photography for the portfolio collage. Stored as Cloudinary public
 // IDs rather than finished URLs so the same image can be requested at a thumbnail
 // width for the wall and a larger width when opened full screen.
-const CLOUDINARY_BASE = 'https://res.cloudinary.com/dmjaisk94/image/upload';
-
-export const cloudinaryImage = (publicId, width) =>
-  `${CLOUDINARY_BASE}/w_${width},q_auto,f_auto/${publicId}`;
+export { cloudinaryImage } from './cloudinary';
 
 export const PORTFOLIO_GALLERY = [
   'v1787547828/EXTERIOR_VIEW_FOR_HOTEL_SAYAJIRAJE_PALACE_AT_-AKLUJ_2_fg4scb.png',

@@ -6,7 +6,7 @@ import { PROJECTS } from '@/lib/constants';
 import { useRevealAnimation, useImageReveal } from '@/hooks/useGSAP';
 import { useLanguage } from '@/context/LanguageContext';
 
-const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'pandharipuram-palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant' };
+const PROJECT_KEYS = { 'kanchan-villa': 'kanchanVilla', 'grand-shaurya': 'grandshaurya', 'ganga-gold': 'gangaGold', 'pandharipuram-palace': 'PandharpuramPalace', 'fancy-re-jewellery-studio': 'fancyrejewellerystudio', 'lumiere-restaurant': 'lumiereRestaurant', 'dr-gholaps-residence': 'drGholapsResidence', 'maharaja-jewellers': 'maharajaJewellers' };
 
 export default function ProjectDetail() {
   const { t } = useLanguage();
@@ -36,7 +36,6 @@ export default function ProjectDetail() {
     { label: t('projectDetail.location'), value: project.location },
     { label: t('projectDetail.year'), value: project.year },
     { label: t('projectDetail.area'), value: project.area },
-    { label: t('projectDetail.materialsLabel'), value: project.materials },
     { label: t('projectDetail.durationLabel'), value: project.duration },
   ];
 
@@ -75,10 +74,15 @@ export default function ProjectDetail() {
                 <p className="text-dark-grey/70 leading-relaxed">{t(`projectsList.${pk}.approach`)}</p>
               </>
             )}
-            <div className="grid grid-cols-2 gap-4 pt-8">
-              <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[0]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
-              <div className="aspect-[3/4] overflow-hidden"><img src={project.gallery?.[1]} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" /></div>
-            </div>
+            {project.gallery?.length > 0 && (
+              <div className="grid grid-cols-2 gap-4 pt-8">
+                {project.gallery.map((src, i) => (
+                  <div key={i} className="aspect-[3/4] overflow-hidden">
+                    <img src={src} alt={title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
