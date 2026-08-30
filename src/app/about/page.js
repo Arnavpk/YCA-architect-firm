@@ -55,10 +55,15 @@ export default function AboutPage() {
   return (
     <>
       <section className="pt-32 md:pt-40 pb-20 md:pb-28 px-6 md:px-12 lg:px-16 bg-white">
-        <div ref={heroRef} className="max-w-4xl opacity-0">
-          <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-6">{t('about.eyebrow')}</p>
-          <h1 className="font-serif text-display-lg text-charcoal mb-8">{t('about.heading')}</h1>
-          <p className="text-dark-grey/60 text-lg leading-relaxed max-w-2xl"><strong className="font-semibold">{t('about.descriptionBold')}</strong>{t('about.description')}</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div ref={heroRef} className="opacity-0">
+            <p className="text-gold text-[11px] tracking-[0.3em] uppercase mb-6">{t('about.eyebrow')}</p>
+            <h1 className="font-serif text-display-lg text-charcoal mb-8">{t('about.heading')}</h1>
+            <p className="text-dark-grey/60 text-lg leading-relaxed">{t('about.descriptionBold') && <strong className="font-semibold">{t('about.descriptionBold')}</strong>}{t('about.description')}</p>
+          </div>
+          <div className="overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_800,q_auto,f_auto/v1788100939/IMG_6734crop_mnlber.jpg" alt="" className="w-full h-auto object-contain" loading="eager" />
+          </div>
         </div>
       </section>
       {/* <section ref={imgRef} className="px-6 md:px-12 lg:px-16 pb-24">
@@ -102,9 +107,6 @@ export default function AboutPage() {
           </div>
           <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
             <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100623/IMG_6732_z0t5fl.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
-          </div>
-          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100939/IMG_6734crop_mnlber.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
         </div>
       </section>
