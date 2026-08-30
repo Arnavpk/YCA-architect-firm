@@ -84,27 +84,27 @@ export default function AboutPage() {
         </div>
       </section>
       <section className="py-20 md:py-28 px-6 md:px-12 lg:px-16 bg-white">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px] lg:auto-rows-[260px]">
-          <div className="col-span-2 row-span-2 overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_1200,q_auto,f_auto/v1788100616/IMG_6728_dmglp2.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+        <div className="columns-2 md:columns-3 gap-3 md:gap-4">
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100616/IMG_6728_dmglp2.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100620/IMG_6727_cbpv80.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100620/IMG_6727_cbpv80.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100625/IMG_6729_uhwku0.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100625/IMG_6729_uhwku0.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100617/IMG_6730_geclpt.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100617/IMG_6730_geclpt.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100618/IMG_6731_k5ub0o.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100618/IMG_6731_k5ub0o.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="col-span-2 overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_1200,q_auto,f_auto/v1788100623/IMG_6732_z0t5fl.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_600,q_auto,f_auto/v1788100623/IMG_6732_z0t5fl.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
-          <div className="col-span-2 overflow-hidden">
-            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_1200,q_auto,f_auto/v1788100939/IMG_6734crop_mnlber.jpg" alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+          <div className="mb-3 md:mb-4 break-inside-avoid overflow-hidden">
+            <img src="https://res.cloudinary.com/dmjaisk94/image/upload/w_900,q_auto,f_auto/v1788100939/IMG_6734crop_mnlber.jpg" alt="" className="w-full h-auto object-contain hover:scale-105 transition-transform duration-700" loading="lazy" />
           </div>
         </div>
       </section>
