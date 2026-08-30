@@ -357,6 +357,10 @@ export const PORTFOLIO_GALLERY = [
   'v1788004432/IMG_5239_kbjowd.jpg',
   'v1788004436/IMG_5240_juulfo.jpg',
   'v1788004435/IMG_5245_l1hshx.jpg',
+  'v1788099069/Maharaja_Jewelers-10_hqhtiq.jpg',
+  'v1788099069/Maharaja_Jewelers-11_x28gkh.jpg',
+  'v1788099069/Maharaja_Jewelers-15_vlf684.jpg',
+  'v1788099069/Maharaja_Jewelers-9_nndjrz.jpg',
 ];
 
 export const TESTIMONIALS = [
