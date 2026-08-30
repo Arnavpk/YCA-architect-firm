@@ -341,7 +341,7 @@ export const translations = {
        ═══════════════════════════════════════ */
     servicesList: {
       residential: {
-        title: 'Residential Interiors',
+        title: 'Interiors',
         subtitle: 'Living Redefined',
         description:
           'Bespoke residential spaces that reflect your personality, lifestyle, and aspirations. From luxury apartments to sprawling villas, every detail is curated with intention.',
@@ -442,7 +442,7 @@ export const translations = {
       //   approach: 'We used a strict monochrome palette but varied the textures endlessly — honed black granite, matte white plaster, ribbed glass, bouclé fabric. Mirrors and light wells expand the perceived space.',
       // },
       fancyrejewellerystudio: {
-        title: 'Fancy Re Jewellery Studio',
+        title: 'Fancy Re Jewellery Shop',
         description: 'A celebration of craftsmanship, from space to jewel.',
         brief: 'An avid home chef wanted a kitchen that functioned like a professional workspace but felt warm enough to host friends and family. Equal parts precision and hospitality.',
         approach: 'A monolithic Italian marble island anchors the room. Japanese-inspired timber joinery houses pantry storage. Under-cabinet lighting and a pot-filler tap were designed around the chef\'s actual workflow.',
@@ -497,7 +497,7 @@ export const translations = {
           'YCA understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
         author: 'Fancy Re',
         project: 'Jewellery Store Design',
-        role: 'Jewellery Studio',
+        role: 'Jewellery Shop',
       },
       {
         quote:
@@ -645,14 +645,14 @@ export const translations = {
        ═══════════════════════════════════════ */
     formOptions: {
       services: [
-        'Residential Interiors',
+        'Interiors',
         'Commercial Design',
         'Architecture Consultancy',
         'Jewellery Store Design',
         'Other',
       ],
       budgetsByService: {
-        'Residential Interiors': ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
+        Interiors: ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
         'Commercial Design': ['₹20–25 Lakhs', '₹25–30 Lakhs', '₹30–40 Lakhs', '₹50 Lakhs & Above'],
         'Architecture Consultancy': ['₹50 Lakhs', '₹60 Lakhs', '₹60–75 Lakhs', '₹1 Crore & Above'],
         'Jewellery Store Design': ['₹50 Lakhs', '₹60 Lakhs', '₹60–75 Lakhs', '₹1 Crore & Above'],
@@ -969,7 +969,7 @@ export const translations = {
 
     servicesList: {
       residential: {
-        title: 'निवासी अंतर्गत सजावट',
+        title: 'अंतर्गत सजावट',
         subtitle: 'नवीन अंदाजातील राहणीमान',
         description:
           'तुमचे व्यक्तिमत्व, जीवनशैली आणि आकांक्षा प्रतिबिंबित करणारी विशेष निवासी सजावट. विलासी फ्लॅटपासून भव्य बंगल्यांपर्यंत.',
@@ -1075,7 +1075,7 @@ export const translations = {
       //     'आम्ही कडक मोनोक्रोम पॅलेट वापरला पण पोत अंतहीन बदलले — घासलेला काळा ग्रॅनाइट, मॅट पांढरा प्लास्टर, पट्टेदार काच, बुक्ले कापड. आरसे आणि प्रकाश विहिरी जाणवणारी जागा विस्तारतात.',
       // },
       fancyrejewellerystudio: {
-        title: 'Fancy Re Jewellery Studio',
+        title: 'Fancy Re Jewellery Shop',
         description:
           'इटालियन संगमरवर आणि जपानी जोडकाम भेटतात अशी पाककला कार्यशाळा — उत्कट गृह पाकशास्त्रज्ञासाठी.',
         brief:
@@ -1133,7 +1133,7 @@ export const translations = {
           'YCA ला समजले की ज्वेलरी स्टोअर म्हणजे केवळ दुकान नाही — ती आमच्या कलेसाठी एक रंगमंच आहे. प्रकाशयोजना, डिस्प्ले डिझाइन, जागेचा प्रवाह — प्रत्येक घटक अलंकारांना स्वतःहून बोलू देण्यासाठी डिझाइन केला.',
         author: 'Fancy Re',
         project: 'ज्वेलरी स्टोअर डिझाइन',
-        role: 'ज्वेलरी स्टुडिओ',
+        role: 'ज्वेलरी शॉप',
       },
       {
         quote:
@@ -1266,7 +1266,7 @@ export const translations = {
 
     formOptions: {
       services: [
-        'निवासी सजावट',
+        'अंतर्गत सजावट',
         'व्यावसायिक सजावट',
         'वास्तुकला सल्लामसलत',
         'नूतनीकरण',

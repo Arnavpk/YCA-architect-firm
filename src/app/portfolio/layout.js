@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Portfolio',
   description:
-    'Explore our portfolio of residential villas, commercial spaces, restaurants, and jewellery studios — 100+ completed projects by Yogesh Chavan Associates.',
+    'Explore our portfolio of residential villas, commercial spaces, restaurants, and jewellery shops — 100+ completed projects by Yogesh Chavan Associates.',
   openGraph: {
     title: 'Portfolio — Yogesh Chavan Associates',
     description:

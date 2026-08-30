@@ -40,10 +40,10 @@ export const NAV_LINKS = [
 export const SERVICES = [
   {
     id: 'residential',
-    title: 'Residential Interiors',
+    title: 'Interiors',
     subtitle: 'Living Redefined',
     description: 'Bespoke residential spaces that reflect your personality, lifestyle, and aspirations. From luxury apartments to sprawling villas, every detail is curated with intention.',
-    image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1785406762/Recidential_Interior_wqnad2.jpg",
+    image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1788001824/Yogesh_Sir_13_of_18_lgdux4.jpg",
   },
   {
     id: 'commercial',
@@ -224,7 +224,7 @@ export const PROJECTS = [
   // },
   {
     id: 'fancy-re-jewellery-studio',
-    title: 'Fancy Re Jewellery Studio',
+    title: 'Fancy Re Jewellery Shop',
     category: 'Jewellery',
     location: 'Sangli',
     year: '2024',

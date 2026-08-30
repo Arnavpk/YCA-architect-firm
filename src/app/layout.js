@@ -18,7 +18,7 @@ export const metadata = {
     'Premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends. Residential, commercial, and hospitality design in Sangli, Maharashtra, India.',
   keywords: [
     'architecture', 'interior design', 'Sangli', 'Maharashtra', 'India',
-    'residential interiors', 'commercial design', 'luxury interiors',
+    'interiors', 'commercial design', 'luxury interiors',
     'Yogesh Chavan', 'YCA', 'architect firm', 'modular kitchen',
     'turnkey projects', 'office interiors',
   ],
@@ -98,7 +98,7 @@ export default function RootLayout({ children }) {
     serviceType: [
       'Architecture Design',
       'Interior Design',
-      'Residential Interiors',
+      'Interiors',
       'Commercial Design',
       'Office Interiors',
       'Modular Kitchen Design',

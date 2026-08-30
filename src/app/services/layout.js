@@ -5,7 +5,7 @@ export const metadata = {
   openGraph: {
     title: 'Our Services — Yogesh Chavan Associates',
     description:
-      'Residential interiors, commercial design, modular kitchens, office spaces & turnkey projects. End-to-end architecture and design solutions.',
+      'Interiors, commercial design, modular kitchens, office spaces & turnkey projects. End-to-end architecture and design solutions.',
   },
 };
 
