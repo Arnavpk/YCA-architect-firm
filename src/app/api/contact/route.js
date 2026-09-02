@@ -5,11 +5,12 @@ import { NextResponse } from 'next/server';
 dns.setDefaultResultOrder('ipv4first');
 
 const GMAIL_USER = 'yogeshchavanassociates26@gmail.com';
-const GMAIL_PASS = process.env.GMAIL_APP_PASSWORD;
 
 export async function POST(request) {
+  const GMAIL_PASS = process.env.GMAIL_APP_PASSWORD;
+
   if (!GMAIL_PASS) {
-    console.error('GMAIL_APP_PASSWORD env variable is not set');
+    console.error('GMAIL_APP_PASSWORD env variable is not set. Available env keys:', Object.keys(process.env).filter(k => k.includes('GMAIL')));
     return NextResponse.json(
       { error: 'Mail service is not configured.' },
       { status: 500 }
