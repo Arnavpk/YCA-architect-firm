@@ -67,6 +67,7 @@ export default function PortfolioPage() {
                   </div>
                   <span className="text-dark-grey/50 text-sm">{project.year}</span>
                 </div>
+
               </Link>
             );
           })}
