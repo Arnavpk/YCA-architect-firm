@@ -13,6 +13,8 @@ export default function ContactPage() {
   const lineRef = useLineReveal();
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '', budget: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +23,28 @@ export default function ContactPage() {
       [name]: value,
       ...(name === 'service' ? { budget: '' } : {}),
     }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    setError(null);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSending(false);
+    }
   };
   const svcOptions = t('formOptions.services');
   const budgetsByService = t('formOptions.budgetsByService');
@@ -87,7 +111,16 @@ export default function ContactPage() {
                   <label className="text-[11px] tracking-[0.15em] uppercase text-dark-grey/60 mb-2 block">{t('contactPage.formMessage')} *</label>
                   <textarea name="message" value={formData.message} onChange={handleChange} required rows={5} className="w-full border-b border-soft-grey py-3 bg-transparent text-charcoal outline-none focus:border-gold transition-colors duration-300 resize-none" placeholder={t('contactPage.formMessagePlaceholder')} />
                 </div>
-                <button onClick={(e) => { e.preventDefault(); setSubmitted(true); }} className="btn-luxury btn-gold mt-4"><span>{t('contactPage.formSubmit')}</span></button>
+                {error && (
+                  <p className="text-red-600 text-sm">{error}</p>
+                )}
+                <button
+                  onClick={handleSubmit}
+                  disabled={sending || !formData.name || !formData.email || !formData.message}
+                  className="btn-luxury btn-gold mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span>{sending ? t('contactPage.formSending') : t('contactPage.formSubmit')}</span>
+                </button>
               </div>
             )}
           </div>
