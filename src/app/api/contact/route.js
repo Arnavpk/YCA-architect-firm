@@ -4,14 +4,29 @@ import { NextResponse } from 'next/server';
 
 dns.setDefaultResultOrder('ipv4first');
 
+<<<<<<< HEAD
 const GMAIL_USER = 'yogeshchavanassociates@gmail.com';
 const GMAIL_PASS = process.env.GMAIL_APP_PASSWORD;
+=======
+const GMAIL_USER = 'yogeshchavanassociates26@gmail.com';
+>>>>>>> 93f00722a20851fa93f71df706e647f3869aeb6f
 
 export async function POST(request) {
+  const GMAIL_PASS = process.env.GMAIL_APP_PASSWORD;
+
   if (!GMAIL_PASS) {
-    console.error('GMAIL_APP_PASSWORD env variable is not set');
+    const gmailKeys = Object.keys(process.env).filter(k => k.includes('GMAIL'));
+    console.error('GMAIL_APP_PASSWORD not set. GMAIL-related keys:', gmailKeys);
     return NextResponse.json(
-      { error: 'Mail service is not configured.' },
+      {
+        error: 'Mail service is not configured.',
+        debug: {
+          envExists: 'GMAIL_APP_PASSWORD' in process.env,
+          envType: typeof process.env.GMAIL_APP_PASSWORD,
+          envLength: process.env.GMAIL_APP_PASSWORD?.length ?? 0,
+          gmailKeys,
+        },
+      },
       { status: 500 }
     );
   }
