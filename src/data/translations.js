@@ -528,6 +528,7 @@ export const translations = {
         project: 'Commercial',
         role: 'Commercial Project',
       },
+
     ],
 
     /* ═══════════════════════════════════════
