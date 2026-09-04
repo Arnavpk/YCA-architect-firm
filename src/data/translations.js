@@ -474,7 +474,7 @@ export const translations = {
     testimonialsList: [
       {
         quote:
-          'Yogesh and his team transformed our vision into a home that feels both timeless and deeply personal. Every room has a purpose, every detail a reason — it is architecture that truly understands how a family lives.',
+          'Mr. Yogesh and his team transformed our vision into a home that feels both timeless and deeply personal. Every room has a purpose, every detail a reason — it is architecture that truly understands how a family lives.',
         author: 'Mr. Taraapurkar',
         project: 'Residential',
         role: 'Homeowner',
@@ -488,14 +488,14 @@ export const translations = {
       },
       {
         quote:
-          'As someone who values precision in my own profession, I deeply appreciate the meticulousness YCA brought to our residence. The spatial planning, the natural light, the material choices — everything reflects thoughtful craftsmanship.',
+          'As someone who values precision in my own profession, I deeply appreciate the meticulousness Mr. Yogesh brought to our residence. The spatial planning, the natural light, the material choices — everything reflects thoughtful craftsmanship.',
         author: 'Dr. Ghadge',
         project: 'Residential',
         role: 'Homeowner',
       },
       {
         quote:
-          'YCA understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
+          'Mr. Yogesh understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
         author: 'Fancy Re',
         project: 'Jewellery Store Design',
         role: 'Jewellery Shop',
@@ -509,21 +509,21 @@ export const translations = {
       },
       {
         quote:
-          'Our showroom needed to feel luxurious without being intimidating. YCA struck that balance perfectly — warm materials, elegant lighting, and a layout that makes every visit feel like an experience.',
+          'Our showroom needed to feel luxurious without being intimidating. Mr. Yogesh struck that balance perfectly — warm materials, elegant lighting, and a layout that makes every visit feel like an experience.',
         author: 'Ganga Gold Jewellers',
         project: 'Jewellery Store Design',
         role: 'Jewellers',
       },
       {
         quote:
-          'From the grand entrance to the finest display niche, the design captures the essence of Maharaja. YCA delivered a space that elevates our brand and leaves a lasting impression on every customer who walks in.',
+          'From the grand entrance to the finest display niche, the design captures the essence of Maharaja. Mr. Yogesh delivered a space that elevates our brand and leaves a lasting impression on every customer who walks in.',
         author: 'Maharaja Jewellers',
         project: 'Jewellery Store Design',
         role: 'Jewellers',
       },
       {
         quote:
-          'The scale and complexity of our project demanded a team that could think big while managing every detail. YCA delivered on both counts — the result is a commercial space that sets a new benchmark.',
+          'The scale and complexity of our project demanded a team that could think big while managing every detail. Mr. Yogesh delivered on both counts — the result is a commercial space that sets a new benchmark.',
         author: 'Grand Shaurya',
         project: 'Commercial',
         role: 'Commercial Project',

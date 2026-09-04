@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 
 dns.setDefaultResultOrder('ipv4first');
 
-const GMAIL_USER = 'yogeshchavanassociates26@gmail.com';
+const GMAIL_USER = 'yogeshchavanassociates@gmail.com';
 const GMAIL_PASS = process.env.GMAIL_APP_PASSWORD;
 
 export async function POST(request) {
@@ -61,14 +61,14 @@ export async function POST(request) {
       </h2>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         ${rows
-          .map(
-            ([label, value]) => `
+      .map(
+        ([label, value]) => `
           <tr>
             <td style="padding: 10px 12px; color: #4A4A4A; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; width: 120px; vertical-align: top;">${label}</td>
             <td style="padding: 10px 12px; color: #1A1A1A; font-size: 14px;">${value}</td>
           </tr>`
-          )
-          .join('')}
+      )
+      .join('')}
       </table>
       <div style="background: #FAF8F5; padding: 20px; margin-top: 16px; border-left: 3px solid #B08D57;">
         <p style="margin: 0 0 8px; color: #4A4A4A; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;">Message</p>
