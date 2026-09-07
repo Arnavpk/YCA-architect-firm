@@ -7,7 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 
 const NAV_KEYS = ['home', 'about', 'services', 'portfolio', 'process', 'contact'];
 const NAV_HREFS = ['/', '/about', '/services', '/portfolio', '/process', '/contact'];
-const SVC_KEYS = ['residential', 'commercial', 'architecture', 'jewellery'];
+const SVC_KEYS = ['commercial', 'architecture', 'jewellery', 'interiors'];
 
 const SOCIAL_ICONS = {
   instagram: (

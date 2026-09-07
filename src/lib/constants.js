@@ -40,13 +40,6 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    id: 'residential',
-    title: 'Interiors',
-    subtitle: 'Living Redefined',
-    description: 'Bespoke residential spaces that reflect your personality, lifestyle, and aspirations. From luxury apartments to sprawling villas, every detail is curated with intention.',
-    image: "https://res.cloudinary.com/dmjaisk94/image/upload/v1788001824/Yogesh_Sir_13_of_18_lgdux4.jpg",
-  },
-  {
     id: 'commercial',
     title: 'Commercial Design',
     subtitle: 'Spaces That Perform',
