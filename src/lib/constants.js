@@ -9,8 +9,9 @@ export const COMPANY = {
   email: 'studio@yogeshchavan.com',
   whatsapp: '+919657119911',
   address: {
-    line1: 'Near Clai Showroom',
-    line2: 'Old Station Road, Azad Chowk, Sangli',
+    line1: 'Yogesh Chavan Associates',
+    line2: 'Ramjyot City Centre, Azad Chowk',
+    line3: 'Old Station Road, Sangli',
     city: 'Sangli',
     state: 'Maharashtra',
     country: 'India',
@@ -86,6 +87,13 @@ export const SERVICES = [
     subtitle: 'Where Architecture Meets Adornment',
     description: 'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly.',
     image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1785751941/Fancy_re_1_habzol.jpg',
+  },
+  {
+    id: 'interiors',
+    title: 'Interiors',
+    subtitle: 'Crafting Beautiful Spaces',
+    description: 'Transforming spaces into refined, functional environments that reflect your personality and elevate everyday living.',
+    image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1788001824/Yogesh_Sir_13_of_18_lgdux4.jpg',
   },
   // {
   //   id: 'furniture',

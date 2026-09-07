@@ -125,7 +125,7 @@ export default function ContactPage() {
             )}
           </div>
           <div ref={infoRef} className="opacity-0 space-y-10">
-            <div><h3 className="text-[11px] tracking-[0.2em] uppercase text-dark-grey/55 mb-4">{t('contactPage.visitUs')}</h3><p className="text-charcoal leading-relaxed">{COMPANY.address.line1}<br />{COMPANY.address.line2}</p></div>
+            <div><h3 className="text-[11px] tracking-[0.2em] uppercase text-dark-grey/55 mb-4">{t('contactPage.visitUs')}</h3><p className="text-charcoal leading-relaxed">{COMPANY.address.line1}<br />{COMPANY.address.line2}<br />{COMPANY.address.line3}</p></div>
             <div><h3 className="text-[11px] tracking-[0.2em] uppercase text-dark-grey/55 mb-4">{t('contactPage.reachOut')}</h3><div className="space-y-2"><a href={`tel:${COMPANY.phone}`} className="block text-charcoal hover:text-gold transition-colors duration-300">{COMPANY.phone}</a><a href={`mailto:${COMPANY.email}`} className="block text-charcoal hover:text-gold transition-colors duration-300">{COMPANY.email}</a></div></div>
             <div><h3 className="text-[11px] tracking-[0.2em] uppercase text-dark-grey/55 mb-4">{t('contactPage.hours')}</h3><p className="text-charcoal">{COMPANY.hours}</p></div>
             <a href={`https://wa.me/${COMPANY.whatsapp}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-[#25D366] text-white px-6 py-3.5 text-[12px] tracking-[0.15em] uppercase hover:bg-[#22c55e] transition-colors duration-300">

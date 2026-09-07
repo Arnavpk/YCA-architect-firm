@@ -413,6 +413,12 @@ export const translations = {
         description:
           'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
       },
+      interiors: {
+        title: 'Interiors',
+        subtitle: 'Crafting Beautiful Spaces',
+        description:
+          'Transforming spaces into refined, functional environments that reflect your personality and elevate everyday living. From material palettes to furniture layouts, every detail is curated with care.',
+      },
     },
 
     /* ═══════════════════════════════════════
@@ -488,14 +494,14 @@ export const translations = {
       },
       {
         quote:
-          'As someone who values precision in my own profession, I deeply appreciate the meticulousness Mr. Yogesh brought to our residence. The spatial planning, the natural light, the material choices — everything reflects thoughtful craftsmanship.',
+          'As someone who values precision in my own profession, I deeply appreciate the meticulousness Mr. Yogesh and his team brought to our residence. The spatial planning, the natural light, the material choices — everything reflects thoughtful craftsmanship.',
         author: 'Dr. Ghadge',
         project: 'Residential',
         role: 'Homeowner',
       },
       {
         quote:
-          'Mr. Yogesh understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
+          'Mr. Yogesh and his team understood that a jewellery store is not just retail — it is a stage for our craft. The lighting, the display design, the flow of the space — every element was designed to let the jewellery speak for itself.',
         author: 'Fancy Re',
         project: 'Jewellery Store Design',
         role: 'Jewellery Shop',
@@ -509,21 +515,21 @@ export const translations = {
       },
       {
         quote:
-          'Our showroom needed to feel luxurious without being intimidating. Mr. Yogesh struck that balance perfectly — warm materials, elegant lighting, and a layout that makes every visit feel like an experience.',
+          'Our showroom needed to feel luxurious without being intimidating. Mr. Yogesh and his team struck that balance perfectly — warm materials, elegant lighting, and a layout that makes every visit feel like an experience.',
         author: 'Ganga Gold Jewellers',
         project: 'Jewellery Store Design',
         role: 'Jewellers',
       },
       {
         quote:
-          'From the grand entrance to the finest display niche, the design captures the essence of Maharaja. Mr. Yogesh delivered a space that elevates our brand and leaves a lasting impression on every customer who walks in.',
+          'From the grand entrance to the finest display niche, the design captures the essence of Maharaja. Mr. Yogesh and his team delivered a space that elevates our brand and leaves a lasting impression on every customer who walks in.',
         author: 'Maharaja Jewellers',
         project: 'Jewellery Store Design',
         role: 'Jewellers',
       },
       {
         quote:
-          'The scale and complexity of our project demanded a team that could think big while managing every detail. Mr. Yogesh delivered on both counts — the result is a commercial space that sets a new benchmark.',
+          'The scale and complexity of our project demanded a team that could think big while managing every detail. Mr. Yogesh and his team delivered on both counts — the result is a commercial space that sets a new benchmark.',
         author: 'Grand Shaurya',
         project: 'Commercial',
         role: 'Commercial Project',
@@ -1043,6 +1049,12 @@ export const translations = {
         description:
           'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात. प्रत्येक जागा अलंकारांना उंचावण्यासाठी, ब्रँड व्यक्त करण्यासाठी आणि अपवादात्मक ग्राहक अनुभव निर्माण करण्यासाठी विचारपूर्वक डिझाइन केलेली असते.',
       },
+      interiors: {
+        title: 'अंतर्गत सजावट',
+        subtitle: 'सुंदर जागा निर्मिती',
+        description:
+          'जागांचे परिष्कृत, कार्यात्मक वातावरणात रूपांतर करणे जे तुमचे व्यक्तिमत्व प्रतिबिंबित करते आणि दैनंदिन जीवन उन्नत करते. साहित्य निवडीपासून फर्निचर मांडणीपर्यंत, प्रत्येक तपशील काळजीपूर्वक निवडलेला असतो.',
+      },
     },
 
     projectsList: {
@@ -1112,7 +1124,7 @@ export const translations = {
     testimonialsList: [
       {
         quote:
-          'योगेश आणि त्यांच्या टीमने आमच्या स्वप्नाचे एका कालातीत आणि वैयक्तिक घरात रूपांतर केले. प्रत्येक खोलीला एक उद्देश आहे, प्रत्येक तपशीलाला एक कारण — हे वास्तुकला खरोखरच कुटुंब कसे जगते ते समजून घेते.',
+          'श्री. योगेश आणि त्यांच्या टीमने आमच्या स्वप्नाचे एका कालातीत आणि वैयक्तिक घरात रूपांतर केले. प्रत्येक खोलीला एक उद्देश आहे, प्रत्येक तपशीलाला एक कारण — हे वास्तुकला खरोखरच कुटुंब कसे जगते ते समजून घेते.',
         author: 'श्री. तारापूरकर',
         project: 'निवासी',
         role: 'गृहमालक',
@@ -1126,14 +1138,14 @@ export const translations = {
       },
       {
         quote:
-          'माझ्या स्वतःच्या व्यवसायात अचूकतेला महत्त्व देणारा म्हणून, YCA ने आमच्या निवासस्थानासाठी आणलेल्या काटेकोरपणाची मी मनापासून कदर करतो. जागा नियोजन, नैसर्गिक प्रकाश, साहित्य निवड — सर्व काही विचारपूर्ण कारागिरी प्रतिबिंबित करते.',
+          'माझ्या स्वतःच्या व्यवसायात अचूकतेला महत्त्व देणारा म्हणून, श्री. योगेश आणि त्यांच्या टीमने आमच्या निवासस्थानासाठी आणलेल्या काटेकोरपणाची मी मनापासून कदर करतो. जागा नियोजन, नैसर्गिक प्रकाश, साहित्य निवड — सर्व काही विचारपूर्ण कारागिरी प्रतिबिंबित करते.',
         author: 'डॉ. घाडगे',
         project: 'निवासी',
         role: 'गृहमालक',
       },
       {
         quote:
-          'YCA ला समजले की ज्वेलरी स्टोअर म्हणजे केवळ दुकान नाही — ती आमच्या कलेसाठी एक रंगमंच आहे. प्रकाशयोजना, डिस्प्ले डिझाइन, जागेचा प्रवाह — प्रत्येक घटक अलंकारांना स्वतःहून बोलू देण्यासाठी डिझाइन केला.',
+          'श्री. योगेश आणि त्यांच्या टीमला समजले की ज्वेलरी स्टोअर म्हणजे केवळ दुकान नाही — ती आमच्या कलेसाठी एक रंगमंच आहे. प्रकाशयोजना, डिस्प्ले डिझाइन, जागेचा प्रवाह — प्रत्येक घटक अलंकारांना स्वतःहून बोलू देण्यासाठी डिझाइन केला.',
         author: 'Fancy Re',
         project: 'ज्वेलरी स्टोअर डिझाइन',
         role: 'ज्वेलरी शॉप',
@@ -1147,21 +1159,21 @@ export const translations = {
       },
       {
         quote:
-          'आमचा शोरूम भव्य वाटायला हवा होता पण भीतीदायक नाही. YCA ने तो समतोल अचूकपणे साधला — उबदार साहित्य, सुंदर प्रकाशयोजना आणि प्रत्येक भेट एक अनुभव बनवणारी मांडणी.',
+          'आमचा शोरूम भव्य वाटायला हवा होता पण भीतीदायक नाही. श्री. योगेश आणि त्यांच्या टीमने तो समतोल अचूकपणे साधला — उबदार साहित्य, सुंदर प्रकाशयोजना आणि प्रत्येक भेट एक अनुभव बनवणारी मांडणी.',
         author: 'गंगा गोल्ड ज्वेलर्स',
         project: 'ज्वेलरी स्टोअर डिझाइन',
         role: 'ज्वेलर्स',
       },
       {
         quote:
-          'भव्य प्रवेशद्वारापासून सूक्ष्मतम डिस्प्ले कोनाड्यापर्यंत, डिझाइन महाराजाचे सार पकडते. YCA ने अशी जागा दिली जी आमच्या ब्रँडला उंचावते आणि प्रत्येक ग्राहकावर चिरस्थायी प्रभाव पाडते.',
+          'भव्य प्रवेशद्वारापासून सूक्ष्मतम डिस्प्ले कोनाड्यापर्यंत, डिझाइन महाराजाचे सार पकडते. श्री. योगेश आणि त्यांच्या टीमने अशी जागा दिली जी आमच्या ब्रँडला उंचावते आणि प्रत्येक ग्राहकावर चिरस्थायी प्रभाव पाडते.',
         author: 'महाराजा ज्वेलर्स',
         project: 'ज्वेलरी स्टोअर डिझाइन',
         role: 'ज्वेलर्स',
       },
       {
         quote:
-          'आमच्या प्रकल्पाच्या व्याप्तीसाठी आणि जटिलतेसाठी मोठा विचार करणारी पण प्रत्येक तपशील सांभाळणारी टीम आवश्यक होती. YCA ने दोन्ही बाबतीत उत्कृष्ट कामगिरी केली — परिणाम एक नवा मापदंड ठरवणारी व्यावसायिक जागा आहे.',
+          'आमच्या प्रकल्पाच्या व्याप्तीसाठी आणि जटिलतेसाठी मोठा विचार करणारी पण प्रत्येक तपशील सांभाळणारी टीम आवश्यक होती. श्री. योगेश आणि त्यांच्या टीमने दोन्ही बाबतीत उत्कृष्ट कामगिरी केली — परिणाम एक नवा मापदंड ठरवणारी व्यावसायिक जागा आहे.',
         author: 'Grand Shaurya',
         project: 'व्यावसायिक',
         role: 'व्यावसायिक प्रकल्प',
