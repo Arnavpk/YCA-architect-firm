@@ -96,7 +96,6 @@ export default function Footer() {
               {/* <p>{COMPANY.address.line1}<br />{COMPANY.address.line2}</p> */}
               <a href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} className="block hover:text-gold transition-colors duration-300">{COMPANY.phone}</a>
               <a href={`mailto:${COMPANY.email}`} className="block hover:text-gold transition-colors duration-300">{COMPANY.email}</a>
-              <a href="mailto:yogeshchavanassociates@gmail.com" className="block hover:text-gold transition-colors duration-300">yogeshchavanassociates@gmail.com</a>
               <p className="text-white/45">{COMPANY.hours}</p>
             </div>
           </div>

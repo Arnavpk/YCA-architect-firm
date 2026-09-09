@@ -91,7 +91,7 @@ export default function RootLayout({ children }) {
       longitude: 74.5693,
     },
     telephone: '+919657119911',
-    email: 'studio@yogeshchavan.com',
+    email: 'yogeshchavanassociates@gmail.com',
     openingHours: 'Mo-Sa 10:00-19:00',
     priceRange: '₹₹₹',
     areaServed: ['Sangli', 'Pune', 'Maharashtra', 'India'],

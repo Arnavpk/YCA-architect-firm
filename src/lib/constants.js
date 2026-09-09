@@ -6,7 +6,7 @@ export const COMPANY = {
   tagline: 'Crafting Timeless Spaces',
   description: 'A premier architecture and interior design studio creating thoughtful, refined spaces that transcend trends and stand the test of time.',
   phone: '+91 96571 19911',
-  email: 'studio@yogeshchavan.com',
+  email: 'yogeshchavanassociates@gmail.com',
   whatsapp: '+919657119911',
   address: {
     line1: 'Yogesh Chavan Associates',
