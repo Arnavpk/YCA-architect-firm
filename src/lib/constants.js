@@ -76,7 +76,7 @@ export const SERVICES = [
   },
   {
     id: 'jewellery',
-    title: 'Jewellery Store Design',
+    title: 'Jewellery Shop Design',
     subtitle: 'Where Architecture Meets Adornment',
     description: 'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly.',
     image: 'https://res.cloudinary.com/dmjaisk94/image/upload/v1785751941/Fancy_re_1_habzol.jpg',

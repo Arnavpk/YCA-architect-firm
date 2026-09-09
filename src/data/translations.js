@@ -408,7 +408,7 @@ export const translations = {
           'Professional project management ensuring timelines, budgets, and quality standards are met without exception.',
       },
       jewellery: {
-        title: 'Jewellery Store Design',
+        title: 'Jewellery Shop Design',
         subtitle: 'Where Architecture Meets Adornment',
         description:
           'We create distinctive jewellery stores where architecture, interiors, lighting, and display come together seamlessly. Every space is thoughtfully designed to elevate the jewellery, express the brand, and create an exceptional customer experience.',
@@ -1044,7 +1044,7 @@ export const translations = {
           'वेळापत्रक, बजेट आणि गुणवत्ता मानके अपवाद न करता पूर्ण करणारे व्यावसायिक प्रकल्प व्यवस्थापन.',
       },
       jewellery: {
-        title: 'ज्वेलरी स्टोअर डिझाइन',
+        title: 'ज्वेलरी शॉप डिझाइन',
         subtitle: 'वास्तुकला आणि अलंकार यांचा संगम',
         description:
           'आम्ही अशी विशिष्ट ज्वेलरी दुकाने निर्माण करतो जिथे वास्तुकला, अंतर्गत सजावट, प्रकाशयोजना आणि प्रदर्शन अखंडपणे एकत्र येतात. प्रत्येक जागा अलंकारांना उंचावण्यासाठी, ब्रँड व्यक्त करण्यासाठी आणि अपवादात्मक ग्राहक अनुभव निर्माण करण्यासाठी विचारपूर्वक डिझाइन केलेली असते.',
