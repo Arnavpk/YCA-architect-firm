@@ -5,6 +5,7 @@ import SmoothScroll from '@/components/SmoothScroll';
 import LoadingScreen from '@/components/LoadingScreen';
 import MusicPlayer from '@/components/MusicPlayer';
 import { LanguageProvider } from '@/context/LanguageContext';
+import { Analytics } from '@vercel/analytics/next';
 
 const SITE_URL = 'https://yca-architect-firm.vercel.app';
 
@@ -136,6 +137,7 @@ export default function RootLayout({ children }) {
             <MusicPlayer />
           </SmoothScroll>
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
